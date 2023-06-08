@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE producto SYSTEM "gramatica.dtd" [
+<!ELEMENT sistema_operativo (#PCDATA)>
+]>
+<producto>
+    <descripcion>Samsung Galaxy S35</descripcion>
+    <sistema_operativo>Android</sistema_operativo>
+</producto>

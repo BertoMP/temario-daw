@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE dichos [
+    <!ELEMENT dichos (trabalenguas+)>
+    <!ELEMENT trabalenguas (verso+)>
+    <!ELEMENT verso (#PCDATA)>
+    <!ENTITY c "coco">
+    <!ENTITY p "pica">
+]>
+<dichos>
+    <trabalenguas>
+        <verso>&c; no compro por el que poco &c; come</verso>
+        <verso>poco &c; compra</verso>
+    </trabalenguas>
+    <trabalenguas>
+        <verso>&p;, &p;, &p; Perico</verso>
+        <verso>&p;, &p;, &p; la rana</verso>
+        <verso>Perico &p;, &p; la rama</verso>
+    </trabalenguas>
+</dichos>

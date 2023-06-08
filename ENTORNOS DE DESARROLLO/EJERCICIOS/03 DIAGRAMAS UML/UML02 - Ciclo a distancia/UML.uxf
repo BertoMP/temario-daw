@@ -1,0 +1,66 @@
+<diagram program="umletino" version="15.0.0"><zoom_level>10</zoom_level><help_text>Space for diagram notes</help_text><element><id>UMLClass</id><coordinates><x>530</x><y>560</y><w>210</w><h>140</h></coordinates><panel_attributes>Persona
+--
+- nombre: String
+- apellidos: String
+- direccion: String
+- telefono: int
+- alias: String
+- email: String
+--</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>420</x><y>450</y><w>210</w><h>60</h></coordinates><panel_attributes>Alumno
+--
+- notaMedia: double
+--
++ calculaMedia(): void</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>690</x><y>450</y><w>110</w><h>60</h></coordinates><panel_attributes>Profesor
+--
+- NRP: int
+--
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>510</x><y>500</y><w>140</w><h>80</h></coordinates><panel_attributes>lt=&lt;&lt;-</panel_attributes><additional_attributes>120;60;120;20;10;20;10;10</additional_attributes></element><element><id>Relation</id><coordinates><x>600</x><y>500</y><w>160</w><h>40</h></coordinates><panel_attributes></panel_attributes><additional_attributes>10;20;140;20;140;10</additional_attributes></element><element><id>Relation</id><coordinates><x>510</x><y>340</y><w>420</w><h>130</h></coordinates><panel_attributes>lt=-
+m1=1..*
+m2=1..*
+matricula &gt;</panel_attributes><additional_attributes>10;110;10;70;380;70;380;10</additional_attributes></element><element><id>Relation</id><coordinates><x>790</x><y>280</y><w>290</w><h>220</h></coordinates><panel_attributes>lt=-
+m1=1
+m2=1..*
+imparte &gt;</panel_attributes><additional_attributes>10;190;260;190;260;10;210;10</additional_attributes></element><element><id>UMLClass</id><coordinates><x>810</x><y>260</y><w>190</w><h>90</h></coordinates><panel_attributes>Módulos
+--
+- horas: int
+- contenido: String
+- nombre: String
+--</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>470</x><y>260</y><w>190</w><h>60</h></coordinates><panel_attributes>Competencias profesional
+--
+- descripcion: String
+--</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>120</x><y>260</y><w>190</w><h>90</h></coordinates><panel_attributes>Ciclo Formativo a Distancia
+--
+- nombre: String
+- codigo:int
+- horas: int
+--
++ calculaHoras(): void
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>650</x><y>260</y><w>180</w><h>50</h></coordinates><panel_attributes>lt=&lt;&lt;&lt;&lt;&lt;-
+compuesto por
+m1= 1
+m2= 1..*</panel_attributes><additional_attributes>10;20;160;20</additional_attributes></element><element><id>Relation</id><coordinates><x>300</x><y>260</y><w>190</w><h>50</h></coordinates><panel_attributes>lt=&lt;&lt;&lt;&lt;&lt;-
+compuesto por
+m1= 1
+m2= 1..*</panel_attributes><additional_attributes>10;20;170;20</additional_attributes></element><element><id>Relation</id><coordinates><x>810</x><y>160</y><w>40</w><h>120</h></coordinates><panel_attributes>lt=&lt;&lt;&lt;&lt;&lt;-
+m1= 1
+m2= 1</panel_attributes><additional_attributes>10;100;10;10</additional_attributes></element><element><id>UMLClass</id><coordinates><x>750</x><y>110</y><w>160</w><h>60</h></coordinates><panel_attributes>Examen
+--
+- puntuacion: double
+--
++ ordenarAlAzar(): void</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>920</x><y>110</y><w>160</w><h>60</h></coordinates><panel_attributes>Tarea
+--
+- puntuacion: double
+--</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>980</x><y>160</y><w>40</w><h>120</h></coordinates><panel_attributes>lt=&lt;&lt;&lt;&lt;&lt;-
+m1= 1
+m2= 1</panel_attributes><additional_attributes>10;100;10;10</additional_attributes></element><element><id>Relation</id><coordinates><x>640</x><y>110</y><w>130</w><h>40</h></coordinates><panel_attributes>lt=&lt;&lt;&lt;&lt;&lt;-
+m1= 1
+m2= 30</panel_attributes><additional_attributes>110;10;10;10</additional_attributes></element><element><id>UMLClass</id><coordinates><x>510</x><y>110</y><w>140</w><h>70</h></coordinates><panel_attributes>Preguntas
+--
+- enunciado: String
+- respuestas: String[ ]
+--</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>270</x><y>380</y><w>350</w><h>90</h></coordinates><panel_attributes>lt=.</panel_attributes><additional_attributes>330;30;330;10;10;10;10;70</additional_attributes></element><element><id>UMLClass</id><coordinates><x>200</x><y>450</y><w>160</w><h>60</h></coordinates><panel_attributes>Matricula
+--
+- codigoMatricula: int
+--
++ matricular(): void</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>780</x><y>60</y><w>90</w><h>70</h></coordinates><panel_attributes>lt=.</panel_attributes><additional_attributes>10;50;10;10;70;10</additional_attributes></element><element><id>UMLNote</id><coordinates><x>850</x><y>50</y><w>130</w><h>30</h></coordinates><panel_attributes>{ Calificación 1 - 10 }
+bg=white</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>970</x><y>60</y><w>80</w><h>70</h></coordinates><panel_attributes>lt=.</panel_attributes><additional_attributes>60;50;60;10;10;10</additional_attributes></element></diagram>

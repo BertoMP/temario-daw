@@ -1,0 +1,17 @@
+create table ejemplar_arbol(
+especie varchar2(20),
+poblacion varchar2(30),
+provincia varchar2(20),
+orden_reg number(4),
+año_plant number(7),
+pulgon varchar2(2) check (pulgon in ('SI','NO')),
+cochinilla varchar2(2) check (cochinilla in ('SI','NO')),
+altura_cm number(7),
+estado varchar2(7) check (estado in ('SANO','ENFERMO')),
+riego varchar2(10),
+rec_periodicidad_poda varchar2(10),
+ultima_poda varchar2(15),
+constraint PK_EJEMPLAR_ARBOL primary key (especie,poblacion,provincia,orden_reg));
+
+
+

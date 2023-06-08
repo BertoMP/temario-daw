@@ -1,0 +1,25 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" >
+<xs:element name="order" >
+<xs:complexType>
+      <xs:sequence>
+            <xs:element name="orderID" type="xs:positiveInteger"/>
+            <xs:element name="destination">
+            <xs:complexType>
+            <xs:all>
+                  <xs:element name="typeAddress" type="xs:string"/>                         
+                  <xs:element name="address" type="xs:string"/>
+            </xs:all>
+            </xs:complexType>
+            </xs:element>
+            <xs:element name="price" >
+            <xs:complexType>
+                 <xs:attribute name="value" type="xs:float" use="required"/>
+                 <xs:attribute name="currency" type="xs:string" default="EUR"/>
+            </xs:complexType>
+            </xs:element>
+      </xs:sequence>
+      <xs:attribute name="deliveryDate" type="xs:date" use="required"/>
+</xs:complexType>
+</xs:element>
+ </xs:schema>

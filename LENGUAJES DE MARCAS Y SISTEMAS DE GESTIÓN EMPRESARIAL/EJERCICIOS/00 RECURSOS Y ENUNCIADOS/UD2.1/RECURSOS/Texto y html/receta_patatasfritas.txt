@@ -1,0 +1,22 @@
+﻿<!DOCTYPE html>
+<html lang="es">
+<head>
+	<title>Patatas fritas</title>
+	<meta charset="utf-8">
+</head>
+<body>
+    <h1>Patatas fritas</h1>
+    <p>Receta de patatas fritas caseras.</p>
+    <h2>Ingredientes</h2>
+    3 ó 4 patatas (300g.)
+    4 dientes de ajo
+    Aceite de oliva
+    Sal
+    <h2>Elaboración (Pasos)</h2>
+    Calentar aceite en una sartén.
+    Añadir las patatas cortadas, la sal y los ajos.
+    Freír al gusto.
+    Servir en plato.
+    <hr>
+  </body>
+</html>

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE producto [
+    <!ELEMENT producto (descripcion)>
+    <!ELEMENT descripcion (#PCDATA)>
+]>
+<producto>
+    <descripcion>Samsung Galaxy S35</descripcion>
+</producto>

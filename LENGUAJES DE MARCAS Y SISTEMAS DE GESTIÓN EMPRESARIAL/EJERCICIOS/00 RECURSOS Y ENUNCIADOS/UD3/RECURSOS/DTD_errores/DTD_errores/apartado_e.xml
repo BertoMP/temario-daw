@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE comunidad [
+  <!ELEMENT comunidad ((persona|familia)*)>
+  <!ELEMENT persona EMPTY>
+  <!ATTLIST persona nombre CDATA #REQUIRED
+                                       codigo ID #REQUIRED>
+  <!ELEMENT familia EMPTY>
+  <!ATTLIST familia nombre CDATA #REQUIRED miembros IDREFS #REQUIRED>
+]>
+
+<comunidad>
+  <persona nombre="Ana García" codigo="AG"/>
+  <persona nombre="León Martín" codigo="LM" />
+  <persona nombre="Pepa García" codigo="PG" />
+  <persona nombre="Natalia García" codigo="NG" />
+  <familia nombre="Familia García" miembros="Ana García, Pepa García, Natalia García" />
+  <familia nombre="Familia Martín" />
+</comunidad>

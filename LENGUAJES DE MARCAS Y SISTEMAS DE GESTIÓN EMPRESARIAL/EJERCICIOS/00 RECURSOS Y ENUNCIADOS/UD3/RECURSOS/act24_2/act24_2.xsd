@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" >
+<xs:element name="jornada">
+<xs:complexType>
+      <xs:all>
+               <xs:element name="partido" type="tipoEvento" minOccurs="0"  />
+               <xs:element name="proyección" type="tipoEvento" minOccurs="0" />
+               <xs:element name="espectáculo" type="tipoEvento" minOccurs="0" />
+      </xs:all>
+<xs:attribute name="fecha" type="xs:date" />
+<xs:attribute name="festivo" type="xs:boolean" default="false"/>
+</xs:complexType>
+</xs:element>
+</xs:schema>

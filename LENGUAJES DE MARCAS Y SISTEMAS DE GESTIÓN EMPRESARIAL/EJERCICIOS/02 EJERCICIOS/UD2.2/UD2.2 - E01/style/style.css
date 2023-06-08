@@ -1,0 +1,18 @@
+body {
+    margin-top: 10%;
+    margin-left: 10%;
+}
+
+h1 {
+    width: 160px; /* 250px - 30px (padding left) - 60px (30x2)*/
+    border: 30px solid saddlebrown;
+    padding-top: 30px;
+    padding-left: 30px;
+    padding-bottom: 30px;
+    background-color: lightyellow;
+    box-shadow: 0px 0px 35px saddlebrown;
+    background-image: url(../img/casa.png);
+    background-size: 70px;
+    background-repeat: no-repeat;
+    background-position: bottom right;
+}

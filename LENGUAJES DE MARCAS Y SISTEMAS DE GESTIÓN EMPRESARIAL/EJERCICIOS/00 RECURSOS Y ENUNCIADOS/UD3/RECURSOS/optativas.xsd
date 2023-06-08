@@ -1,0 +1,7 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" targetNamespace="www.centro.org/optativas">
+<xs:attribute name="optativaCiencias" type="xs:string" />
+<xs:attribute name="optativaHumanidades" type="xs:string" />
+<xs:attribute name="optativaArte" type="xs:string" />
+<xs:attribute name="extraescolar" type="xs:string" />
+</xs:schema>

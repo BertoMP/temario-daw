@@ -1,0 +1,15 @@
+﻿<...base xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+  xsi:schemaLocation= "actividad/1.org Esquema1.xsd
+                                        actividad/2.org Esquema2.xsd"
+  xmlns:p="actividad/1.org"
+  xmlns:s="actividad/2.org"
+  xsi:noNamespaceSchemaLocation="...">
+    <...uno>
+        <...descripción>Esto es una descripción</...descripción>    
+        <...contenido>Esto es un contenido</...contenido>    
+    </...uno>
+    <...dos>
+        <...texto>Esto es un texto</...texto>    
+        </...dos>
+    <...objeto>34</...objeto>
+</...base>

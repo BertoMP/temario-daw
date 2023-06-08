@@ -1,0 +1,18 @@
+<html>
+<head>
+	<title>Mi web</title>
+<head>
+<body>
+ <p>Glosario de siglas:</p>
+    <hr>
+    <dl>
+      <dt>CSS</dt>
+      <dd>Cascading Style Sheets</dd>
+      <dt>HTML</dt>
+      <dd>HyperText Markup Language</dd>
+      <dt>W3C
+      <dd>World Wide Web Consortium</dd>
+    </dl>
+ </body>
+</html>
+

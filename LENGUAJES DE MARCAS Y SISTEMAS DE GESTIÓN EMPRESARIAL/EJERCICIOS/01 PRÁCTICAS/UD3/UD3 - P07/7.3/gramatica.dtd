@@ -1,0 +1,2 @@
+<!ELEMENT producto (descripcion,sistema_operativo)>
+<!ELEMENT descripcion (#PCDATA)>

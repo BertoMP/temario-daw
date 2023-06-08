@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet href="ejemplo.css"?>
+<!DOCTYPE listado [
+<!ELEMENT listado (elemento*)>
+<!ELEMENT elemento (#PCDATA)>
+]>
+<listado>
+    <elemento>primero</elemento>
+    <elemento>segundo</elemento>
+    <elemento>tercero</elemento>
+    <elemento>cuarto</elemento>
+    <elemento>quinto</elemento>
+</listado>

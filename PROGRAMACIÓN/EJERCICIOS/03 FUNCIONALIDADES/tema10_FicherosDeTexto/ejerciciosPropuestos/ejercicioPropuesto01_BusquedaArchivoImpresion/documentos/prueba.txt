@@ -1,0 +1,6 @@
+Esto es un fichero de prueba. Debe seleccionar uno de los ficheros existentes.
+
+Los ficheros existentes son:
+
+nombres.txt
+numeros.txt

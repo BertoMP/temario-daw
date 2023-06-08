@@ -1,0 +1,11 @@
+﻿<curso xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="curso.xsd">
+<alumno>
+    <NIA>1256003</NIA>
+    <nacimiento>2007-04-13</nacimiento>
+</alumno>
+<alumno>
+    <NIA>1365220</NIA>
+    <nacimiento>2007-05-23</nacimiento>
+</alumno>
+</curso>
+    

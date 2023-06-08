@@ -1,0 +1,19 @@
+﻿<carteraClientes xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="carteraClientes.xsd">
+<cliente>
+    <facturación>
+        <cuentaBancaria>1230000000000000</cuentaBancaria>
+    </facturación>
+<datosPersonales NIF="10000000-A" />
+</cliente>
+<cliente esVIP="true">
+    <facturación>
+        <tarjetaCrédito>
+            <numTarjeta>999999999</numTarjeta>
+            <fechaCaducidad>2028-01-01</fechaCaducidad>
+            <códigoCVV>123</códigoCVV>
+        </tarjetaCrédito>
+    </facturación>
+<datosPersonales NIF="10000000-B" nombre="Alberto" apellido1="Romero"/>
+</cliente>
+</carteraClientes>
+    

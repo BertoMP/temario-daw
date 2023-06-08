@@ -1,0 +1,15 @@
+listado {
+    color: blue;
+}
+
+elemento::first-letter {
+    text-transform: uppercase;
+}
+
+elemento:nth-of-type(odd) {
+    background-color: orange;
+}
+
+elemento {
+    display: block;
+}

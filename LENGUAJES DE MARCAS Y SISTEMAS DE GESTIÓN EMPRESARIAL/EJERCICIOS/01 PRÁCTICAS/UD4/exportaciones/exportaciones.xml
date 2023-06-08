@@ -1,0 +1,53 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<exportacion xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="exportaciones.xsd"
+  fecha="2022-03-16">
+<conserva cantidad="200" referencia="55A">
+  <descripcion>atún natural</descripcion>
+  <peso>125</peso>
+  <precio>1.05</precio>
+</conserva>
+<conserva cantidad="30" referencia="57K">
+  <descripcion>sardinillas</descripcion>
+  <peso>200</peso>
+  <precio>1.00</precio>
+</conserva>
+<conserva cantidad="10" referencia="122Y">
+  <descripcion>melva</descripcion>
+  <peso>150</peso>
+  <precio>0.80</precio>
+</conserva>
+<lote referencia="000045-L">
+  <conserva cantidad="50">
+    <descripcion>atún escabeche</descripcion>
+    <peso>200</peso>
+    <precio>1.35</precio>
+  </conserva>
+  <conserva cantidad="50">
+    <descripcion>caballa sin sal</descripcion>
+    <peso>150</peso>
+    <precio>0.86</precio>
+  </conserva>
+</lote>
+<lote referencia="000046-L"> <!--Lote nuevo-->
+  <conserva cantidad="10">
+    <descripcion>guisantes</descripcion>
+    <peso>500</peso>
+    <precio>2.56</precio>
+  </conserva>
+  <conserva cantidad="10">
+    <descripcion>espárragos XL</descripcion>
+    <peso>200</peso>
+    <precio>3.20</precio>
+  </conserva>
+  <conserva cantidad="10">
+    <descripcion>garbanzos</descripcion>
+    <peso>500</peso>
+    <precio>1.06</precio>
+  </conserva>
+  <conserva cantidad="10">
+    <descripcion>palmitos</descripcion>
+    <peso>125</peso>
+    <precio>1.98</precio>
+  </conserva>
+</lote>
+</exportacion>

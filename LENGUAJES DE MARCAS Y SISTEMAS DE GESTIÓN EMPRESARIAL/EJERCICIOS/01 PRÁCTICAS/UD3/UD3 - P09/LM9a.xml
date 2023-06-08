@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE muebles [
+    <!ELEMENT muebles (mueble+)>
+    <!ELEMENT mueble (#PCDATA)>
+]>
+<muebles>
+    <mueble>Silla</mueble>
+</muebles>

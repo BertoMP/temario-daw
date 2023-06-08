@@ -1,0 +1,8 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE empleado [
+  <!ELEMENT empleado EMPTY>
+  <!ATTLIST empleado nombre CDATA #IMPLIED >
+]>
+<empleado dni="03141592E" />
+
+

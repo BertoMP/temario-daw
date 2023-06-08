@@ -1,0 +1,97 @@
+#caracteristicas {
+    padding-top: 20px;
+}
+
+#contenedor {
+    width: 50%;
+    margin: auto;
+}
+
+#datos, .adicional {
+    border: 1px rgb(102, 205, 170) solid;
+}
+
+#enlace {
+    font-size: 1.5em;
+    font-style: italic;
+    text-align: right;
+}
+
+#ingredientes {
+    padding-left: 5px;
+}
+
+.adicional {
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+.dificultad {
+    background-image: url(../assets/img/dificultad.JPG);
+    background-position: left center;
+    background-repeat: no-repeat;
+    padding-left: 30px;
+    padding-right: 20px;
+}
+
+.negrita {
+    font-weight: bold;
+}
+
+.personas {
+    background-image: url(../assets/img/personas.JPG);
+    background-position: left center;
+    background-repeat: no-repeat;
+    padding-left: 30px;
+    padding-right: 20px;
+}
+
+.tiempo {
+    background-image: url(../assets/img/tiempo.JPG);
+    background-position: left center;
+    background-repeat: no-repeat;
+    padding-left: 30px;
+    padding-right: 20px;
+}
+
+.tipo {
+    background-image: url(../assets/img/tipo.JPG);
+    background-position: left center;
+    background-repeat: no-repeat;
+    padding-left: 30px;
+    padding-right: 20px;
+}
+
+a:link {
+    text-decoration: none;
+}
+
+a:hover {
+    color: rgb(102, 205, 170);
+}
+
+body {
+    font-family: Garamond;
+    font-size: 20px;
+}
+
+h2 {
+    font-family: 'Comic Sans MS';
+    font-size: 18px;
+    background-color: black;
+    color: white;
+    padding-left: 25%;
+}
+
+h2::first-letter {
+    font-size: 4em;
+}
+
+img {
+    width: 100%;
+    height: 300px;
+}
+
+ul {
+    list-style-image: url(../assets/img/cuadro.png);
+}

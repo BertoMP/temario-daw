@@ -1,0 +1,44 @@
+td,th {
+    padding-left: 10px;
+}
+
+th {
+    text-align: left;
+}
+
+caption {
+    font-style: italic;
+    letter-spacing: 0.5em;
+    caption-side: bottom;
+}
+
+th, tr:last-of-type td {
+    text-transform: uppercase;
+    color: white;
+    background-color: navy;
+}
+
+tr td:nth-child(2) {
+    text-align: center;
+}
+
+tr td:last-child::after {
+    content: "€";
+}
+
+tr {
+    border: 1px solid grey;
+}
+
+table {
+    border-collapse: collapse;
+}
+
+tr:nth-child(odd) {
+    background-color: rgb(230, 230, 250);
+}
+
+tr:first-of-type {
+    position: sticky;
+    top: 5px;
+}

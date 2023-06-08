@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+    <xs:element name="deporte" type="xs:string" />
+    <xs:element name="instrumento" type="xs:string" />
+    <xs:element name="aficion">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:any minOccurs="1" maxOccurs="5" />
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+</xs:schema>

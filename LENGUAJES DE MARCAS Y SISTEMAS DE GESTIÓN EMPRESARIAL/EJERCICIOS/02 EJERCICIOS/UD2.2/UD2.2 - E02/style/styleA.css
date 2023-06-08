@@ -1,0 +1,20 @@
+div {
+    background-color: grey;
+    color: white;
+    height: 50px;
+}
+
+span {
+    padding-top: 15px;    
+}
+
+span:first-of-type {
+    float: left;
+    padding-left: 15px;
+}
+
+span:last-of-type {
+    float: right;
+    padding-right: 15px;
+}
+

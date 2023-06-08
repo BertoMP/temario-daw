@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE sistema_solar [
+    <!ELEMENT sistema_solar (cuerpo_celeste+)>
+    <!ELEMENT cuerpo_celeste ((planeta, satelite*)|cometa)>
+    <!ELEMENT planeta (#PCDATA)>
+    <!ELEMENT cometa (#PCDATA)>
+    <!ELEMENT satelite (#PCDATA)>
+]>
+<sistema_solar>
+    <cuerpo_celeste>
+        <planeta>Mercurio</planeta>
+    </cuerpo_celeste>
+    <cuerpo_celeste>
+        <planeta>La Tierra</planeta>
+        <satelite>La Luna</satelite>
+    </cuerpo_celeste>
+    <cuerpo_celeste>
+        <planeta>Marte</planeta>
+        <satelite>Fobos</satelite>
+        <satelite>Deimos</satelite>
+    </cuerpo_celeste>
+    <cuerpo_celeste>
+        <cometa>Halley</cometa>
+    </cuerpo_celeste>
+</sistema_solar>

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE Mensaje SYSTEM "Mensaje.dtd">
+<Mensaje>
+<Remitente>
+<Nombre>Nombre del remitente</Nombre>
+<Mail> Correo del remitente </Mail>
+</Remitente>
+<Destinatario>
+<Nombre>Nombre del destinatario</Nombre>
+<Mail>Correo del destinatario</Mail>
+</Destinatario>
+<Asunto>Mi documento</Asunto>
+<Texto>
+<Parrafo> Este es mi documento con una estructura muy sencilla</Parrafo>
+<Parrafo> Hasta pronto</Parrafo>
+<firma>Nombre del remitente</firma>
+</Texto>
+</Mensaje>

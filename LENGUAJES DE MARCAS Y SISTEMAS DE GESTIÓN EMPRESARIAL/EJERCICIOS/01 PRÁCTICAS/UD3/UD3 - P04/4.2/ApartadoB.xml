@@ -1,0 +1,6 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<tienda>
+  <prenda modelo="MOD-34" color="Rojo" talla="XL"/>
+  <prenda modelo="STYLE-MD" color="Azul" talla="M"/>
+  <prenda modelo="STYLE-MR" color="Azul" talla="XXL"/>
+</tienda>

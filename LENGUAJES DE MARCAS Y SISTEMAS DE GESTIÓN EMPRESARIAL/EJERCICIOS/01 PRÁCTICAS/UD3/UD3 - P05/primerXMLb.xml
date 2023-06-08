@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mensaje [
+<!ELEMENT mensaje (contenido)>
+<!ELEMENT contenido (#PCDATA)>
+]>
+<!--primer XML-->
+<mensaje>
+    <destinatario>Todos</destinatario>
+    <contenido>Hola mundo</contenido>
+</mensaje>

@@ -1,0 +1,13 @@
+drop table productos cascade constraints;
+create table productos(
+producto_no number primary key,
+precio_uni number
+);
+insert into productos values (10, 99);
+insert into productos values (20, 520);
+insert into productos values (30, 999);
+insert into productos values (40, 3025);
+insert into productos values (50, 1050);
+insert into productos values (60, 290);
+insert into productos values (70, 75);
+commit;

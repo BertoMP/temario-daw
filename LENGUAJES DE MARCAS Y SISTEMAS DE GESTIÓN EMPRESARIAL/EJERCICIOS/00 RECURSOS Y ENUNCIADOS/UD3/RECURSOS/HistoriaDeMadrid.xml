@@ -1,0 +1,48 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<capítulos>
+   <capítulo>
+      <título>Presentación</título>
+      <página-inicial>7</página-inicial>
+      <página-final>10</página-final>
+   </capítulo>
+   <capítulo>
+      <título>Madrid antes de ser Madrid</título>
+      <página-inicial>11</página-inicial>
+      <página-final>20</página-final>
+   </capítulo>
+   <capítulo>
+      <título>Madrid medieval</título>
+      <página-inicial>21</página-inicial>
+      <página-final>68</página-final>
+   </capítulo>
+   <capítulo>
+      <título>Madrid de los Austrias</título>
+      <página-inicial>69</página-inicial>
+      <página-final>114</página-final>
+   </capítulo>
+   <capítulo>
+      <título>Madrid de los Borbones, S.XVIII</título>
+      <página-inicial>115</página-inicial>
+      <página-final>162</página-final>
+   </capítulo>
+   <capítulo>
+      <título>Madrid: primera mitad del XIX</título>
+      <página-inicial>163</página-inicial>
+      <página-final>194</página-final>
+    </capítulo>
+    <capítulo>
+      <título>Madrid: segunda mitad del XIX</título>
+      <página-inicial>195</página-inicial>
+      <página-final>216</página-final>
+   </capítulo>
+   <capítulo>
+      <título>Madrid siglo XX</título>
+      <página-inicial>217</página-inicial>
+      <página-final>302</página-final>
+   </capítulo>
+   <capítulo>
+      <título>Bibliografía</título>
+      <página-inicial>303</página-inicial>
+      <página-final>308</página-final>
+   </capítulo>
+</capítulos>

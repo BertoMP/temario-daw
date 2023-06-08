@@ -1,0 +1,35 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" elementFormDefault="qualified">
+  
+  <xs:element name="exportacion">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element ref="conserva" minOccurs="0" maxOccurs="unbounded"/>
+        <xs:element ref="lote" minOccurs="0" maxOccurs="unbounded"/>
+      </xs:sequence>
+      <xs:attribute name="fecha" type="xs:date" use="required"/>
+    </xs:complexType>
+  </xs:element>
+
+  <xs:element name="conserva" type="tipoConserva" />
+
+  <xs:element name="lote">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element name="conserva"  type="tipoConserva" minOccurs="2" maxOccurs="10"/>
+      </xs:sequence>
+       <xs:attribute name="referencia" type="xs:string" use="required"/>
+    </xs:complexType>
+  </xs:element>
+  
+    <xs:complexType name="tipoConserva">
+      <xs:sequence>
+        <xs:element name="descripcion" type="xs:string"/>
+        <xs:element name="peso" type="xs:positiveInteger"/>
+        <xs:element name="precio" type="xs:float"/>
+        </xs:sequence>
+      <xs:attribute name="cantidad" type="xs:positiveInteger" use="required"/>
+      <xs:attribute name="referencia" type="xs:string"/>
+  </xs:complexType>
+   
+</xs:schema>

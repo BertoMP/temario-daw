@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<hojaDeVuelos xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:noNamespaceSchemaLocation="vuelos.xsd" 
+    fechaDelDia="2022-01-01">
+    <vuelo id="IB8860" admitePasajeros="true" aerolínea="Iberia">
+        <origen>MAD</origen>
+        <destino>ALC</destino>
+        <hora>
+            <llegada>10:54:00</llegada>
+        </hora>
+    </vuelo>
+    <vuelo id="TP1027" admitePasajeros="false" aerolínea="TAP Air Portugal">
+        <origen>MAD</origen>
+        <destino>LIS</destino>
+        <hora>
+            <salida>12:05:00</salida>
+        </hora>
+    </vuelo>
+</hojaDeVuelos>

@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Mi web</title>
+	<meta charset='utf-8'>
+</head>
+
+<body>
+Rubí
+Zafiro Azul
+Esmeralda
+Amatista
+Alejandrita
+Ópalo
+Topacio
+Turquesa
+Aguamarina
+</body>
+</html>
+

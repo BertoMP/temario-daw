@@ -1,0 +1,5 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<altura xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+xsi:noNamespaceSchemaLocation="altura.xsd">180.35</altura>
+
+<!-- Si se deja vacío el documento es váliod. Si se pone un valor diferente a 180.35, deja de ser válido. -->

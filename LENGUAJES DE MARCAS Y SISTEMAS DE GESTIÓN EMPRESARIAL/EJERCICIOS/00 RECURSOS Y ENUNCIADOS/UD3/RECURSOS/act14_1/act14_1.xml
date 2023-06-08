@@ -1,0 +1,12 @@
+﻿<dp:alumno>
+    <dp:nombre>Esther</dp:nombre>
+    <dp:apellido>Moreno</dp:apellido>
+    <dp:direccion>
+        <dp:calle>Plaza Mayor</dp:calle>
+        <dp:cp>28820</dp:cp>
+    </dp:direccion>
+    <ce:centro>
+      <ce:nombre>IES Luis Braille</ce:nombre>
+      <ce:direccion localidad="Coslada"/>
+    </ce:centro>
+</dp:alumno>

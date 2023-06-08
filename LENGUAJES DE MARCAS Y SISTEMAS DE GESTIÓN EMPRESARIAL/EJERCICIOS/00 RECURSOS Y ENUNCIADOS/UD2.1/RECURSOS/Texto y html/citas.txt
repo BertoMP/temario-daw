@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Mi web</title>
+	<meta charset='utf-8'>
+</head>
+<body>
+<p>Hemos venido a rescatarte, dice Elizabeth Swann en la película Piratas del Caribe. Como respuesta, Jack Sparrow le dice:
+No me digas. Eres muy amable. Pero, en vista de que yo poseo un barco y vosotros no, vosotros debéis ser rescatados, y, no estoy seguro de que eso me apetezca. </p>
+<p>En la ficha de IMDb para Piratas del Caribe: La maldición de la Perla Negra aparece una puntuación de 8,0.</p>
+ </body>
+</html>
+

@@ -1,0 +1,26 @@
+* {
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+h1 {
+    border: 2px solid blue;
+    padding: 10px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+h2 {
+    border: 2px solid lightgrey;
+    padding: 5px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+li:not(:first-of-type) { /* También puede ser li+li o li~li*/
+    margin-top: 15px;
+}
+
+ul {
+    border: 2px solid lime;
+}

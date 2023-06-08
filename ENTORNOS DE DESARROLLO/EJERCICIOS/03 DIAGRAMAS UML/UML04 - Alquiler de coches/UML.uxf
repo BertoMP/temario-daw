@@ -1,0 +1,52 @@
+<diagram program="umletino" version="15.0.0"><zoom_level>10</zoom_level><help_text></help_text><element><id>UMLClass</id><coordinates><x>340</x><y>60</y><w>190</w><h>120</h></coordinates><panel_attributes>Cliente
+--
+- codigo: String
+- dni: String
+- nombre: String
+- dirección: String
+- teléfono: int
+--
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>330</x><y>270</y><w>200</w><h>90</h></coordinates><panel_attributes>Reserva
+--
+- fechaInicio: Date
+- fechaFin: Date
+- precioTotal: double
+--</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>330</x><y>470</y><w>200</w><h>150</h></coordinates><panel_attributes>Coche
+--
+- precio: double
+- depositoRestante: double
+- indicadorEntrega: boolean
+- matrícula: String
+- modelo: String
+- color: String
+- marca: String
+--
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>420</x><y>170</y><w>90</w><h>120</h></coordinates><panel_attributes>lt=-
+m1=1
+m2=1..*
+reserva &gt;</panel_attributes><additional_attributes>10;10;10;100</additional_attributes></element><element><id>UMLClass</id><coordinates><x>60</x><y>500</y><w>140</w><h>110</h></coordinates><panel_attributes>Garaje
+--
+- codigo: String
+- direccion: String
+- planta: int
+- plaza: int
+--</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>190</x><y>540</y><w>160</w><h>50</h></coordinates><panel_attributes>lt=-
+m1= 1..n
+m2= 1
+&lt; ocupa
+</panel_attributes><additional_attributes>140;20;10;20</additional_attributes></element><element><id>Relation</id><coordinates><x>420</x><y>350</y><w>100</w><h>140</h></coordinates><panel_attributes>lt=-
+m1=1..*
+m2=1
+involucra &gt;</panel_attributes><additional_attributes>10;120;10;10</additional_attributes></element><element><id>Relation</id><coordinates><x>300</x><y>0</y><w>180</w><h>150</h></coordinates><panel_attributes>lt=-
+m1=0..*
+m2=0..1
+avala &gt;</panel_attributes><additional_attributes>140;60;140;20;20;20;20;120;40;120</additional_attributes></element><element><id>UMLClass</id><coordinates><x>680</x><y>270</y><w>120</w><h>70</h></coordinates><panel_attributes>Agencia
+--
+- codigo: String
+- direccion: String
+--</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>520</x><y>290</y><w>180</w><h>50</h></coordinates><panel_attributes>lt=-
+m1=1..*
+m2=1
+pertenece &gt;</panel_attributes><additional_attributes>10;20;160;20</additional_attributes></element><element><id>UMLNote</id><coordinates><x>180</x><y>650</y><w>170</w><h>70</h></coordinates><panel_attributes>Una vez asignada, no puede
+cambiar, será final.
+bg=white</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>250</x><y>550</y><w>30</w><h>120</h></coordinates><panel_attributes>lt=.</panel_attributes><additional_attributes>10;100;10;10</additional_attributes></element></diagram>

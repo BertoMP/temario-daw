@@ -1,0 +1,38 @@
+body {
+    width: 75%;
+    margin: auto;
+    background-image: url(../assets/img/lobos.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    text-align: center;
+}
+
+#titulo {
+    font-family: fantasy;
+    font-size: 20px;
+    letter-spacing: 0.5em;
+    background-color: lightgray;
+    text-decoration: overline underline double;
+    display: inline-block;
+}
+
+.blanco {
+    font-weight: 900;
+    text-shadow: 2px 5px 8px white;
+}
+
+.estrofa {   
+    margin-top: 50px;
+    line-height: 3;
+    color: lightgrey;
+}
+
+.estrofa::first-letter {
+    font-size: xx-large;
+    font-style: italic;
+    text-transform: uppercase;
+}
+
+.lobos {
+    text-decoration: underline dotted sienna 5px;
+}

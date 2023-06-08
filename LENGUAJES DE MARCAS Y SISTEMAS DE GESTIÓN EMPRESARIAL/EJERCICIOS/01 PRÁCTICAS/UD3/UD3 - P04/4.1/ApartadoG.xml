@@ -1,0 +1,5 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<herramientaDePintura>
+    <pincel tipo="v&lt;100/ab" /> <!-- No se puede usar el símbolo < -->
+    <lapicero tipo_mina="grafito/carbon" /> <!-- Faltaba el valor del tipo -->
+</herramientaDePintura >

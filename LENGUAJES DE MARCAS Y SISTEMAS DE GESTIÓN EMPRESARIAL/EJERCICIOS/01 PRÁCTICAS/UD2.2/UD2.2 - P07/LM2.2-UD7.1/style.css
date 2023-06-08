@@ -1,0 +1,17 @@
+h1 {
+    border-bottom: 9px double blue;
+}
+
+h2 {
+    border: 1px solid lightgrey;
+}
+
+ul:first-of-type {
+    border-top: 4px dotted red;
+    border-bottom: 4px dotted red;
+}
+
+ul:nth-of-type(2) {
+    border: 3px dashed lime;
+    border-radius: 25px;
+}

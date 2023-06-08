@@ -1,0 +1,58 @@
+<diagram program="umletino" version="15.0.0"><zoom_level>9</zoom_level><help_text>Figura no poligonal</help_text><element><id>UMLClass</id><coordinates><x>378</x><y>315</y><w>171</w><h>72</h></coordinates><panel_attributes>Proyecto
+--
+- código: String
+- nombre: String
+--</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>351</x><y>171</y><w>216</w><h>72</h></coordinates><panel_attributes>Jefe de proyecto
+--
+- nombre: String { no puede repetirse }
+- codigo: String
+--</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>90</x><y>315</y><w>162</w><h>81</h></coordinates><panel_attributes>Plano
+--
+- id: int
+- fechaEntrega: Date
+- arquitectos: Arquitecto[]
+--</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>360</x><y>603</y><w>171</w><h>99</h></coordinates><panel_attributes>Linea
+--
+- id: String
+- coorX: int
+- coorY: int
+- longitud: int
+--
++ calculaLongitudLinea(): void</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>450</x><y>234</y><w>90</w><h>99</h></coordinates><panel_attributes>lt=-
+m1=0..1
+m2=1
+trabaja en &gt;</panel_attributes><additional_attributes>10;90;10;10</additional_attributes></element><element><id>Relation</id><coordinates><x>243</x><y>333</y><w>153</w><h>45</h></coordinates><panel_attributes>lt=&lt;&lt;&lt;&lt;-
+m1= 1
+m2= 1..*
+se compone</panel_attributes><additional_attributes>150;20;10;20</additional_attributes></element><element><id>UMLClass</id><coordinates><x>630</x><y>171</y><w>162</w><h>54</h></coordinates><panel_attributes>Arquitecto
+--
+- nombre: String
+--</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>495</x><y>18</y><w>162</w><h>72</h></coordinates><panel_attributes>Persona
+--
+# direccion: String
+# telefono: String
+--</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>567</x><y>81</y><w>162</w><h>108</h></coordinates><panel_attributes>lt=&lt;&lt;-</panel_attributes><additional_attributes>10;10;10;50;160;50;160;100</additional_attributes></element><element><id>Relation</id><coordinates><x>450</x><y>117</y><w>144</w><h>72</h></coordinates><panel_attributes>lt=-</panel_attributes><additional_attributes>140;10;10;10;10;60</additional_attributes></element><element><id>Relation</id><coordinates><x>153</x><y>387</y><w>72</w><h>99</h></coordinates><panel_attributes>lt=-
+m1= 1..*
+m2= 1..*
+tienen &gt;</panel_attributes><additional_attributes>10;10;10;90</additional_attributes></element><element><id>UMLClass</id><coordinates><x>18</x><y>603</y><w>198</w><h>81</h></coordinates><panel_attributes>FiguraPoligonal
+--
+- numeroLineas: int
+- tipoPoligono: String
+- lineas: Linea[]
+--
++ calculaPerímetro():void</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>369</x><y>459</y><w>135</w><h>54</h></coordinates><panel_attributes>FiguraNoPoligonal
+--
+- tipoFigura: String
+--</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>207</x><y>630</y><w>171</w><h>45</h></coordinates><panel_attributes>lt=&lt;&lt;&lt;&lt;&lt;-
+m1= 1
+m2= N..M
+se compone
+</panel_attributes><additional_attributes>10;20;170;20</additional_attributes></element><element><id>Relation</id><coordinates><x>234</x><y>477</y><w>153</w><h>27</h></coordinates><panel_attributes>lt=&lt;&lt;-</panel_attributes><additional_attributes>10;10;150;10</additional_attributes></element><element><id>Relation</id><coordinates><x>207</x><y>477</y><w>135</w><h>153</h></coordinates><panel_attributes>lt=-</panel_attributes><additional_attributes>10;150;130;150;130;10</additional_attributes></element><element><id>UMLClass</id><coordinates><x>81</x><y>468</y><w>162</w><h>108</h></coordinates><panel_attributes>/Figura/
+--
+# id: int
+# nombre: String
+# color: String
+# perimetro: double
+--
++ calculaArea(): void
++ calculaPerimetro(): void</panel_attributes><additional_attributes></additional_attributes></element></diagram>

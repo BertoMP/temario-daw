@@ -1,0 +1,8 @@
+﻿<alumno>
+  <nombre>Esther</nombre>
+  <apellido>Moreno</apellido>
+  <direccion>
+    <calle>Plaza Mayor</calle>
+    <cp>28820</cp>
+  </direccion>
+</alumno>

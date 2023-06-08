@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>LM22.4</title>
+</head>
+<body>
+    <h1>Formulario de registro</h1>
+    <form action="http://www.servidor.com" method="post">
+        <label for="nombre">Nombre:</label>
+        <input type="text" name="nombre" id="nombre" maxlength="10">
+        <br><br>
+
+        <label for="apellidos">Apellidos:</label>
+        <input type="text" name="apellidos" id="apellidos" maxlength="50">
+        <br><br>
+
+        <label for="sexo">Sexo:</label>
+        <input type="radio" name="sexo" id="sexoH" value="h"> Hombre
+        <input type="radio" name="sexo" id="sexoM" value="m"> Mujer
+        <br><br>
+
+        <label for="correo">Correo:</label>
+        <input type="email" name="email" id="email">
+        <br><br>
+
+        <input type="checkbox" name="check1" id="check1" checked> Deseo recibir información sobre novedades y ofertas
+        <br><br>
+
+        <input type="checkbox" name="check2" id="check2"> Declaro haber leído y aceptar las condiciones generales del programa y la normativa sobre protección de datos
+        <br><br>
+
+        <input type="hidden" name="cv" value="1">
+        <br><br>
+
+        <input type="submit" value="Enviar">
+    </form>
+</body>
+</html>

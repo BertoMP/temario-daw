@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>LM22.4</title>
+</head>
+<body>
+    <h1>Rellena tu CV</h1>
+    <form action="http://www.servidor.com" method="post" enctype="multipart/form-data">
+        <label for="nombre">Nombre:</label>
+        <input type="text" name="nombre" id="nombre" size="10" maxlength="30">
+        <br><br>
+
+        <label for="apellidos">Apellidos:</label>
+        <input type="text" name="apellidos" id="apellidos" size="50" maxlength="80">
+        <br><br>
+
+        <label for="contrasena">Contraseña:</label>
+        <input type="password" name="contrasena" id="contrasena" maxlength="10">
+        <br><br>
+
+        <label for="dni">DNI:</label>
+        <input type="text" name="dni" id="dni" size="10" maxlength="9">
+        <br><br>
+
+        <label for="sexo">Sexo:</label>
+        <br>
+        <input type="radio" name="sexo" id="sexoH" value="h" checked> Hombre
+        <br>
+        <input type="radio" name="sexo" id="sexoM" value="m"> Mujer
+        <br><br>
+
+        Incluir mi foto <input type="file" name="foto" id="foto">
+        <br><br>
+
+        Incluir mi experiencia <input type="file" name="experiencia" id="experiencia">
+        <br><br>
+        <input type="checkbox" name="suscripcion" id="suscripcion" checked> Suscribirme al boletín de novedades
+        <br><br>
+
+        <input type="submit" value="Guardar cambios">
+        <input type="reset" value="Borrar los datos introducidos">
+    </form>
+</body>
+</html>

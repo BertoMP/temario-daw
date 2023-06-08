@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Mi web</title>
+	<meta charset='utf-8'>
+</head>
+<body>
+Técnicas
+Óleo
+Acrílico
+Tinta
+Carboncillo
+Grafito
+Pastel
+Acuarela
+Material
+Pincel
+Rotulador
+Punta fina
+Punta gruesa
+Plumilla
+Lápiz
+Espátula
+Motivo
+Retrato
+Paisaje
+Marina
+Abstracto
+Bodegón
+</body>
+</html>
+

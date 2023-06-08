@@ -1,0 +1,30 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" >
+<xs:element name="teléfono">
+    <xs:complexType>
+        <xs:sequence>
+            <xs:element name="telefono" type="tipoTel" />
+            <xs:element name="numero" type="numeroTel" />
+        </xs:sequence>
+        <xs:attribute name="nombre" type="username" />
+    </xs:complexType>
+</xs:element>
+
+<xs:simpleType name="tipoTel">
+    <xs:restriction base="xs:string">
+        <xs:enumeration value="móvil" />
+        <xs:enumeration value="fijo" />
+    </xs:restriction>
+</xs:simpleType>
+<xs:simpleType name="numeroTel">
+    <xs:restriction base="xs:positiveInteger">
+        <xs:totalDigits value="9" />
+    </xs:restriction>
+</xs:simpleType>
+<xs:simpleType name="username">
+    <xs:restriction base="xs:string">
+            <xs:minLength value="10"/>
+            <xs:maxLength value="20"/>
+    </xs:restriction>
+</xs:simpleType>
+</xs:schema>

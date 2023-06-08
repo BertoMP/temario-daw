@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<dp:alumno xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+  xsi:schemaLocation="datosPersonales.org datosPersonales.xsd"
+  xmlns:dp="datosPersonales.org">
+  <dp:nombre>Esther</dp:nombre>
+  <dp:apellido>Moreno</dp:apellido>
+  <dp:direccion>
+    <dp:calle>Plaza Mayor</dp:calle>
+    <dp:cp>28820</dp:cp>
+  </dp:direccion>
+</dp:alumno>

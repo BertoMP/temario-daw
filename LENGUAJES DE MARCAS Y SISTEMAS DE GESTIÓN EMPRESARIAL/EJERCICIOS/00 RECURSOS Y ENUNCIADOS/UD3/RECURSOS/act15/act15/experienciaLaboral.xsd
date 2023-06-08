@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema"  >
+  <xs:element name="experiencia">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element name="periodo" minOccurs="0" maxOccurs="unbounded">
+          <xs:complexType>
+              <xs:attribute name="fecha_inicio" type="xs:date" />
+              <xs:attribute name="fecha_fin" type="xs:date" />
+              <xs:attribute name="puesto" type="xs:string" />
+        </xs:complexType>
+      </xs:element>
+      </xs:sequence>
+  </xs:complexType>
+</xs:element> 
+ </xs:schema>

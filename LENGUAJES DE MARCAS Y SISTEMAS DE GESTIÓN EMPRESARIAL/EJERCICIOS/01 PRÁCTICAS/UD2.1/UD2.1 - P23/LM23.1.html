@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>LM23.1</title>
+</head>
+<body>
+    <h1>Rellena tu CV</h1>
+    <form action="www.servidor.php" method="post" enctype="multipart/form-data">
+        <label for="nombre_apellidos">Nombre y apellidos</label>
+        <br>
+        <input type="text" name="nombre_apellidos" id="nombre_apellidos" size="30" maxlength="50">
+        <br><br>
+        <label for="contrasena">Contraseña</label>
+        <br>
+        <input type="password" name="pass" id="contrasena" maxlength="10">
+        <br><br>
+        <label for="dni">DNI</label>
+        <br>
+        <input type="text" name="dni" id="dni" size="10" maxlength="9" autofocus>
+        <br><br>
+        Estado actual
+        <br>
+        <input type="radio" name="estado" value="desempleado" checked> Desempleado
+        <br>
+        <input type="radio" name="estado" value="trabajando"> Trabajando
+        <br><br>
+        Incluir mi foto <input type="file" name="foto">
+        <br><br>
+        Incluir mi experiencia <input type="file" name="experiencia">
+        <br><br>
+        <input type="checkbox" name="suscribirme" checked> Suscribirme al boletín de novedades
+        <br><br>
+        <button type="reset"><img src="img/eliminar.png" alt="Eliminar" width="50"></button>
+        <button type="submit"><img src="img/enviar.png" alt="Enviar" width="125"></button>
+    </form>
+</body>
+</html>

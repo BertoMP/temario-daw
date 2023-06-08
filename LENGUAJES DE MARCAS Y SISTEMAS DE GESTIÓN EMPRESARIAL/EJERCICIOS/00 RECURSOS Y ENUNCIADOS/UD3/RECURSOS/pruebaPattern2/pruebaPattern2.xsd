@@ -1,0 +1,45 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" >
+<xs:element name="pruebaPattern">
+<xs:complexType>
+   <xs:sequence>
+       <xs:element name="fruta" type="tipoFruta"/> 
+       <xs:element name="fruta2" type="tipoFruta2"/> 
+      <xs:element name="cp" type="cpMadrid"/> 
+      <xs:element name="codSeg" type="cs"/> 
+      <xs:element name="ciudad" type="nombreCiudad"/> 
+  </xs:sequence>
+</xs:complexType>
+</xs:element>
+
+<xs:simpleType name="tipoFruta">
+     <xs:restriction base="xs:string">
+          <xs:pattern value="..."/>
+    </xs:restriction>
+  </xs:simpleType>
+  
+  <xs:simpleType name="tipoFruta2">
+     <xs:restriction base="xs:string">
+          <xs:pattern value="..."/>
+    </xs:restriction>
+  </xs:simpleType>
+
+ <xs:simpleType name="cpMadrid">
+     <xs:restriction base="xs:string">
+          <xs:pattern value="..."/>
+    </xs:restriction>
+  </xs:simpleType>  
+  
+<xs:simpleType name="cs">
+     <xs:restriction base="xs:string">
+          <xs:pattern value="..."/>
+    </xs:restriction>
+  </xs:simpleType>  
+  
+  <xs:simpleType name="nombreCiudad">
+     <xs:restriction base="xs:string">
+          <xs:pattern value="..."/>
+    </xs:restriction>
+  </xs:simpleType>  
+  
+ </xs:schema>

@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Mi web</title>
+	<meta charset='utf-8'>
+</head>
+<body>
+Etiquetas de texto
+Etiquetas de formato
+
+			Italic. Pone la letra en cursiva
+			Bold. 	Pone la letra en negrita.
+			Underline.El texto aparece subrayado. 
+			Subíndice. Aparece como subíndice
+			Superíndice. Aparece como superíndice
+			Aparece el texto tachado.
+
+
+Etiquetas semánticas (de significado)
+
+			Emphasis. Indica que el texto es importante o diferente.Se ve en cursiva.
+			Strong. Indica que el texto es “fuerte”, es decir, se quiere resaltar su importancia. Se ve en negrita.
+			Código. Se emplea para indicar que un texto es un código de programación. Suele ir dentro de (no al revés)
+
+				Ejemplo:
+				var N=parseInt(prompt("Número: "));
+				var k=1;
+				do{
+					document.write(k+" ");
+					k+=2; //equivale a k=k+2
+				}while (k=N)
+
+
+
+ </body>
+</html>
+

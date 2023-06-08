@@ -1,0 +1,22 @@
+body {
+    margin-left: 10%;
+    margin-right: 10%;
+    background-image: url(../img/fondo5.jpg);
+}
+
+p {
+    background-color: lightslategray;
+    color: white;
+    font-size: large;
+    padding: 15px 15px 15px 15%;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+p i {
+    color: lightgrey;
+}
+
+img {
+    width: 55%;
+}

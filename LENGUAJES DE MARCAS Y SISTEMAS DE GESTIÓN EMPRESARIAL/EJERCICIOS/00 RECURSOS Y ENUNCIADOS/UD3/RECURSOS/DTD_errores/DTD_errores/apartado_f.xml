@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE orquesta [
+  <!ELEMENT orquesta>
+  <!ELEMENT instrumento EMPTY>
+  <!ATTLIST instrumento tipo CDATA #REQUIRED>
+  <!ATTLIST instrumento nombre ID #REQUIRED>
+]>
+
+<orquesta>
+  <instrumento tipo="cuerda" nombre="violín" />
+  <instrumento tipo="cuerda" nombre="piano" />
+  <intrumento nombre="flauta travesera"  />
+  </orquesta>

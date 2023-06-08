@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<aficion xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:noNamespaceSchemaLocation="aficion.xsd"
+    xsi:schemaLocation="otros.org otro.xsd"
+    xmlns:o="otros.org">
+    <deporte>Balonmano</deporte>
+    <instrumento>Violín</instrumento>
+    <deporte>Tiro con arco</deporte>
+    <o:otro>
+        <categoria>Idioma</categoria>
+        <descripcion>Alemán</descripcion>
+    </o:otro>
+</aficion>

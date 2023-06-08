@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+    <xs:element name="carteraClientes">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="cliente" minOccurs="1" maxOccurs="50">
+                    <xs:complexType>
+                        <xs:sequence>
+                            <xs:element name="facturación">
+                                <xs:complexType>
+                                    <xs:choice>
+                                        <xs:element name="cuentaBancaria">
+                                            <xs:simpleType>
+                                                <xs:restriction base="xs:positiveInteger">
+                                                    <xs:totalDigits value="20" />
+                                                </xs:restriction>
+                                            </xs:simpleType>
+                                        </xs:element>
+                                        <xs:element name="tarjetaCrédito" type="tipoTarjeta" />
+                                    </xs:choice>
+                                </xs:complexType>
+                            </xs:element>
+                            <xs:element name="datosPersonales" type="tipoPersona" />
+                        </xs:sequence>
+                        <xs:attribute name="esVIP" type="xs:boolean" default="false" />
+                    </xs:complexType>
+                </xs:element>
+            </xs:sequence>
+        </xs:complexType>    
+    </xs:element>
+    <xs:complexType name="tipoTarjeta">
+        <xs:all>
+            <xs:element name="numTarjeta" type="xs:positiveInteger" />
+            <xs:element name="fechaCaducidad" type="xs:date" />
+            <xs:element name="códigoCVV" type="xs:positiveInteger" />
+        </xs:all>
+    </xs:complexType>
+    <xs:complexType name="tipoPersona">
+        <xs:attribute name="NIF" type="tipoNIF" use="required" />
+        <xs:attribute name="nombre" type="nombrePropio" />
+        <xs:attribute name="apellido1" type="nombrePropio" />
+        <xs:attribute name="apellido2" type="nombrePropio" />
+    </xs:complexType>
+    <xs:simpleType name="tipoNIF">
+        <xs:restriction base="xs:string">
+            <xs:pattern value="\d{8}-[A-Z]" />
+        </xs:restriction>
+    </xs:simpleType>
+    <xs:simpleType name="nombrePropio">
+        <xs:restriction base="xs:string">
+            <xs:pattern value="[A-Z][a-z]+" />
+        </xs:restriction>
+    </xs:simpleType>
+</xs:schema>

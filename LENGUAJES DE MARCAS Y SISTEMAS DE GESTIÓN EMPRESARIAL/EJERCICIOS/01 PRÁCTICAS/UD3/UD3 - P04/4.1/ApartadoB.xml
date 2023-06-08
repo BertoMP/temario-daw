@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<biblioteca> <!-- Faltaba el elemento padre -->
+    <libro> 
+        <titulo>Cien años de soledad</titulo>
+        <editorial>Espasa</editorial>
+    </libro>
+    <libro>
+        <editorial>Salamandra</editorial>
+        <titulo>Memoria de mis putas tristes</titulo>
+    </libro>
+    <autor>García Márquez</autor> <!-- Sobraba el cierre en la apertura -->
+</biblioteca>

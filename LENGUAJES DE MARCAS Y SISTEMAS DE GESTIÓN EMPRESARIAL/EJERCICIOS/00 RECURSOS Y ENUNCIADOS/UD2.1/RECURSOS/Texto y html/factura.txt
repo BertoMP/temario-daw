@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Mi web</title>
+	<meta charset='utf-8'>
+</head>
+<body>
+<table border="1">
+      <caption>Ticket de compra</caption>
+		<tr>
+          <th>Producto</th>
+          <th>Cantidad</th>
+          <th>Precio</th>
+        </tr>
+		<tr>
+          <td>Acelgas</td>
+          <td>1</td>
+          <td>1,99 &euro;</td>
+        </tr>
+        <tr>
+          <td>Tomates ensalada</td>
+          <td>2</td>
+          <td>5,20 &euro;</td>
+        </tr>
+		<tr>
+          <td>Tomates raf</td>
+          <td>1</td>
+          <td>3,99 &euro;</td>
+        </tr>
+		<tr>
+          <td>Tomates pera</td>
+          <td>2</td>
+          <td>1,56 &euro;</td>
+        </tr>
+		<tr>
+          <td>Patata</td>
+          <td>6</td>
+          <td>3,20 &euro;</td>
+        </tr>
+        <tr>
+          <td>Espárragos</td>
+          <td>1</td>
+          <td>2,99 &euro;</td>
+        </tr>
+		 <tr>
+          <td>Pimientos</td>
+          <td>1</td>
+          <td>1,7 &euro;</td>
+       	</tr>
+		 <tr>
+          <td>Calabación</td>
+          <td>2</td>
+          <td>1,9 &euro;</td>
+        </tr>
+		<tr>
+          <td>Berenjena</td>
+          <td>3</td>
+          <td>3 &euro;</td>
+        </tr>
+		<tr>
+          <td>Melón</td>
+          <td>4</td>
+          <td>3,98 &euro;</td>
+        </tr>
+		<tr>
+          <td>Sandía</td>
+          <td>4</td>
+          <td>2,05 &euro;</td>
+        </tr>
+		<tr>
+          <td>Lechuga iceberg</td>
+          <td>4</td>
+          <td>2 &euro;</td>
+        </tr>
+		<tr>
+          <td>Puerro</td>
+          <td>2</td>
+          <td>1,59 &euro;</td>
+        </tr>
+		<tr>
+          <td>Alcachofa</td>
+          <td>2</td>
+          <td>1,75 &euro;</td>
+        </tr>
+		<tr>
+          <td>Boniato rojo</td>
+          <td>5</td>
+          <td>4,75 &euro;</td>
+        </tr>
+		<tr>
+          <td>Calabaza</td>
+          <td>1</td>
+          <td>2,50 &euro;</td>
+        </tr>
+		<tr>
+          <td>Cebolla dulce</td>
+          <td>1</td>
+          <td>1,05 &euro;</td>
+        </tr>
+		<tr>
+          <td>Lombarda</td>
+          <td>2</td>
+          <td>4,05 &euro;</td>
+        </tr>
+		<tr>
+          <td>Tomate cherry</td>
+          <td>2</td>
+          <td>3,88 &euro;</td>
+        </tr>
+		<tr>
+          <td>Uvas</td>
+          <td>1</td>
+          <td>1,96 &euro;</td>
+        </tr>
+		<tr>
+          <td>Uvas sin semillas</td>
+          <td>1</td>
+          <td>2,35 &euro;</td>
+        </tr>
+		<tr>
+          <td>Mango</td>
+          <td>1</td>
+          <td>3,09 &euro;</td>
+		</tr>
+		<tr>
+          <td>Aguacate</td>
+          <td>1</td>
+          <td>3,87 &euro;</td>
+        </tr>
+		<tr>
+          <td>Endivias</td>
+          <td>4</td>
+          <td>5,05 &euro;</td>
+        </tr>
+		<tr>
+          <td>Cebolla morada</td>
+          <td>1</td>
+          <td>3,87 &euro;</td>
+        </tr>
+		<tr>
+          <td>Manzanas</td>
+          <td>1</td>
+          <td>1,96 &euro;</td>
+        </tr>
+		<tr>
+          <td>Espinacas</td>
+          <td>1</td>
+          <td>2,45 &euro;</td>
+        </tr>
+		<tr>
+          <td>Remolacha</td>
+          <td>2</td>
+          <td>1,75 &euro;</td>
+        </tr>
+		<tr>
+          <td>Apio</td>
+          <td>2</td>
+          <td>1,88 &euro;</td>
+        </tr>
+		<tr>
+          <td>Cebolla deshidratada</td>
+          <td>2</td>
+          <td>3,88 &euro;</td>
+        </tr>
+		<tr>
+          <td>Corazón escarola</td>
+          <td>1</td>
+          <td>1,48 &euro;</td>
+        </tr>
+		<tr>
+          <td>Ensalada mezcla</td>
+          <td>1</td>
+          <td>1,35 &euro;</td>
+        </tr>
+		<tr>
+          <td>Ensalada especial</td>
+          <td>1</td>
+          <td>1,48 &euro;</td>
+        </tr>
+		<tr>
+          <td>Peras</td>
+          <td>1</td>
+          <td>1,96 &euro;</td>
+        </tr>
+		<tr>
+          <td>Ensalada primavera</td>
+          <td>1</td>
+          <td>1,48 &euro;</td>
+        </tr>
+		<tr>
+          <td>Ensalada brotes</td>
+          <td>1</td>
+          <td>1,48 &euro;</td>
+        </tr>
+		<tr>
+          <td>Cogollos</td>
+          <td>4</td>
+          <td>3,88 &euro;</td>
+        </tr>
+		<tr>
+          <td>Maiz cocido</td>
+          <td>1</td>
+          <td>1,15 &euro;</td>
+        </tr>
+		<tr>
+          <td>Cebolla</td>
+          <td>1</td>
+          <td>0,99 &euro;</td>
+        </tr>
+		<tr>
+          <td>Ajo morado</td>
+          <td>1</td>
+          <td>1,19 &euro;</td>
+        </tr>
+		<tr>
+          <td>Boniato blanco</td>
+          <td>1</td>
+          <td>0,66 &euro;</td>
+        </tr>
+		<tr>
+          <td>Escarola</td>
+          <td>1</td>
+          <td>1,49 &euro;</td>
+        </tr>
+		<tr>
+          <td>Champiñón</td>
+          <td>1</td>
+          <td>1,25 &euro;</td>
+        </tr>
+		<tr>
+          <td>Pepino</td>
+          <td>1</td>
+          <td>0,66 &euro;</td>
+        </tr>
+		<tr>
+          <td>Pimiento padrón</td>
+          <td>2</td>
+          <td>3,66 &euro;</td>
+        </tr>
+		<tr>
+          <td>Zanahoria</td>
+          <td>2</td>
+          <td>1,65 &euro;</td>
+        </tr>
+		<tr>
+          <td>Zanahoria baby</td>
+          <td>2</td>
+          <td>3,75 &euro;</td>
+        </tr>
+		<tr>
+          <td>Pimeinto italiano</td>
+          <td>2</td>
+          <td>1,75 &euro;</td>
+        </tr>
+		<tr>
+          <td>Coliflor</td>
+          <td>4</td>
+          <td>4,00 &euro;</td>
+        </tr>
+		<tr>
+          <td>Mango deshidratado</td>
+          <td>4</td>
+          <td>12,00 &euro;</td>
+        </tr>
+		<tr>
+          <td>Manzana deshidratada</td>
+          <td>2</td>
+          <td>1,30 &euro;</td>
+        </tr>
+	    <tr>
+          <td colspan="2">Total</td>
+          <td>125,31&euro;</td>
+        </tr>
+ </table>
+
+ </body>
+</html>

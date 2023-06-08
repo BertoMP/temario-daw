@@ -1,0 +1,36 @@
+<diagram program="umletino" version="15.0.0"><zoom_level>10</zoom_level><help_text>Persona
+--
+</help_text><element><id>UMLClass</id><coordinates><x>200</x><y>530</y><w>80</w><h>80</h></coordinates><panel_attributes>Nif
+--
+- dni: int
+- letra: char
+--</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>200</x><y>170</y><w>80</w><h>90</h></coordinates><panel_attributes>Fecha
+--
+- dia: byte
+- mes: byte
+- año: int
+--
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>160</x><y>340</y><w>170</w><h>110</h></coordinates><panel_attributes>Persona
+--
+- nombre: String
+- apellidos: String
+- fechaNacimiento: Fecha
+- nifPersona: Nif
+--</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>320</x><y>380</y><w>250</w><h>50</h></coordinates><panel_attributes>lt=-
+m1=0..*
+m2=0..*
+se inscribe &gt;</panel_attributes><additional_attributes>10;20;230;20</additional_attributes></element><element><id>Relation</id><coordinates><x>230</x><y>440</y><w>60</w><h>110</h></coordinates><panel_attributes>lt=&lt;&lt;&lt;&lt;&lt;-
+m1= 1
+m2= 1
+tiene</panel_attributes><additional_attributes>10;10;10;90</additional_attributes></element><element><id>Relation</id><coordinates><x>230</x><y>250</y><w>60</w><h>110</h></coordinates><panel_attributes>lt=&lt;&lt;&lt;&lt;&lt;-
+m1= 1..*
+m2= 1
+tiene</panel_attributes><additional_attributes>10;90;10;10</additional_attributes></element><element><id>UMLClass</id><coordinates><x>550</x><y>360</y><w>230</w><h>80</h></coordinates><panel_attributes>Socio
+--
+- fechaDeAlta: Fecha
+- codigoAsociado: String
+--
++ nuevoSocio(): void</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>270</x><y>200</y><w>430</w><h>180</h></coordinates><panel_attributes>lt=&lt;&lt;&lt;&lt;&lt;-
+m1= 1..*
+m2= 1
+tiene</panel_attributes><additional_attributes>390;160;390;20;10;20</additional_attributes></element><element><id>Relation</id><coordinates><x>320</x><y>360</y><w>250</w><h>30</h></coordinates><panel_attributes>lt=&lt;&lt;-</panel_attributes><additional_attributes>10;10;230;10</additional_attributes></element></diagram>

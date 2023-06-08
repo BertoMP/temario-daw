@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Actividad 4.3</title>
+    <style>
+        /* SE APLICA ESTO:
+            - color: blue -> Por la etiqueta style del documento HTML
+            - font-size: x-large -> No hay conflicto.
+            - border-style: hidden -> Por el modificador "!important" de la regla CSS. */
+        .magicTitle {
+            font-size: x-large;
+            color: green;
+            border-style: hidden !important;
+        }
+    </style>
+</head>
+<body>
+    <div class="magicTitle" style="border:1px solid blue; color: blue;">
+    Aprendiendo a programar.
+    </div>
+</body>
+</html>
+
+<!--
+    A) ¿Se monstrará un borde para el <div>? ¿Por qué?
+        No, porque la propiedad definida en el style está modificada con !important.
+    B) ¿Con qué color se mostrará el texto, con color verde o con color azul? ¿Por qué?
+        Con color azul (10 vs 1000).
+-->

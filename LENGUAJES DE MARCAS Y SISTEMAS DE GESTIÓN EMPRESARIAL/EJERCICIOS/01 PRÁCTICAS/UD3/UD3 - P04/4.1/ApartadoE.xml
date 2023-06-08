@@ -1,0 +1,6 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<navegadores>
+    <navegador nombre="Firefox" licencia="GPL" licencia2="MPL" /> <!-- Dos atributos con el mismo nombre -->
+    <navegador nombre="LibreOffice" licencia="LGPL" />
+    <navegador nombre="Inkscape" licencia="GPL" /> <!-- Valor del atributo sin comillas -->
+</navegadores>

@@ -1,0 +1,8 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<pruebaPattern xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="pruebaPattern2.xsd">
+    <fruta>uva</fruta>
+    <fruta2>Uva</fruta2>
+    <cp>28820</cp>
+    <codSeg>012-1234567</codSeg>
+    <ciudad>Coslada</ciudad>
+</pruebaPattern>

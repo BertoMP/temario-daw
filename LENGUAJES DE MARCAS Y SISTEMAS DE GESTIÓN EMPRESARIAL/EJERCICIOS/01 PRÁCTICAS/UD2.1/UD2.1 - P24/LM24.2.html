@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>LM24.1</title>
+</head>
+<body>
+    <h3>Notificación de incidencia</h3>
+    <form action="www.servidor.php" method="post">
+        <fieldset>
+            <legend>Datos de la incidencia:</legend>
+            <label for="user">Usuario:</label>
+            <br>
+            <input type="text" name="user" id="user">
+            <br><br>
+            <label for="departamento">Departamento:</label>
+            <br>
+            <select name="departamento" id="departamento">
+                <option value="informatica">Informática</option>
+                <option value="marketing">Márketing</option>
+                <option value="ventas">Ventas</option>
+            </select>
+            <br><br>
+            <label for="incidencia">Descripción:</label>
+            <br>
+            <textarea name="incidencia" id="incidencia" cols="50" rows="3" placeholder="Describa la incidencia..."></textarea>
+            <br><br>
+            <label for="contrasena">Contraseña:</label>
+            <br>
+            <input type="password" name="contrasena" id="contrasena">
+        </fieldset>
+        <fieldset>
+            <legend>Botones de reset y envio</legend>
+            <button type="reset">Resetear</button>
+            <button type="submit">Enviar</button>
+        </fieldset>
+    </form>
+</body>
+</html>

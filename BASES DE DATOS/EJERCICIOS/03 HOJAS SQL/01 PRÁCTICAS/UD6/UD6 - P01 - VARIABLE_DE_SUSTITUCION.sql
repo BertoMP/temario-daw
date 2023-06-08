@@ -1,0 +1,7 @@
+SET SERVEROUTPUT ON;
+
+BEGIN
+    DBMS_OUTPUT.PUT_LINE('Hola &nombreUsuario');
+END;
+/
+

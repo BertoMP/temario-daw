@@ -1,0 +1,29 @@
+body {
+    width: 80%;
+    margin: auto;
+}
+
+#datos {
+    float: left;
+    width: 20%;
+    min-width: 200px;
+}
+
+#principal {
+    float: left;
+    width: 60%;
+    margin-left: 1%;
+}
+
+#contenido {
+    list-style-type: none;
+    padding: 0;
+    min-width: 300px;
+}
+
+#contenido li {
+    float: left;
+    width: 30%;
+    padding: 1%;
+    
+}

@@ -1,0 +1,46 @@
+h1 {
+	color:DarkTurquoise;
+}
+
+nav a{ 
+	background-color:CadetBlue;
+	color:white;
+	text-align:center;
+}
+
+main section{
+	height: 400px;
+	margin:10px;
+	padding: 10px 50px;
+	color:white;
+	background-color:DarkGrey;
+	border-radius:5px;
+	float: left;
+}
+
+nav,aside,footer, nav a {
+	margin: 10px;
+	padding: 10px;
+}
+
+aside{
+	background-color:DarkTurquoise;
+	border-radius:5px;
+	display:inline-block;
+}
+
+footer {
+	clear: left;
+}
+
+body {
+	width: 60%;
+	margin: auto;
+}
+
+@media screen and (orientation: portrait) {
+	nav a {
+		display: block;
+		width: 200px;
+	}
+}

@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Mi web</title>
+	<meta charset='utf-8'>
+</head>
+<body>
+
+<h1>Reunión del departamento de Operación y Mantenimiento de Red</h1>
+<h3>Celebrada el día 23 de junio de 2018, se tratan los siguientes puntos:</h3>
+
+<p>El jefe de departamento informa que ningún empleado del departamento podrá disfrutar de vacaciones durante el mes de Agosto, debido a la alta carga de trabajo que implica el proyecto de despliegue de nodos firmado la pasada semana con el proveedor Huawei.</p>
+
+<p>Por otro lado, Enrique Muñoz, técnico especialista en implantación de fibra óptica, recuerda que existe un manual de integración disponible en el directorio de red compartido del departamento.<p>
+
+<p>Sin más asuntos que tratar, se cierra la sesión.<P>
+</p>
+ </body>
+</html>
+

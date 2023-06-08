@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE sistema_solar [
+    <!ELEMENT sistema_solar (planeta+)>
+    <!ELEMENT planeta (nombre,diametro,orden,gaseoso?,satelite*)>
+    <!ELEMENT nombre (#PCDATA)>
+    <!ELEMENT diametro (#PCDATA)>
+    <!ELEMENT orden (#PCDATA)>
+    <!ELEMENT gaseoso EMPTY>
+    <!ELEMENT satelite (nombre,caracteristica+)>
+    <!ELEMENT caracteristica (#PCDATA)>
+    <!ENTITY km " kilometros">
+]>
+<sistema_solar>
+    <planeta>
+        <nombre>Mercurio</nombre>
+        <diametro>4879,4&km;</diametro>
+        <orden>1º</orden>
+    </planeta>
+    <planeta>
+        <nombre>Júpiter</nombre>
+        <diametro>142.984&km;</diametro>
+        <orden>5º</orden>
+        <gaseoso />
+        <satelite>
+            <nombre>Ío</nombre>
+            <caracteristica>El objeto geológicamente más activo del sistema solar.</caracteristica>
+            <caracteristica>Formado por rocas de silicato.</caracteristica>
+        </satelite>
+        <satelite>
+            <nombre>Europa</nombre>
+            <caracteristica>Tiene la superficie más lisa de cualquier objeto conocido del sistema
+                solar.</caracteristica>
+        </satelite>
+    </planeta>
+    <planeta>
+        <nombre>Saturno</nombre>
+        <diametro>120.536&km;</diametro>
+        <orden>6</orden>
+        <gaseoso />
+        <satelite>
+            <nombre>Titán</nombre>
+            <caracteristica>Se ha encontrado evidencia clara de cuerpos líquidos estables en la
+                superficie.</caracteristica>
+        </satelite>
+    </planeta>
+</sistema_solar>

@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE orquesta [
+  <!ELEMENT orquesta (instrumento*)>
+  <!ELEMENT instrumento EMPTY>
+  <!ATTLIST instrumento tipo (cuerda|viento)  #IMPLIED>
+  <!ATTLIST instrumento nombre ID #REQUIRED>
+  <!ATTLIST instrumento foto ENTITY  "img_orquesta">
+  <!ENTITY img_platillo SYSTEM "platillo.jpg" NDATA jpg>
+  <!NOTATION jpg SYSTEM "image/jpg">
+]>
+
+<orquesta>
+  <instrumento tipo="cuerda" nombre="violín" />
+  <instrumento tipo="cuerda" nombre="piano" />
+  <instrumento  nombre="platillo" foto="img_platillo" />
+  </orquesta>

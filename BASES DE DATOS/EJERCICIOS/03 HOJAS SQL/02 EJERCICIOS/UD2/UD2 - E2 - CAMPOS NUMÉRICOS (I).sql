@@ -1,0 +1,14 @@
+--CREACIÓN TABLA
+CREATE TABLE mueble
+(
+    cod VARCHAR2(3) PRIMARY KEY,
+    alto NUMBER(4,2),
+    ancho NUMBER(4,2),
+    fondo NUMBER(4,2),
+    precio NUMBER(5,2),
+    stock NUMBER(4)
+);
+
+--INSERTAR DATOS
+INSERT INTO mueble VALUES ('12R', 60.03, 25.30, 50.05, 102.99, 124);
+INSERT INTO mueble VALUES ('03S', 110.00, 10.55, 33.10, 78.99, 35);

@@ -1,0 +1,21 @@
+p {
+    background-color: transparent;
+    color: white;
+    font-size: large;
+    width: 400px;
+    padding: 15px;
+    margin: 20px;
+    margin-left: 10%;
+}
+
+body {
+    background-image: url(../img/niebla1.png);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+
+p::first-letter {
+    font-size: xx-large;
+}

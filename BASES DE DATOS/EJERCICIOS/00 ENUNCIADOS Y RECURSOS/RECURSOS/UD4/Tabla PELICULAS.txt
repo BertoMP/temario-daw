@@ -1,0 +1,20 @@
+drop table peliculas;
+
+create table peliculas(
+titulo varchar(40),
+año number(4),
+duracion number(3),
+presupuesto number(12,2),
+recaudacion number(12,2) default 0,
+oscar number(2),
+primary key (titulo,año)
+);
+
+insert into peliculas values ('Ben Hur',1959,212,15175000,146900000,11);
+insert into peliculas (titulo,año,duracion,presupuesto,recaudacion) values ('Ben Hur',2016,124,100000000,94061311.65);
+insert into peliculas values ('Forrest Gump',1994,142,55000000,677387716.78,6);
+insert into peliculas values ('El Padrino',1972,175,6000000,245066411.24,3);
+insert into peliculas values ('La La Land',2016,128,30000000,445636919.02,6);
+insert into peliculas values ('Million Dollar Baby',2004,132,30000000,216763646,4);
+
+commit;

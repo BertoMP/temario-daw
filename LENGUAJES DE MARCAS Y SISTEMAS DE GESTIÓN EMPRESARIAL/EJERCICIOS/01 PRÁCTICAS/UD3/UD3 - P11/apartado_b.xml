@@ -1,0 +1,9 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE melodia [
+  <!ELEMENT melodia EMPTY>
+  <!ATTLIST melodia autor CDATA #IMPLIED
+                    genero CDATA "" 
+                    titulo CDATA "" >
+]>
+<melodia autor="Eminem" genero="rap" titulo="Lose yourself"/>
+<!-- Faltaba el género como atributo y hacer que la etiqueta fuera EMPTY -->

@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>LM23.4</title>
+</head>
+<body>
+    <h1>Rellena tu CV</h1>
+    <form action="www.servidor.php" method="post" enctype="multipart/form-data">
+        <label for="nombre_apellidos">Nombre y apellidos</label>
+        <br>
+        <input type="text" name="nombre_apellidos" id="nombre_apellidos" size="30" maxlength="50">
+        <br><br>
+        <label for="contrasena">Contraseña</label>
+        <br>
+        <input type="password" name="pass" id="contrasena" maxlength="10">
+        <br><br>
+        <label for="dni">DNI</label>
+        <br>
+        <input type="text" name="dni" id="dni" size="10" maxlength="9" autofocus>
+        <br><br>
+        Estado actual
+        <br>
+        <input type="radio" name="estado" value="desempleado" checked> Desempleado
+        <br>
+        <input type="radio" name="estado" value="trabajando"> Trabajando
+        <br><br>
+        Incluir mi foto <input type="file" name="foto">
+        <br><br>
+        <textarea name="experiencia" cols="50" rows="10" maxlength="500" placeholder="Incluir mi experiencia aquí"></textarea>
+        <br><br>
+        Área de interés
+        <select name="area_interes">
+            <optgroup label="Informática">
+                <option value="diseno">Diseño web</option>
+                <option value="sistemas">Sistemas informáticos</option>
+                <option value="redes">Redes de ordenadores</option>
+                <option value="protocolos">Protocolos de comunicación</option>
+            </optgroup>
+            <optgroup label="Arte">
+                <option value="pintura">Pintura</option>
+                <option value="dibujo">Dibujo</option>
+                <option value="escultura">Escultura</option>
+                <option value="vidrieras">Vidrieras</option>
+            </optgroup>
+        </select>
+        <br><br>
+        <input type="checkbox" name="suscribirme" checked> Suscribirme al boletín de novedades
+        <br><br>
+        <button type="reset"><img src="img/eliminar.png" alt="Eliminar" width="50"></button>
+        <button type="submit"><img src="img/enviar.png" alt="Enviar" width="125"></button>
+    </form>
+</body>
+</html>

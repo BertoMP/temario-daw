@@ -1,0 +1,20 @@
+CREATE TABLE ARBOL
+(
+    calle VARCHAR2(30),
+    posicion NUMBER(2),
+    altura NUMBER(2) CHECK(altura<50),
+    especie VARCHAR2(20) NOT NULL,
+    hoja VARCHAR2(10),
+        CONSTRAINT PK_ARBOL PRIMARY KEY(calle, posicion),
+        CONSTRAINT CK_HOJA CHECK(hoja IN('Perenne','Caduco'))
+);
+
+/* Conocemos sólo 2 de los 4 nombres de las restricciones por lo que deberemos
+   averiguar los nombres del resto de constraints. */
+SELECT * FROM USER_CONSTRAINTS WHERE TABLE_NAME='ARBOL';
+--ESPECIE NOT NULL (SYS_C0011875)
+--ALTURA CHECK (SYS_C0011876)
+ALTER TABLE ARBOL DROP CONSTRAINT SYS_C0011875;
+ALTER TABLE ARBOL DROP CONSTRAINT SYS_C0011876;
+ALTER TABLE ARBOL DROP CONSTRAINT PK_ARBOL;
+ALTER TABLE ARBOL DROP CONSTRAINT CK_HOJA;

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<factura xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:noNamespaceSchemaLocation="factura.xsd"
+    fecha="2021-02-23"
+    importe="85"
+    moneda="€">
+    <datosEmisor>
+        <titular>Librería Coslada</titular>
+        <cif>12345678B</cif>
+        <telefono>666000000</telefono>
+    </datosEmisor>
+    <datosCliente>
+        <titular>IES Luis Braille</titular>
+        <cif>87654321A</cif>
+        <telefono>606066666</telefono>
+    </datosCliente>
+    <detalleFactura>
+        <articulo codigo="AW7" tipo="Libro" descripcion="Aplicaciones Web" cantidad="2" oferta="true" pvp="25" />
+        <articulo codigo="LM5" tipo="PDF" descripcion="Lenguaje de Marcas" cantidad="1" oferta="false" pvp="30" />
+    </detalleFactura>
+</factura>

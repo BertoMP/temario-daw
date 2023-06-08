@@ -1,0 +1,21 @@
+#datos {
+    float: left;
+    width: 20%;
+}
+
+#principal {
+    float: left;
+    width: 60%;
+    margin-left: 1%;
+}
+
+#contenido {
+    list-style-type: none;
+    padding: 0;
+}
+
+#contenido li {
+    float: left;
+    width: 30%;
+    padding: 1%;
+}

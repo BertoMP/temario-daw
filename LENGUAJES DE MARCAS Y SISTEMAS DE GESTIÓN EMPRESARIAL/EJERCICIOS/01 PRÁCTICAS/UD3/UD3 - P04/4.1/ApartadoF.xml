@@ -1,0 +1,6 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<mundiales-de-futbol>
+    <mundial>
+        <pais nombre="España" año="1982"/> <!--Faltaban nombres de las etiquetas -->
+    </mundial>
+</mundiales-de-futbol>

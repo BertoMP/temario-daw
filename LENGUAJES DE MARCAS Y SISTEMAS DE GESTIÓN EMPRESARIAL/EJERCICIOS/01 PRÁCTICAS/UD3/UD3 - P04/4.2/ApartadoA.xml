@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<tienda>
+  <prenda>
+    <modelo>MOD-34</modelo>
+    <color>Rojo</color>
+    <talla>XL</talla>
+  </prenda>
+  <prenda>
+    <modelo>STYLE-MD</modelo>
+    <color>Azul</color>
+    <talla>M</talla>
+  </prenda>
+  <prenda>
+    <modelo>STYLE-MR</modelo>
+    <color>Azul</color>
+    <talla>XXL</talla>
+  </prenda>
+</tienda>

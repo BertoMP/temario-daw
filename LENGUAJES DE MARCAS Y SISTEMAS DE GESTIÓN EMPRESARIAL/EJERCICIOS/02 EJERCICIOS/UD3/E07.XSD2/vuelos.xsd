@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+    <xs:element name="hojaDeVuelos">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="vuelo" minOccurs="0" maxOccurs="unbounded">
+                    <xs:complexType>
+                        <xs:sequence>
+                            <xs:element name="origen" type="ciudad" />
+                            <xs:element name="destino" type="ciudad" />
+                            <xs:element name="hora">
+                                <xs:complexType>
+                                    <xs:choice>
+                                        <xs:element name="salida" type="xs:time" />
+                                        <xs:element name="llegada" type="xs:time" />
+                                    </xs:choice>
+                                </xs:complexType>
+                            </xs:element>
+                        </xs:sequence>
+                        <xs:attribute name="id" type="xs:string" />
+                        <xs:attribute name="admitePasajeros" type="xs:boolean" />
+                        <xs:attribute name="aerolínea" type="xs:string" />
+                    </xs:complexType>
+                </xs:element>
+            </xs:sequence>
+            <xs:attribute name="fechaDelDia" type="xs:date" use="required" />
+        </xs:complexType>
+    </xs:element>
+    <xs:simpleType name="ciudad">
+        <xs:restriction base="xs:string">
+            <xs:length value="3" />
+        </xs:restriction>
+    </xs:simpleType>
+</xs:schema>

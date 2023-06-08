@@ -1,0 +1,22 @@
+﻿Conceptos sobre aplicaciones web
+Contenido
+Evolución de la web e internet
+Aplicaciones web
+1. Evolución de la web e internet
+Perspectiva histórica:
+El éxito de la aplicaciones web
+Historia de la web:
+RPC
+SOAP
+REST
+2. Aplicaciones web
+¿Qué es una palicación web?
+Aplicación que se ejecuta a través de un navegador.
+Ventajas de las aplicaciones web
+Gran compatibilidad
+Requerimientos mínimos en el cliente
+Facilidad de uso
+Datos centralizados
+No es necesaria la instalación en cliente.
+Desventajas de las aplicaciones web
+Algunas son: menor potencia, menor aprovechamiento del hardware, complejidad en el desarrollo, delegación del control de la información.

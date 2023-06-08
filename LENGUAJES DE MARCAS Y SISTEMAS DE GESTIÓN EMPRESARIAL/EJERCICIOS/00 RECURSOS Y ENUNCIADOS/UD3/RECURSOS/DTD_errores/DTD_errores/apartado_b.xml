@@ -1,0 +1,8 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE melodia [
+  <!ELEMENT melodia EMPTY>
+  <!ATTLIST melodia autor CDATA #IMPLIED>
+]>
+<melodia autor="Eminem" genero="rap" >Lose yourself</melodia>
+
+

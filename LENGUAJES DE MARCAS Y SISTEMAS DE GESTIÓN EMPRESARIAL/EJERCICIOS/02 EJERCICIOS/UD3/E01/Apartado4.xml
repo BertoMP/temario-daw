@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE cocineros [
+    <!ELEMENT cocineros (cocinero+, aprendiz*)>
+    <!ELEMENT cocinero (nombre, restaurante, estrellas_michelin?, libro*)>
+    <!ELEMENT aprendiz (nombre, fecha_nac, escuela)>
+    <!ELEMENT nombre (#PCDATA)>
+    <!ELEMENT restaurante (#PCDATA)>
+    <!ELEMENT estrellas_michelin (#PCDATA)>
+    <!ELEMENT libro (titulo, fecha_publicacion)>
+    <!ELEMENT titulo (#PCDATA)>
+    <!ELEMENT fecha_publicacion (#PCDATA)>
+    <!ELEMENT fecha_nac (#PCDATA)>
+    <!ELEMENT escuela (#PCDATA)>
+]>
+<cocineros>
+    <cocinero>
+        <nombre>Ferran Adrià</nombre>
+        <restaurante>El Bulli</restaurante>
+        <estrellas_michelin>3</estrellas_michelin>
+        <libro>
+            <titulo>La comidad de la Familia</titulo>
+            <fecha_publicacion>2011</fecha_publicacion>
+        </libro>
+        <libro>
+            <titulo>Comer para pensar</titulo>
+            <fecha_publicacion>2009</fecha_publicacion>
+        </libro>
+
+    </cocinero>
+    <cocinero>
+        <nombre>Santi Santamaría</nombre>
+        <restaurante>Can Fabes</restaurante>
+        <estrellas_michelin>3</estrellas_michelin>
+        <libro>
+            <titulo>La cocina al desnudo</titulo>
+            <fecha_publicacion>2008</fecha_publicacion>
+        </libro>
+        <libro>
+            <titulo>La cocina sabia</titulo>
+            <fecha_publicacion>2007</fecha_publicacion>
+        </libro>
+        <libro>
+            <titulo>El gusto de la salud</titulo>
+            <fecha_publicacion>2007</fecha_publicacion>
+        </libro>
+    </cocinero>
+    <cocinero>
+        <nombre>Manu Piñeiro</nombre>
+        <restaurante>Ailala</restaurante>
+    </cocinero>
+    <aprendiz>
+        <nombre>Luis Romo</nombre>
+        <fecha_nac>2005</fecha_nac>
+        <escuela>Eshob</escuela>
+    </aprendiz>
+    <aprendiz>
+        <nombre>María Vinatero</nombre>
+        <fecha_nac>2003</fecha_nac>
+        <escuela>Le Cordon Bleu</escuela>
+    </aprendiz>
+</cocineros>

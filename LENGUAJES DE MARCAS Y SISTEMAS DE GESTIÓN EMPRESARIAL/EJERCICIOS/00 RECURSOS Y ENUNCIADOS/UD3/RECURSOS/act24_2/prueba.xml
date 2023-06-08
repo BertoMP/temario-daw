@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<jornada xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="act24_2.xsd" fecha="2022-08-15" festivo="true">
+<proyección>
+      <título>El rompehuesos</título>
+      <descripción>Película de 1974 protagonizada por Burt Reynolds</descripción>
+</proyección>
+<partido>
+    <título>Fútbol femenino categoría Benjamin</título>
+    <descripción>Enfrentamiento en cuartos de final</descripción>
+</partido>
+
+</jornada>

@@ -1,0 +1,20 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" >
+<xs:element name="curso" >
+<xs:complexType>
+<xs:sequence>
+    <xs:element name="alumno" maxOccurs="30">
+    <xs:complexType>
+    <xs:attribute name="NIA" type="xs:positiveInteger"/>
+    <xs:attribute name="nacimiento" type="xs:date"/>
+    <xs:attribute name="nombreCompleto" type="xs:string" use="required"/>
+    <xs:attribute name="repetidor" type="xs:boolean" default="false"/>
+    <xs:anyAttribute />
+    </xs:complexType>
+    </xs:element>
+</xs:sequence>
+<xs:attribute name="grupo" type="xs:string" use="required"/>
+</xs:complexType>
+</xs:element>
+<xs:attribute name="observaciones" type="xs:string" />
+</xs:schema>

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+    <xs:element name="usuario">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="identificador" >
+                    <xs:complexType>
+                        <xs:choice>
+                            <xs:element name="login" type="xs:string" />
+                            <xs:element name="id" type="xs:positiveInteger" />
+                        </xs:choice>
+                    </xs:complexType>
+                </xs:element>
+                <xs:element name="mail" type="xs:string" />
+                <xs:element name="fecha_creacion" type="xs:date" />
+                <xs:element name="acceso" type="xs:dateTime" minOccurs="0" maxOccurs="unbounded" />
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+</xs:schema>

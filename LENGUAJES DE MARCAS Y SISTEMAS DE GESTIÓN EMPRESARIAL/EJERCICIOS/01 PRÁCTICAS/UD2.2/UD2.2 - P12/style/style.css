@@ -1,0 +1,20 @@
+body {
+    margin: 50px;
+}
+
+div:last-of-type {
+    color: grey;
+    text-align: center;
+}
+
+h3 + p::first-letter {
+    font-size: xx-large;
+    background-color: lightgreen;
+    border-radius: 5px;
+}
+
+h3 {
+    background-color: green;
+    color: white;
+    padding: 5px;
+}

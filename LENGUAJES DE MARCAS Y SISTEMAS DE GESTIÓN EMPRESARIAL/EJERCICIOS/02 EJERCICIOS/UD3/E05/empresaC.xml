@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE empresa [
+    <!ELEMENT empresa (equipo+, director)>
+    <!ELEMENT equipo (empleado+,oficina)>
+    <!ELEMENT empleado (#PCDATA)>
+    <!ELEMENT oficina EMPTY>
+    <!ELEMENT director (#PCDATA)>
+    <!ATTLIST equipo nombre ID #REQUIRED>
+    <!ATTLIST oficina direccion CDATA "Sede central">
+    <!ATTLIST empleado  dni ID #REQUIRED
+                        jornada (completa|reducida) "completa">
+    <!ATTLIST director  dni ID #IMPLIED
+                        subordinados IDREFS #IMPLIED>
+]>
+<empresa>
+    <equipo nombre="A">
+        <empleado dni="N1111">Juan Ortiz</empleado>
+        <empleado dni="N2222">Julián Pérez</empleado>
+        <oficina />
+    </equipo>
+    <equipo nombre="B">
+        <empleado dni="N3333">Luisa Gómez</empleado>
+        <empleado dni="N4444" jornada="reducida">Andrés Romero</empleado>
+        <oficina direccion="Avenina de la Industria s/n" />
+    </equipo>
+    <director subordinados="A B">Alejandra Martín</director>
+</empresa>

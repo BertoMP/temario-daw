@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<matematicas>
+    <operacion>
+        <nombre>Ecuación</nombre>
+        <explicacion><![CDATA["Igualdad en la que aparecen numeros y letras (incógnitas) relacionados mediante operaciones matemáticas"]]></explicacion>
+        <ejemplos>
+            <ejemplo>3x + 1 = x - 2</ejemplo>
+            <ejemplo>x - 3 = 2 + x</ejemplo>
+            <ejemplo>x/2 = 1 - x + 3x/2</ejemplo>
+        </ejemplos>
+    </operacion>
+    <operacion>
+        <nombre>Inecuación</nombre>
+        <explicacion><![CDATA["Expresión de la forma: f(x) < g(x), f(x) <= g(x), f(x) > g(x) p f(x) >= g(x)"]]></explicacion>
+        <ejemplos>
+            <ejemplo>5x + 6 &lt; 3x - 8</ejemplo>
+            <ejemplo>2x &lt; -14</ejemplo>
+        </ejemplos>
+    </operacion>
+</matematicas>

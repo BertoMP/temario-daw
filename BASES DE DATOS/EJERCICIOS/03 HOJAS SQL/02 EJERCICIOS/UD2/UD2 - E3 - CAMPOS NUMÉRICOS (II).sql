@@ -1,0 +1,14 @@
+--CREACIÓN TABLA
+CREATE TABLE precio_art
+(
+    articulo VARCHAR(10) PRIMARY KEY,
+    valor NUMBER(5,-2),
+    fecha DATE
+);
+
+--INSERCIÓN DE DATOS
+INSERT INTO precio_art VALUES ('DELGER', 10565, '23-03-17');
+INSERT INTO precio_art VALUES ('SYNTR', 100.72, '10-01-20');
+
+--COMPROBACIÓN DE REGISTROS
+SELECT * FROM precio_art;

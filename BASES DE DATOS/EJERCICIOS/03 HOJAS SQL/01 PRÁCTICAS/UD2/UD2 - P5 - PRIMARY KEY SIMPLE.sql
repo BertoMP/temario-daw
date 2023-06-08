@@ -1,0 +1,18 @@
+--CREACIÓN DE LA TABLA
+CREATE TABLE provin
+(
+    codigo NUMBER(2) PRIMARY KEY,
+    nombre VARCHAR2(25)
+);
+
+--INSERTAR REGISTROS
+INSERT INTO provin VALUES (91, 'Madrid');
+INSERT INTO provin VALUES (93, 'Barcelona');
+INSERT INTO provin VALUES (14, 'Córdoba');
+INSERT INTO provin VALUES (17, 'Girona');
+
+--MOSTRAR REGISTROS
+SELECT * FROM provin;
+
+--INSERTAR REGISTRO
+INSERT INTO provin VALUES (17, 'Gerona');

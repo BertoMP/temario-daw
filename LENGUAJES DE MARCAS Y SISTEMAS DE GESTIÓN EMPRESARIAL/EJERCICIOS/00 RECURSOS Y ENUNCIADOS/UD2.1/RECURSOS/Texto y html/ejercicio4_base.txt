@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Noticias RAE</title>
+	<meta charset='utf-8'>
+</head>
+<body>
+
+<h1>Noticias <abbr title="Real Academia Española">RAE</abbr></h1>
+<br>
+
+<h2>Índice de noticias destacadas</h2>
+
+Tarde para la ira, Premio Borau-RAE 2018
+Raúl Vallejo, Premio RAE 2018
+El Cantar de cantares
+Puertas abiertas
+Líderes iberoamericanos
+El patrimonio lingüístico europeo
+Madrid Otra Mirada
+Enclave RAE, en Aragón
+Tesoro panhispánico
+El español, lengua de creación y de integración
+«Amamos la poesía»
+Homenaje al Hispanismo Internacional
+Premio CERMI
+Puertas abiertas
+Encuentro cultural
+
+
+
+<h2>Noticias destacadas</h2>
+
+<h3>Tarde para la ira, Premio Borau-RAE 2018</h3>
+4.10.2018
+<p>El Premio Borau-RAE 2018 ha sido concedido hoy al guion de la película Tarde para la ira, obra de Raúl Arévalo y David Pulido.</p>
+
+
+<h3>Raúl Vallejo, Premio RAE 2018</h3>
+4.10.2018
+<p>El Premio RAE 2018 ha sido concedido hoy al escritor ecuatoriano Raúl Vallejo por su novela El perpetuo exiliado, basada en la vida del expresidente José María Velasco Ibarra.</p>
+
+<h3>El Cantar de cantares</h3>
+4.10.2018
+<p>El Cantar de cantares de Salomón, de Fray Luis de León, editado por Víctor García de la Concha. El editor habla de la obra con Emilio Lledó.</p>
+
+<h3>Puertas abiertas</h3>
+3.10.2018
+<p>La RAE se ha sumado hoy a las distintas actividades llevadas a cabo con motivo de la celebración de la XV Semana de la Arquitectura, organizada por el Colegio Oficial de Arquitectos de Madrid, con una jornada de puertas abiertas. </p>
+
+ 
+<h3>Líderes iberoamericanos</h3>
+2.10.2018
+<p>Los miembros del programa Jóvenes Líderes Iberoamericanos han visitado hoy la sede de la RAE, en donde han mantenido un encuentro con su director, Darío Villanueva.</p>
+
+
+<h3>El patrimonio lingüístico europeo</h3>
+2.10.2018
+<p>Los académicos Paz Battaner y Pedro Álvarez de Miranda participaron la semana pasada en la Accademia della Crusca (Florencia, Italia) en una jornada sobre «El patrimonio lingüístico europeo».</p>
+
+ 
+<h3>Madrid Otra Mirada</h3>
+2.10.2018
+<p>El 19 de octubre, la Real Academia Española (RAE) se suma, con una jornada de puertas abiertas, a Madrid Otra Mirada.</p>
+
+
+<h3>Enclave RAE, en Aragón</h3>
+1.10.2018
+<p>El Gobierno de Aragón y la RAE han llegado a un acuerdo para ofrecer a los alumnos de la Comunidad este plataforma lingüística, que ayuda al usuario a utilizar la lengua correctamente tanto en su expresión oral como escrita.</p>
+
+ 
+<h3>Tesoro panhispánico</h3>
+28.9.2018
+<p>La escritora y académica Carme Riera ha clausurado hoy en el Senado un ciclo de conferencias dedicado a «El español como lengua de creación y de integración».</p>
+
+<h3>El español, lengua de creación y de integración</h3>
+27.9.2018
+<p>En el marco del 40.º aniversario de la Constitución, el director de la RAE ha participado en el Simposio «El español como lengua de creación y de integración» con una conferencia titulada «Valores constitucionales y el español de todo el mundo».</p>
+
+ <h3>«Amamos la poesía»</h3>
+27.9.2018
+<p>La RAE y la editorial Condé Nast han presentado un proyecto para difundir poesía española e hispanoamericana a través de vídeos en los que diferentes actores recitan un poema.</p>
+
+ <h3>Homenaje al Hispanismo Internacional</h3>
+26.9.2018
+<p>La Real Academia Española ha acogido hoy las sesiones de trabajo del «Homenaje al Hispanismo Internacional» organizado por la Fundación Duques de Soria de Ciencia y Cultura Hispánica (FDSCCH).</p>
+
+<h3>Premio CERMI</h3>
+25.9.2018
+<p>El académico Santiago Muñoz Machado ha sido galardonado con el Premio a la Investigación Social y Científica, que concede el Comité Español de Representantes de Personas con Discapacidad.</p>
+
+<h3>Puertas abiertas</h3>
+21.9.2018
+<p>El próximo 3 de octubre, la RAE participará en la XV Semana de la Arquitectura, que organiza el Colegio Oficial de Arquitectos de Madrid, con una jornada de puertas abiertas.</p>
+
+<h3>Encuentro cultural</h3>
+21.9.2018
+<p>El director de la RAE, Darío Villanueva, ha participado hoy en un encuentro cultural organizado por el Instituto Cervantes. </p>
+<hr>
+<p><em>La Real Academia Española, fundada en 1713 por iniciativa de Juan Manuel Fernández Pacheco y Zúñiga, marqués de Villena, «es una institución con personalidad jurídica propia que tiene como misión principal velar por que los cambios que experimente la lengua española en su constante adaptación a las necesidades de sus hablantes no quiebren la esencial unidad que mantiene en todo el ámbito hispánico», según establece el artículo primero de sus actuales estatutos.</em></p>
+<hr>
+<h5>Historia</h5>
+<p>La Real Academia Española (RAE) se funda en Madrid el año 1713, bajo el reinado de Felipe V y por iniciativa de Juan Manuel Fernández Pacheco y Zúñiga, inspirada en el modelo de la Academia Francesa y con el propósito, reflejado en sus primeros estatutos, de trabajar al servicio del idioma español.</p>
+
+<p>Desde entonces, la institución se ha dedicado a preservar —mediante sus actividades, obras y publicaciones— el buen uso y la unidad de una lengua en permanente evolución y expansión, una aspiración también recogida en sus estatutos vigentes, de 1993.</p>
+
+<p>Con la creación de la Asociación de Academias de la Lengua Española (ASALE) en 1951, comienza a desarrollarse una política lingüística que implica la colaboración de las veintitrés academias de España, América, Filipinas y Guinea Ecuatorial, con el fin de fijar la norma común sobre léxico, gramática y ortografía para todos los hispanohablantes.</p>
+
+<p>A lo largo de su historia, la RAE ha tenido sedes temporales en distintos lugares de la capital de España. La actual, en la calle Felipe IV, es un edificio construido expresamente para la corporación e inaugurado en 1894. Desde 2007 cuenta también con el Centro de Estudios de la RAE y de la ASALE, un edificio de la calle Serrano (187 y 189) cedido por el Gobierno de España para acoger los proyectos panhispánicos.</p>
+
+<p>Sobre la historia de la RAE se han publicado distintas obras. Entre las más recientes, además de la escrita por Alonso Zamora Vicente —aparecida en 1999 y actualizada en una segunda edición de 2015—, destacan el Catálogo de la exposición del tricentenario (2013) —coordinado por los académicos Carmen Iglesias y José Manuel Sánchez Ron— y La Real Academia Española. Vida e historia (2014), de Víctor García de la Concha, director honorario de la corporación desde 2010.</p>
+ </body>
+</html>
+

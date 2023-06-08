@@ -1,0 +1,2 @@
+<!ELEMENT producto (descripcion)>
+<!ELEMENT descripcion (#PCDATA)>

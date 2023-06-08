@@ -1,0 +1,16 @@
+﻿<dp:alumno>
+    <dp:nombre>Esther</dp:nombre>
+    <dp:apellido>Moreno</dp:apellido>
+    <dp:direccion>
+        <dp:calle>Plaza Mayor</dp:calle>
+        <dp:cp>28820</dp:cp>
+    </dp:direccion>
+    <ce:centro>
+      <ce:nombre>IES Luis Braille</ce:nombre>
+      <ce:direccion localidad="Coslada"/>
+    </ce:centro>
+    <experiencia>
+          <periodo fecha_inicio="2021-01-01" fecha_fin="2021-06-30" puesto="desarrollo"/>
+          <periodo fecha_inicio="2021-07-01" puesto="responsable"/>
+    </experiencia>
+</dp:alumno>

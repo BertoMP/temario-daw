@@ -1,0 +1,48 @@
+drop table detalle_factura cascade constraints;
+drop table client cascade constraints;
+drop table factura cascade constraints;
+drop table merchan cascade constraints;
+
+ALTER SESSION SET NLS_DATE_FORMAT='DD/MM/YYYY';
+
+create table client(
+CIF varchar2(9) primary key,
+empresa varchar2(50),
+dirección varchar2(50),
+mail varchar2(50) check (mail like '%@%')
+);
+create table merchan(
+producto number(4) primary key,
+descripcion varchar2(50),
+material varchar2(50),
+precio number(10,2)
+);
+create table factura(
+num_fact number(10) primary key,
+CIF_cliente varchar2(9) not null references client,
+fecha date,
+iva number(2) not null 
+);
+create table detalle_factura(
+num_fact number(10) references factura on delete cascade,
+producto number(4) references merchan,
+cantidad number(3) default 1,
+primary key (num_fact,producto)
+);
+insert into client values('12300000A','BOT SA','Avda Resina, Laredo, cp 39770, Cantabria','info@bot.es');
+insert into client values('98700000B','Pantaleón','Calle Sin, Madrid, cp 28001, Madrid','recepcion@pantaleon.es');
+insert into client values('25200000C','Games+','Calle Discrección, Madrid, cp 28008, Madrid','hola@gamesmas.com');
+insert into merchan values(60,'Cenicero con escudo', 'metal',5.6);
+insert into merchan values(70,'Llavero personalizado','resina',8);
+insert into merchan values(80,'Cojín impreso','tela',12.9);
+insert into merchan values(90,'Puzzle foto', 'cartón',15.25);
+insert into merchan values(100,'Imán nevera', 'metal',2);
+insert into factura values(1,'12300000A', '30/12/21',21);
+insert into factura values(2,'12300000A', '30/12/21',21);
+insert into factura values(3,'98700000B', '29/12/21',21);
+insert into detalle_factura values(1,60,5);
+insert into detalle_factura values(1,70,8);
+insert into detalle_factura values(1,80,2);
+insert into detalle_factura values(2,60,15);
+insert into detalle_factura(num_fact,producto) values(3,80);
+commit;

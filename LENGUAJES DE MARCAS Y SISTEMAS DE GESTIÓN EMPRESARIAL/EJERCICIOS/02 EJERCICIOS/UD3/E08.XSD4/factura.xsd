@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+    <xs:element name="factura">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="datosEmisor" type="datos"/>
+                <xs:element name="datosCliente" type="datos" />
+                <xs:element name="detalleFactura">
+                    <xs:complexType>
+                        <xs:sequence>
+                            <xs:element name="articulo" minOccurs="1" maxOccurs="unbounded">
+                                <xs:complexType>
+                                    <xs:attribute name="codigo">
+                                        <xs:simpleType>
+                                            <xs:restriction base="xs:string">
+                                                <xs:pattern value="[A-Z]{2}\d" />
+                                            </xs:restriction>
+                                        </xs:simpleType>
+                                    </xs:attribute>
+                                    <xs:attribute name="tipo" type="xs:string" />
+                                    <xs:attribute name="descripcion" type="xs:string" />
+                                    <xs:attribute name="cantidad" type="xs:positiveInteger" default="1" />
+                                    <xs:attribute name="oferta" type="xs:boolean" default="false" />
+                                    <xs:attribute name="pvp" type="xs:positiveInteger" />
+                                </xs:complexType>
+                            </xs:element>
+                        </xs:sequence>
+                    </xs:complexType>
+                </xs:element>
+            </xs:sequence>
+            <xs:attribute name="fecha" type="xs:date" use="required" />
+            <xs:attribute name="moneda" type="xs:string" fixed="€" />
+            <xs:attribute name="importe" type="xs:positiveInteger" />
+        </xs:complexType>
+    </xs:element>
+    <xs:complexType name="datos">
+        <xs:sequence>
+            <xs:element name="titular" type="xs:string" />
+            <xs:element name="cif" type="tipoCif" />
+            <xs:element name="telefono" type="tipoTel" />
+        </xs:sequence>
+    </xs:complexType>
+    <xs:simpleType name="tipoCif">
+        <xs:restriction base="xs:string">
+            <xs:pattern value="\d{8}[A-Z]" />
+        </xs:restriction>
+    </xs:simpleType>
+    <xs:simpleType name="tipoTel">
+        <xs:restriction base="xs:positiveInteger">
+            <xs:totalDigits value="9" />
+        </xs:restriction>
+    </xs:simpleType>
+</xs:schema>

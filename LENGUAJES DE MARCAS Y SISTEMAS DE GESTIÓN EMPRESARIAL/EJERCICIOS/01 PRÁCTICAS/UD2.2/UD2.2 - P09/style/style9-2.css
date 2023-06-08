@@ -1,0 +1,25 @@
+div {
+    background-image: url(../img/fondo3.jpg);
+    background-size: 100% 95%;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color: lightcyan;
+    margin-top: 10%;
+    margin-left: 10%;
+    box-shadow: 5px 5px 5px steelblue;
+    box-sizing: border-box;
+    width: 270px;
+    border-radius: 8px;
+}
+
+blockquote {
+    padding-top: 30px;
+    padding-left: 20px;
+    margin-bottom: 6px;
+}
+
+em {
+    display: inline-block;
+    margin-left: 65%;
+    margin-bottom: 20px;
+}

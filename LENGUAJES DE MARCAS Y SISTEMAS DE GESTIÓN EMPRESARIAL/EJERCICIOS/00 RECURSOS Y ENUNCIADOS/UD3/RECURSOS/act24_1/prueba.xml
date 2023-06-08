@@ -1,0 +1,5 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<teléfono xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="act24_1.xsd" nombre="Ana Martín">
+<tipo>móvil</tipo>
+<número>600000000</número>
+</teléfono>

@@ -1,0 +1,32 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" >
+<xs:element name="pruebaPattern">
+<xs:complexType>
+   <xs:sequence>
+       <xs:element name="prueba">
+       <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                        <xs:pattern value="\d{5}-\d{5}" />
+                  </xs:restriction>
+        </xs:simpleType>
+       </xs:element>
+    </xs:sequence> 
+    
+</xs:complexType>
+</xs:element>
+</xs:schema>
+
+<!-- A. Sólo dos letras minúsculas -->
+<!-- value="[a-z]{2}" -->
+<!-- B. Sólo dos letras mayúsculas o minúsculas -->
+<!-- value="[A-z]{2}" -->
+<!-- C. Se admita sólo una letra entra la a y la e, seguida de un espacio y un número -->
+<!-- value="[a-e]\s\d" -->
+<!-- D. Sean dos palabras minúsculas de longitud indefinida cada una -->
+<!-- value="[a-z]+\s[a-z]+" -->
+<!-- E. Sea una palabra que obligatoriamente empiece por mayúscula. -->
+<!-- value="[A-Z][a-z]*" -->
+<!-- F. Una palabra que tenga el número 5 en su penúltima posición -->
+<!-- value="[a-z]*5[a-z]" -->
+<!-- G. Dos números de 5 cifras separados por un guión -->
+<!-- value="\d{5}-\d{5}"-->

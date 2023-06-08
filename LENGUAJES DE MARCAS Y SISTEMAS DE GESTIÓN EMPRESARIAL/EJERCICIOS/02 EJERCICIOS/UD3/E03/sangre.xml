@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE sangre [
+    <!ELEMENT sangre (plasma|corpusculo)*>
+    <!ELEMENT plasma (#PCDATA)>
+    <!ELEMENT corpusculo (#PCDATA | globulo_blanco)*>
+    <!ELEMENT globulo_blanco (#PCDATA)>
+    <!ATTLIST plasma porcentaje CDATA #REQUIRED>
+]>
+<sangre>
+    <plasma porcentaje="7%">Proteinas</plasma>
+    <plasma porcentaje="91.5%">Agua</plasma>
+    <plasma porcentaje="1.5%">Otros solutos</plasma>
+    <corpusculo>Plaquetas</corpusculo>
+    <corpusculo>
+        <globulo_blanco>Neutrofilos</globulo_blanco>
+    </corpusculo>
+    <corpusculo>
+        <globulo_blanco>Linfocitos</globulo_blanco>
+    </corpusculo>
+    <corpusculo>
+        <globulo_blanco>Monocitos</globulo_blanco>
+    </corpusculo>
+    <corpusculo>
+        <globulo_blanco>Eosinofilos</globulo_blanco>
+    </corpusculo>
+    <corpusculo>
+        <globulo_blanco>Basofilos</globulo_blanco>
+    </corpusculo>
+    <corpusculo>Globulos Rojos</corpusculo>
+</sangre>

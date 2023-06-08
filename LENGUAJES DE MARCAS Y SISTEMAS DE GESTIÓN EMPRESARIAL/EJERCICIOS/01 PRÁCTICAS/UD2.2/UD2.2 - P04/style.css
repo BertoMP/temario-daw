@@ -1,0 +1,22 @@
+p {
+    color:blue;
+    font-family:'Book Antiqua';
+    font-size:xx-small;
+}
+
+h2 {
+    color:darkviolet;
+    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size:x-large;
+}
+
+h1 {
+    color:indigo;
+    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size:xx-large;
+}
+
+li {
+    color:orange;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}

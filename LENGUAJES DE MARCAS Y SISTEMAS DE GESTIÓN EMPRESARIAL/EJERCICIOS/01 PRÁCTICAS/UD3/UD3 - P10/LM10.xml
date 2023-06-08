@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE cantantes[
+    <!ELEMENT cantantes (cantante+)>
+    <!ELEMENT cantante ((nombre_completo|apodo),estilo_musica+,nacionalidad,referentes?)>
+    <!ELEMENT nombre_completo (#PCDATA)>
+    <!ELEMENT apodo (#PCDATA)>
+    <!ELEMENT estilo_musica (#PCDATA)>
+    <!ELEMENT nacionalidad (#PCDATA)>
+    <!ELEMENT referentes (cantante+)>
+]>
+<cantantes>
+    <cantante>
+        <nombre_completo>Luciano Pavarotti</nombre_completo>
+        <estilo_musica>Canto lírico</estilo_musica>
+        <nacionalidad>Italiano</nacionalidad>
+    </cantante>
+    <cantante>
+        <apodo>"El cigala"</apodo>
+        <estilo_musica>Flamenco</estilo_musica>
+        <nacionalidad>Español</nacionalidad>
+        <referentes>
+            <cantante>
+                <nombre_completo>Antonio Carmona Amaya</nombre_completo>
+                <estilo_musica>Flamenco</estilo_musica>
+                <nacionalidad>Español</nacionalidad>
+            </cantante>
+            <cantante>
+                <apodo>"El arrebato"</apodo>
+                <estilo_musica>Flamenco</estilo_musica>
+                <estilo_musica>Pop</estilo_musica>
+                <nacionalidad>Español</nacionalidad>
+            </cantante>
+        </referentes>
+    </cantante>
+</cantantes>

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE cocineros [
+    <!ELEMENT cocineros (cocinero+)>
+    <!ELEMENT cocinero (nombre, restaurante, estrellas_michelin?)>
+    <!ELEMENT nombre (#PCDATA)>
+    <!ELEMENT restaurante (#PCDATA)>
+    <!ELEMENT estrellas_michelin (#PCDATA)>
+]>
+<cocineros>
+    <cocinero>
+        <nombre>Ferran Adrià</nombre>
+        <restaurante>El Bulli</restaurante>
+        <estrellas_michelin>3</estrellas_michelin>
+    </cocinero>
+    <cocinero>
+        <nombre>Santi Santamaría</nombre>
+        <restaurante>Can Fabes</restaurante>
+        <estrellas_michelin>3</estrellas_michelin>
+    </cocinero>
+</cocineros>

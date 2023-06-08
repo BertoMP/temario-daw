@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE cocineros [
+    <!ELEMENT cocineros (cocinero+)>
+    <!ELEMENT cocinero (nombre, restaurante)>
+    <!ELEMENT nombre (#PCDATA)>
+    <!ELEMENT restaurante (#PCDATA)>
+]>
+<cocineros>
+    <cocinero>
+        <nombre>Ferran Adrià</nombre>
+        <restaurante>El Bulli</restaurante>
+    </cocinero>
+    <cocinero>
+        <nombre>Santi Santamaría</nombre>
+        <restaurante>Can Fabes</restaurante>
+    </cocinero>
+</cocineros>

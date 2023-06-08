@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <title>Actividad4.1</title>
+        <meta charset="utf-8">
+        <style>
+            /* Valor: 101 */
+            #outer a{
+                background-color:red;
+            }
+            /* Valor: 201. Se aplica este background-color. */
+            #outer #inner a {
+                background-color:blue;
+            }
+            /* Valor: 104 */
+            #outer div ul li a{
+                color:yellow;
+            }
+            /* Valor: 113. Se aplica este color. */
+            #outer div ul .nav a{
+                color:white;
+            }
+        </style>
+    </head>
+        <body>
+            <div id="outer" class="container">
+                <div id="inner" class="container">
+                    <ul>
+                        <li class="nav"><a href="#">One</a></li>
+                        <li class="nav"><a href="#">Two</a></li>
+                    </ul>
+                </div>
+            </div>
+        </body>
+</html>

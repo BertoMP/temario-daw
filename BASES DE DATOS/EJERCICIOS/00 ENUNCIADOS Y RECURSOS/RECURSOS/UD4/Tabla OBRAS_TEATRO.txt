@@ -1,0 +1,12 @@
+create table obras_teatro(
+titulo varchar(40),
+estreno number(4),
+duracion number(3),
+categoria varchar2(30) check (categoria in ('musical','drama','comedia','experimental')),
+primary key (titulo,estreno)
+);
+insert into obras_teatro values ('El Rey León',1997,160,'musical');
+insert into obras_teatro values ('La La Land',2004,95,'drama');
+insert into obras_teatro values ('El Verdugo',1921,110,'drama');
+insert into obras_teatro values ('El Verdugo',2020,70,'experimental');
+commit;

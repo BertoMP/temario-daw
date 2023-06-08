@@ -1,0 +1,23 @@
+--CREACIÓN TABLA
+CREATE TABLE cliente
+(
+    NIF VARCHAR2(9) PRIMARY KEY,
+    nombre VARCHAR2(30),
+    apellido VARCHAR2(30),
+    telefono NUMBER(9)
+);
+
+--COMPROBAR ESTRUCTURA TABLA
+DESCRIBE cliente;
+
+--CREACIÓN TABLA 2
+CREATE TABLE cliente
+(
+    NIF VARCHAR2(9) PRIMARY KEY,
+    nombre VARCHAR2(30),
+    apellido VARCHAR2(30),
+    telefono NUMBER(9)
+);
+
+--BORRAR TABLA
+DROP TABLE cliente;

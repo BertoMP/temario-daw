@@ -1,0 +1,39 @@
+SET SERVEROUTPUT ON;
+
+DECLARE
+    V_APELLIDO_EMP  EMPLE.APELLIDO%TYPE;
+    V_SALARIO_EMP   EMPLE.SALARIO%TYPE;
+    V_SALARIO_NUEVO EMPLE.SALARIO%TYPE;
+    V_DEPART_EMP    EMPLE.DEPT_NO%TYPE;
+    V_MEDIA_SUELDO  EMPLE.SALARIO%TYPE;
+BEGIN
+    V_APELLIDO_EMP := UPPER('&APELLIDO_EMPLEADO');
+    
+    SELECT SALARIO, DEPT_NO INTO V_SALARIO_EMP, V_DEPART_EMP
+    FROM EMPLE
+    WHERE APELLIDO = V_APELLIDO_EMP;
+    
+    SELECT AVG(SALARIO) INTO V_MEDIA_SUELDO
+    FROM EMPLE
+    WHERE DEPT_NO = V_DEPART_EMP;
+    
+    IF V_SALARIO_EMP < V_MEDIA_SUELDO THEN
+        V_SALARIO_NUEVO := V_SALARIO_EMP * 1.1;
+        UPDATE EMPLE
+            SET SALARIO = V_SALARIO_NUEVO
+            WHERE APELLIDO = V_APELLIDO_EMP;
+        DBMS_OUTPUT.PUT_LINE('Se ha actualizado el salario de ' 
+            || V_APELLIDO_EMP || ' de ' || V_SALARIO_EMP || ' a ' 
+            || V_SALARIO_NUEVO || '.');
+    ELSE
+        DBMS_OUTPUT.PUT_LINE('No se ha actualizado el salario de ' 
+            || V_APELLIDO_EMP || '.');
+    END IF;
+EXCEPTION
+    WHEN NO_DATA_FOUND THEN
+        DBMS_OUTPUT.PUT_LINE('El empleado ' || V_APELLIDO_EMP || ' no existe.');
+    WHEN TOO_MANY_ROWS THEN
+        DBMS_OUTPUT.PUT_LINE('Hay varios empleados con el apellido ' 
+            || V_APELLIDO_EMP || '.');
+END;
+/

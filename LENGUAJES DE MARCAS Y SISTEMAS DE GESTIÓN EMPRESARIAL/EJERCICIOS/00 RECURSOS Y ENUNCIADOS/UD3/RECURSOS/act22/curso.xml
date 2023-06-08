@@ -1,0 +1,5 @@
+﻿<curso xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="curso.xsd" grupo="3ESO-F">
+<alumno nombreCompleto="Minerva Castell Ruíz" NIA="1256003" nacimiento="2007-04-13" />
+<alumno nombreCompleto="Lisa Sobrino Tejo" NIA="1365220" nacimiento="2007-05-23" repetidor="true" observaciones="Traslado desde otro centro educativo"/> 
+</curso>
+    

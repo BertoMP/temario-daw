@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<telefono xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:noNamespaceSchemaLocation="restricciones.xsd"
+    nombre="Alberto Martínez" >
+    <tipo>móvil</tipo>
+    <numero>1289</numero>
+</telefono>

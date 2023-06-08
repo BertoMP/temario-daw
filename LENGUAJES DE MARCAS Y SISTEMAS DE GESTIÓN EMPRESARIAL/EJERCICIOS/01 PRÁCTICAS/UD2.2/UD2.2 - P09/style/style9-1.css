@@ -1,0 +1,24 @@
+div {
+    background-image: url(../img/fondo2.jpg);
+    margin-top: 10%;
+    margin-left: 10%;
+    color: white;
+    font-size: x-large;
+    box-shadow: 5px 5px 5px steelblue;
+    box-sizing: border-box;
+    width: 400px;
+    border-radius: 25px;
+
+}
+
+blockquote {
+    padding-top: 50px;
+    padding-left: 20px;
+    margin-bottom: 20px;
+}
+
+em {
+    display: inline-block;
+    margin-left: 65%;
+    margin-bottom: 20px;
+}

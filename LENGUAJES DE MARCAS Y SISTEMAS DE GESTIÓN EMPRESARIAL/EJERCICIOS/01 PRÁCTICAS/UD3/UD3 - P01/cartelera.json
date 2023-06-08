@@ -1,0 +1,28 @@
+{
+    "cartelera": [
+        {
+            "titulo": "La Quimera del Oro",
+            "año_de_estreno": 1925,
+            "proyecciones": [
+                {
+                    "dia": "Lunes",
+                    "hora": "22:30"
+                },
+                {
+                    "dia": "Jueves",
+                    "hora": "23:00"
+                }
+            ]
+        },
+        {
+            "titulo": "El Maquinista de la General",
+            "año_de_estreno": 1926,
+            "proyecciones": [
+                {
+                    "dia": "Martes",
+                    "hora": "21:00"
+                }
+            ]
+        }
+    ]
+}

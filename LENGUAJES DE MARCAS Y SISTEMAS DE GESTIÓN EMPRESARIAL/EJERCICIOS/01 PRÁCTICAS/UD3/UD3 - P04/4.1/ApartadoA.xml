@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<musicos>
+    <musico>
+        <especialidad instrumento="Guitarra"/> <!-- Faltaba el nombre del atributo -->
+        <nombre>Juan Perez</nombre>
+    </musico> <!-- Faltaba la etiqueta de cierre-->
+    <musico>
+        <especialidad instrumento="Percusión"/> <!-- Faltaba el nombre del atributo -->
+        <nombre>Mario Contreras</nombre>
+    </musico>
+</musicos>

@@ -1,0 +1,112 @@
+<diagram program="umletino" version="15.0.0"><zoom_level>7</zoom_level><element><id>UMLClass</id><coordinates><x>727</x><y>252</y><w>98</w><h>105</h></coordinates><panel_attributes>Articulo
+--
+# nombre: String
+# descripcion: String
+# material: String
+# color: String
+# precio: double
+# stock: int
+# Fotografia: Image
+--</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>902</x><y>98</y><w>63</w><h>56</h></coordinates><panel_attributes>Zapato
+--
+- numero: int
+- tipo: String
+--</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>685</x><y>105</y><w>175</w><h>42</h></coordinates><panel_attributes>Bolso
+--
+- tipo: String { bandolera, mochila, fiesta }
+--</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>524</x><y>98</y><w>140</w><h>56</h></coordinates><panel_attributes>Complemento
+--
+- tipo: String { cinturon, guante }
+- talla: int
+--</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>839</x><y>343</y><w>231</w><h>42</h></coordinates><panel_attributes>Campaña
+--
+- temporada: String {otoño/invierno, primavera/verano}
+--</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>587</x><y>147</y><w>203</w><h>119</h></coordinates><panel_attributes>lt=&lt;&lt;-</panel_attributes><additional_attributes>270;150;270;80;10;80;10;10</additional_attributes></element><element><id>Relation</id><coordinates><x>769</x><y>140</y><w>21</w><h>77</h></coordinates><panel_attributes>lt=-</panel_attributes><additional_attributes>10;90;10;10</additional_attributes></element><element><id>Relation</id><coordinates><x>769</x><y>147</y><w>182</w><h>70</h></coordinates><panel_attributes>lt=-</panel_attributes><additional_attributes>10;80;240;80;240;10</additional_attributes></element><element><id>UMLClass</id><coordinates><x>566</x><y>623</y><w>77</w><h>42</h></coordinates><panel_attributes>Persona
+--
+# nombre: String
+--</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>818</x><y>273</y><w>154</w><h>84</h></coordinates><panel_attributes>lt=&lt;&lt;&lt;&lt;-
+m1=1..n
+m2=1
+pertenenece</panel_attributes><additional_attributes>10;20;190;20;190;100</additional_attributes></element><element><id>UMLClass</id><coordinates><x>335</x><y>469</y><w>182</w><h>91</h></coordinates><panel_attributes>Socio
+--
+- direccion: String
+- correoElectronico: String
+- poblacion: String
+--
++ visualizaPedido (pedido: Pedido): void
++ cancelaPedido (pedido: Pedido): void
++ cambiaDatos(): void</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>713</x><y>623</y><w>133</w><h>42</h></coordinates><panel_attributes>EmpleadoAlmacen
+--
+
+--
++ cumplimentaPedidos(): void</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>699</x><y>469</y><w>161</w><h>56</h></coordinates><panel_attributes>EmpleadoAdministrativo
+--
+
+--
++ darBaja (campaña: Campaña): void
++ darAlta(campaña: Campaña): void</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>573</x><y>511</y><w>63</w><h>42</h></coordinates><panel_attributes>Empleado
+--
+# id: int
+--</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>384</x><y>553</y><w>231</w><h>84</h></coordinates><panel_attributes>lt=&lt;&lt;-</panel_attributes><additional_attributes>310;100;310;60;10;60;10;10</additional_attributes></element><element><id>Relation</id><coordinates><x>594</x><y>546</y><w>21</w><h>63</h></coordinates><panel_attributes>lt=-</panel_attributes><additional_attributes>10;70;10;10</additional_attributes></element><element><id>Relation</id><coordinates><x>629</x><y>490</y><w>84</w><h>63</h></coordinates><panel_attributes>lt=&lt;&lt;-</panel_attributes><additional_attributes>10;70;60;70;60;10;100;10</additional_attributes></element><element><id>Relation</id><coordinates><x>664</x><y>532</y><w>63</w><h>112</h></coordinates><panel_attributes>lt=-</panel_attributes><additional_attributes>70;140;10;140;10;10</additional_attributes></element><element><id>UMLClass</id><coordinates><x>328</x><y>273</y><w>140</w><h>56</h></coordinates><panel_attributes>Pedido
+--
+- fecha: Date
+- precioFinal: double
+--</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>356</x><y>322</y><w>56</w><h>161</h></coordinates><panel_attributes>lt=-
+m1=1
+m2=1..*
+&lt; realiza</panel_attributes><additional_attributes>10;210;10;10</additional_attributes></element><element><id>Relation</id><coordinates><x>461</x><y>287</y><w>280</w><h>35</h></coordinates><panel_attributes>lt=-
+m1=0..*
+m2=1..*
+contiene &gt;</panel_attributes><additional_attributes>10;20;380;20</additional_attributes></element><element><id>Relation</id><coordinates><x>587</x><y>294</y><w>21</w><h>49</h></coordinates><panel_attributes>lt=.</panel_attributes><additional_attributes>10;10;10;50</additional_attributes></element><element><id>UMLClass</id><coordinates><x>545</x><y>329</y><w>105</w><h>56</h></coordinates><panel_attributes>DetallesPedido
+--
+- articulo: Articulo
+- cantidad: int
+--</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>223</x><y>490</y><w>126</w><h>35</h></coordinates><panel_attributes>lt=-
+m1= 1
+m2=1..n
+pertenece &gt;</panel_attributes><additional_attributes>160;20;10;20</additional_attributes></element><element><id>UMLClass</id><coordinates><x>90</x><y>476</y><w>140</w><h>42</h></coordinates><panel_attributes>TarjetaBancaria
+--
+- numero: String
+--</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>853</x><y>378</y><w>154</w><h>140</h></coordinates><panel_attributes>lt=-
+m1=1
+m2=*
+cambia &gt;</panel_attributes><additional_attributes>10;170;150;170;150;10</additional_attributes></element><element><id>Relation</id><coordinates><x>818</x><y>252</y><w>357</w><h>413</h></coordinates><panel_attributes>lt=-
+m1=1
+m2=1..n
+empaqueta &gt;</panel_attributes><additional_attributes>40;560;410;560;410;10;10;10</additional_attributes></element><element><id>UMLClass</id><coordinates><x>1161</x><y>343</y><w>105</w><h>42</h></coordinates><panel_attributes>Paquete
+--
+- direccionEntrega: String
+--
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>1098</x><y>364</y><w>77</w><h>21</h></coordinates><panel_attributes>lt=.</panel_attributes><additional_attributes>10;10;90;10</additional_attributes></element><element><id>Relation</id><coordinates><x>1203</x><y>266</y><w>70</w><h>91</h></coordinates><panel_attributes>lt=-
+m1=1..*
+m2=1
+&lt; se entrega</panel_attributes><additional_attributes>10;110;10;10</additional_attributes></element><element><id>UMLClass</id><coordinates><x>1147</x><y>203</y><w>126</w><h>70</h></coordinates><panel_attributes>EmpresaTransporte
+--
+- nombre: String
+- cif: String
+- dominioFiscal: String
+--</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>1266</x><y>224</y><w>112</w><h>35</h></coordinates><panel_attributes>lt=&lt;&lt;&lt;&lt;&lt;-
+m1=1
+m2=1..n
+tiene
+</panel_attributes><additional_attributes>10;20;140;20</additional_attributes></element><element><id>UMLClass</id><coordinates><x>1364</x><y>210</y><w>147</w><h>56</h></coordinates><panel_attributes>Ruta
+--
+- areaInfluencia: String
+- fechasDisponibles: Date[]
+--</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>1035</x><y>133</y><w>112</w><h>49</h></coordinates><panel_attributes>Incidencia
+--
+- fecha: Date
+- descripción: String
+--</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>1140</x><y>154</y><w>84</w><h>21</h></coordinates><panel_attributes>lt=.</panel_attributes><additional_attributes>10;10;100;10</additional_attributes></element><element><id>Relation</id><coordinates><x>1203</x><y>112</y><w>56</w><h>105</h></coordinates><panel_attributes>lt=-
+m1=1
+m2=1..n
+&lt; realiza</panel_attributes><additional_attributes>10;130;10;10</additional_attributes></element><element><id>UMLClass</id><coordinates><x>1168</x><y>77</y><w>84</w><h>42</h></coordinates><panel_attributes>Reparto
+--
+- fecha: Date
+--</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLNote</id><coordinates><x>881</x><y>504</y><w>210</w><h>21</h></coordinates><panel_attributes>{siempre que no haya pedidos por cumplimentar}
+bg=white</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLNote</id><coordinates><x>440</x><y>420</y><w>252</w><h>28</h></coordinates><panel_attributes>{siempre que no haya sido cumplimentado por el empleado
+de almacén}
+bg=white</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>419</x><y>322</y><w>63</w><h>161</h></coordinates><panel_attributes>lt=-
+m1=1
+m2=0..n
+&lt; cancela</panel_attributes><additional_attributes>10;210;10;10</additional_attributes></element></diagram>

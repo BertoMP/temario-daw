@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Actividad 4.4</title>
+    <style>
+        /* REGLAS CSS */
+    </style>
+</head>
+
+<body>
+    <div>
+        <div class="destacado">
+            <p>
+                Si empleo tantas horas en convencerme que tengo razón, ¿no será que existe alguna razón por la que temer
+                que estoy equivocado?
+            </p>
+        </div>
+    </div>
+</body>
+
+</html>
+
+<!-- 
+    a)
+    /* Valor: 1 */
+    body {
+        color: grey;
+    }
+    /* Valor: 13 SE APLICA ESTA */
+    body div.destacado p {
+        color: cyan;
+    }
+    /* Valor: 10 */
+    .destacado {
+        color: green;
+    }
+    /* Valor: 11 */
+    div.destacado {
+        color: blue;
+    }
+    /* Valor: 12 */
+    div.destacado p {
+        color: yellow;
+    }
+    /* Valor: 11 */
+    div:first-child {
+        color: magenta;
+    }
+
+    b)
+    /* ÚNICA REGLA */
+    body {
+        color: grey;
+    }
+
+    c)
+    /* Valor: 1 */
+    body {
+        color: grey;
+    }
+    /* Valor: 10. SE APLICA ESTA */
+    .destacado {
+        color: green;
+    }
+
+    d)
+    body div.destacado p {
+        color: cyan;
+    }
+    /* !important SE APLICA ESTA */
+    .destacado {
+        color: green !important;
+    }
+
+    e)
+    /* Valor: 2 */
+    div p {
+        color: cyan;
+    }
+    /* Valor: 2 */
+    div > p {
+        color: red;
+    }
+    /* Valor: 2. SE APLICA ESTA POR SER LA MÁS RECIENTE */
+    body p {
+        color: orange;
+    }
+
+    f)
+    body div.destacado p {
+        color: cyan;
+    }
+    .destacado {
+        color: green;
+    }
+    /* !important SE APLICA ESTA */
+    p {
+        color: red !important;
+    }
+-->

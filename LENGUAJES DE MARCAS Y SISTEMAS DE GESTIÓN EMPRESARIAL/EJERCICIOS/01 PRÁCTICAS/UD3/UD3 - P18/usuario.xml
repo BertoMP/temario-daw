@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<usuario xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+    xsi:noNamespaceSchemaLocation="usuario.xsd">
+    <identificador>
+        <id>125</id>
+    </identificador>
+    <mail>ana.garcia@gmail.com</mail>
+    <fecha_creacion>2021-01-01</fecha_creacion>
+    <acceso>2021-01-01T17:00:00</acceso>
+    <acceso>2021-01-02T10:30:00</acceso>
+</usuario>

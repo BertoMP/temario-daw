@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<dp:alumno xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="actividad/datosP.org datosPersonales.xsd 
+                      actividad/centroE.org centroEducativo.xsd"
+  xmlns:dp="actividad/datosP.org"
+  xmlns:ce="actividad/centroE.org">
+    <nombre>Esther</nombre>
+    <apellido>Moreno</apellido>
+    <direccion>
+        <calle>Plaza Mayor</calle>
+        <cp>28820</cp>
+    </direccion>
+    <ce:centro>
+      <nombre>IES Luis Braille</nombre>
+      <direccion localidad="Coslada"/>
+    </ce:centro>
+</dp:alumno>

@@ -1,0 +1,23 @@
+drop table dp_tel;
+drop table datospersonales;
+
+create table datospersonales(
+login varchar2(15) primary key,
+idioma varchar2(3) check (idioma in ('ESP','EN','FR','DE')),
+fecha_nac date);
+
+create table dp_tel(
+telefono number(9) primary key,
+login varchar2(15) references datospersonales on delete cascade);
+
+insert into datospersonales values('mcalero23','ESP','21/03/2005');
+insert into datospersonales values('eriv625','ESP','08/10/2004');
+insert into datospersonales values('jdestroy','FR','11/06/2003');
+
+insert into dp_tel values(600022222,'eriv625');
+insert into dp_tel values(600033333,'eriv625');
+insert into dp_tel values(600044444,'jdestroy');
+insert into dp_tel(telefono) values(600055555);
+
+
+commit;

@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE orquesta [
+  <!ELEMENT orquesta (instrumento*)>
+  <!ELEMENT instrumento EMPTY>
+  <!ATTLIST instrumento tipo (cuerda|viento|percusion) "cuerda">
+  <!ATTLIST instrumento nombre ID #REQUIRED>
+]>
+
+<orquesta>
+  <instrumento tipo="cuerda" nombre="violín" />
+  <instrumento tipo="cuerda" nombre="piano" />
+  <instrumento tipo="percusion" nombre="platillo"  />
+  </orquesta>
+  <!-- El listado del atributo tipo estaba mal construido (faltaba percusión)
+      y el valor por defecto no podía estar vacío.-->

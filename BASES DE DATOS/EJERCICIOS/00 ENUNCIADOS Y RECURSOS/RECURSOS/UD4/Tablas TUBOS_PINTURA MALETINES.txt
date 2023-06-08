@@ -1,0 +1,38 @@
+drop table tubos_pintura;
+drop table maletines;
+
+create table maletines(
+cod_maletin varchar2(3) primary key,
+material varchar2(30),
+capacidad number(3)
+);
+create table tubos_pintura(
+ref number(3) primary key,
+marca varchar2(30),
+color varchar2(30),
+tipo varchar2(30) check (tipo in ('óleo','acrílico','acuarela')),
+cod_maletin varchar2(3) references maletines on delete set null
+);
+insert into maletines values ('M-1','madera de pino',15);
+insert into maletines values ('M-2','resina',35);
+insert into maletines values ('M-3','madera de pino',50);
+insert into maletines values ('M-4','resina',12);
+insert into maletines values ('M-5','madera de roble',45);
+insert into maletines values ('M-6','plástico',45);
+
+insert into tubos_pintura(ref,marca,color,tipo) values('010','Titán','azul ultramar','óleo');
+insert into tubos_pintura(ref,marca,color,tipo) values('011','Titán','azul cobalto','óleo');
+insert into tubos_pintura(ref,marca,color,tipo) values('012','Titán','azul cobalto','acuarela');
+insert into tubos_pintura(ref,marca,color,tipo) values('013','Winsor and Newton','azul ultramar','acuarela');
+insert into tubos_pintura values('034','Van Gogh','laca carmín','acuarela','M-2');
+insert into tubos_pintura values('036','Van Gogh','verde esmeralda','acuarela','M-2');
+insert into tubos_pintura values('037','Rembrandt','ocre amarillo','acrílico','M-3');
+insert into tubos_pintura values('045','Rembrandt','siena tostada','acrílico','M-3');
+insert into tubos_pintura values('046','Rembrandt','siena natural','acrílico','M-3');
+insert into tubos_pintura values('047','Rembrandt','sombra tostada','acrílico','M-3');
+insert into tubos_pintura values('048','Rembrandt','sombra natural','acrílico','M-3');
+insert into tubos_pintura values('050','Amsterdam','azul cyan','óleo','M-5');
+insert into tubos_pintura values('060','Amsterdam','negro','óleo','M-5');
+insert into tubos_pintura values('014','Titán','blanco','óleo','M-5');
+commit;
+

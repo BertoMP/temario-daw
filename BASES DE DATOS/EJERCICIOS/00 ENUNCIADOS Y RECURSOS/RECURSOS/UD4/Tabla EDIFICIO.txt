@@ -1,0 +1,20 @@
+create table edificio(
+pais varchar2(30),
+cod_direccion varchar(10),
+uso varchar2(10) check (uso in ('público','privado')),
+inicio_obras date,
+fin_obras date,
+plantas number(4),
+altura_planta_cm number(6),
+aforo_planta number(5),
+metros_planta number(5),
+altura_total_cm number(7),
+material varchar2(30),
+extintores number(5),
+cod_arquitec varchar2(5),
+cod_constructora varchar2(5) not null,
+precio number(9),
+constraint PK_EDIFICIO primary key (pais,cod_direccion)
+);
+
+
