@@ -2,7 +2,7 @@
 
 Apuntes y ejercicios correspondientes al temario del CFGS de Desarrollo de Aplicaciones Web (DAW).
 
-Actualizado a junio de 2023.
+Actualizado a marzo de 2024.
 
 ## 1DAW
   - [Bases de datos](BBDD)
@@ -11,3 +11,11 @@ Actualizado a junio de 2023.
   - [Lenguajes de Marcas](LLMM) 
   - [Programación](PROG)
   - [Sistemas Informáticos](SSII)
+
+## 2DAW
+  - [Desarrollo web en entorno cliente](DWEC)
+  - [Desarrollo web en entorno servidor](DWES)
+  - [Despliegue de aplicacione web](DEAW)
+  - [Diseño de interfaces web](DIW)
+  - [Empresa e iniciativa emprendedora](EIE)
+  - [Inglés técnico para grado superior](ITGS)
