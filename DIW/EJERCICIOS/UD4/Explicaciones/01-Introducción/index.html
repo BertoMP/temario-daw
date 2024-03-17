@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Uso de jQuery</title>
+</head>
+<body>
+    <section id="miCapa">Hola mundo!!</section>
+    <p class="especial">Párrafo especial</p>
+    <p>Párrafo normal</p>
+    <p class="especial">Otro especial</p>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script>
+        $(document).ready(function () {
+			let tamanyoLetra = 2;
+
+			$('#miCapa').on('click mouseenter', function () {
+				$('#miCapa').css({
+					'color': 'blue',
+					'font-size': tamanyoLetra + 'em'
+				});
+				tamanyoLetra += 0.3;
+			});
+        })
+    </script>
+</body>
+</html>

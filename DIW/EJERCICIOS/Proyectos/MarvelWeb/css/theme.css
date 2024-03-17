@@ -1,0 +1,71 @@
+/* VARIABLES CSS PERSONALIZADAS CONTENIDAS EN :root PARA SU REUTILIZACIÓN */
+:root {
+    /* VARIBLES DE FUENTES*/
+    --fuente-marvel: Marvel, sans-serif;
+    --fuente-encabezado-formulario: Marvel2, sans-serif;
+
+    /* VARIABLES DE COLORES */
+    --color-primario: #ed1d24;
+    --color-secundario: #fff;
+    --color-terciario: #000;
+    --color-facebook: #1877f2;
+    --color-facebook-hover: #d8dfea;
+    --color-x: #ebeef0;
+    --color-x-hover: #1da1f2;
+    --color-instagram: #c13584;
+    --color-instagram-hover: #833ab4;
+
+    /* VARIABLES DE GRADIENTES */
+    --gradiente-header: linear-gradient(to bottom, #000, #e62429);
+    --gradiente-footer: linear-gradient(to bottom, #e62429, #000);
+    --gradiente-avengers: radial-gradient(circle, #4b0082, #000);
+    --gradiente-spiderman: radial-gradient(circle, #1c1c1c, #f00);
+    --gradiente-ironman: radial-gradient(circle, #ffd700, #f00);
+    --gradiente-thor: radial-gradient(circle, #0011ff, #ffd700);
+    --gradiente-deadpool: radial-gradient(circle, #1c1c1c, #f00);
+    --gradiente-antman: radial-gradient(circle, #a8a5a5, #f00);
+    --gradiente-wolverine: radial-gradient(circle, #8b4513, #ffd700);
+    --gradiente-capitan-america: radial-gradient(circle, #fff, #00f);
+    --gradiente-black-widow: radial-gradient(circle, #f00, #000);
+    --gradiente-thanos: radial-gradient(circle, #ffd700, #9a56ca);
+    --gradiente-ultron: radial-gradient(circle, #313131, #747372);
+    --gradiente-magneto: radial-gradient(circle, #8b4513, #f00);
+    --gradiente-venom: radial-gradient(circle, #e00b0b, #000);
+
+    /* VARIABLES DE COLORES DE FONDO */
+    --bgColor-aside: #e02328;
+    --bgColor-general: #ebd8c1;
+    --bgColor-cards: #a52727;
+    --bgColor-boton-formulario: #3c6086;
+    --bgColor-boton-formulario-hover: #93bdeb;
+}
+
+/* font-face PARA DEFINIR UNA FUENTE PERSONALIZADA LLAMADA Marvel */
+@font-face {
+    font-family: 'Marvel';
+    src: url(../assets/fonts/ACMESecretAgentBB_Reg.ttf);
+}
+
+/* font-face PARA DEFINIR UNA FUENTE PERSONALIZADA LLAMADA Marvel2 */
+@font-face {
+    font-family: 'Marvel2';
+    src: url(../assets/fonts/BadaboomBB_Reg.ttf);
+}
+
+/* ESTABLECE UN ESTILADO PARA EL ELEMENTO body */
+body {
+    background-color: var(--bgColor-general);
+    font-family: 'Poppins', sans-serif;
+    font-size: 1rem;
+    width: 100%;
+}
+
+/* ESTABLECE UN ESTILADO PARA EL aside (POR DEFECTO NO SE MOSTRARÁ) */
+aside {
+    display: none;
+}
+
+/* ESTABLECE UN ESTILADO PARA LOS a (POR DEFECTO NO SE MOSTRARÁ SU DECORACIÓN) */
+a {
+    text-decoration: none;
+}

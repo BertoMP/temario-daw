@@ -1,0 +1,21 @@
+
+
+.btn {
+    border-radius: 0;
+}
+
+.btn-primary {
+    background-color: crimson;
+}
+
+
+.instructions-table {
+    display: none;
+    text-align: center;
+}
+
+@media (max-width: 1200px) {
+    .instructions-table {
+        display: block;
+    }
+}

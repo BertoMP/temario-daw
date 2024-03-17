@@ -1,0 +1,105 @@
+/* ESTILOS PARA EL main DE LA PÁGINA Y PARA LOS section QUE SON HIJOS DIRECTOS DE ÉL */
+main,
+main>section {
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+    margin: 10px;
+}
+
+/* ESTILOS ESPECÍFICOS PARA EL main DE LA PÁGINA */
+main {
+    min-height: 300px;
+}
+
+/* ESTILO PARA LOS ENCABEZADOS h2 DE LA PÁGINA */
+h2 {
+    font-family: var(--fuente-marvel);
+    font-size: 6rem;
+}
+
+/* ESTILO PARA LOS ENCABEZADOS h3 DE LA PÁGINA */
+h3 {
+    font-family: var(--fuente-marvel);
+    font-size: 2rem;
+    text-align: center;
+    margin: 50px 20px 20px 20px;
+    color: var(--color-primario);
+}
+
+/* ESTILOS PARA LOS ELEMENTOS CON CLASE .contenedor-flex */
+.contenedor-flex {
+    width: 100%;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-content: center;
+    gap: 50px;
+}
+
+/* ESTILOS PARA LOS ELEMENTOS article QUE SON HIJOS DIRECTOS DE .contenedor-flex */
+.contenedor-flex>article {
+    width: 300px;
+    height: 500px;
+    display: flex;
+    flex-flow: column;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 20px;
+    gap: 20px;
+    background: var(--gradiente-header);
+    border-radius: 16px;
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.5);
+}
+
+/* ESTILOS PARA LOS ELEMENTOS p CONTENIDOS EN article QUE SON HIJOS DIRECTOS DE .contenedor-flex */
+.contenedor-flex>article p {
+    font-size: 1.7rem;
+    text-align: center;
+    color: var(--color-secundario);
+}
+
+/* ESTILOS PARA LOS ELEMENTOS p CON CLASE .titulo-largo CONTENIDOS EN article QUE SON HIJOS
+   DIRECTOS DE .contenedor-flex */
+.contenedor-flex>article p.titulo-largo {
+    font-size: 1.3rem;
+}
+
+/* ESTILOS PARA LOS ELEMENTOS img QUE SON HIJOS DIRECTOS DE UN article QUE ES HIJO DIRECTO DE UN .contenedor-flex */
+.contenedor-flex>article>img {
+    width: 80%;
+    border-radius: 20px;
+    box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.5);
+    transition: all .5s;
+}
+
+/* ESTILOS PARA LOS article QUE SON HERMANOS DE UN ELEMENTO img */
+img+article {
+    height: 10%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* ESTILOS PARA LOS ELEMENTOS img QUE SON HIJOS DIRECTOS DE UN article QUE ES HIJO DIRECTO DE UN .contenedor-flex
+   CUANDO EL CURSOR DEL RATÓN PASA SOBRE ELLOS */
+.contenedor-flex>article>img:hover {
+    transform: translateY(-20px);
+    cursor: pointer;
+}
+
+/* ESTILOS PARA LOS h2 CUANDO EL CURSOR DEL RATÓN PASA SOBRE ELLOS */
+h2:hover {
+    cursor: pointer;
+}
+
+/* ESTILOS PARA LOS ELEMENTOS section QUE SON HERMANOS DE UN h2 */
+h2+section {
+    display: none;
+}
+
+/* ESTILOS PARA LOS ELEMENTOS section QUE SON HERMANOS DE UN h2 CUANDO TIENE LA CLASE .activo ASOCIADA */
+h2+section.activo {
+    display: block;
+}

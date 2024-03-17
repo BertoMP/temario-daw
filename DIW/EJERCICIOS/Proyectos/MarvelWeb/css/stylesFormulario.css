@@ -1,0 +1,82 @@
+/* ESTABLECE ESTILOS SOBRE EL CONTENEDOR main */
+main {
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+/* ESTABLECE ESTILOS SOBRE EL CONTENEDOR .formulario-registro */
+.formulario-registro {
+    margin: 2%;
+    width: 90%;
+    max-width: 800px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--bgColor-cards);
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    padding: 30px;
+}
+
+/* ESTILOS PARA LOS ENCABEZADOS H2 DEL CONTENEDOR .formulario-registro */
+.formulario-registro h2 {
+    font-family: var(--fuente-encabezado-formulario);
+    text-transform: uppercase;
+    text-align: center;
+    letter-spacing: 2px;
+    font-size: 3rem;
+    margin-bottom: 20px;
+}
+
+/* ESTABLECE ESTILOS AL FORMULARIO */
+.formulario-registro form {
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+/* ESTABLECE ESTILOS A LAS ETIQUETAS label DEL FORMULARIO */
+.formulario-registro label {
+    font-family: var(--fuente-marvel);
+    font-size: 2rem;
+    color: var(--color-secundario);
+    text-align: center;
+    font-weight: bold;
+    text-transform: uppercase;
+    display: block;
+}
+
+/* ESTABLECE ESTILOS PARA LOS ELEMENTOS input DEL FORMULARIO */
+.formulario-registro input {
+    text-align: center;
+    font-family: 'Poppins', sans-serif;
+    width: 100%;
+    padding: 10px;
+    font-size: 1.2rem;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+/* ESTABLECE ESTILOS PARA LOS BOTONES DEL FORMULARIO */
+.formulario-registro button {
+    width: 100%;
+    background-color: var(--bgColor-boton-formulario);
+    border-radius: 16px;
+    color: var(--color-secundario);
+    padding: 10px 20px;
+    height: 50px;
+    font-size: 1.5rem;
+    border: none;
+    cursor: pointer;
+    transition: all 1000ms;
+}
+
+/* ESTABLECE ESTILOS PARA LOS BOTONES DEL FORMULARIO CUANDO SE PASA EL CURSOR POR ENCIMA */
+.formulario-registro button:hover {
+    background-color: var(--bgColor-boton-formulario-hover);
+    color: var(--color-terciario);
+}

@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="description" content="Responsive design testing for the masses">
+	<title>carousel</title>
+	<style>
+		*{vertical-align:top;}
+		body{padding:20px;font-family:sans-serif;overflow-y:scroll;}
+		h2{margin:0 0 20px 0;}
+		#frames{overflow-x:scroll;width:100%;margin-bottom:10px;padding-bottom:20px;}
+		.frame{margin-right:20px;float:left;}
+		.frame:last-child{margin-right:0;}
+		.frame img{display:none;vertical-align:middle;}
+		iframe{border:solid 1px #000;}
+		.widthOnly {height:580px;}
+		.widthOnly h2 span{display:none;}
+		.widthOnly iframe{height:500px;}
+		br{clear:both}
+	</style>
+</head>
+<body>
+  <h1>carousel</h1>
+	<div id="frames">
+		<div>
+			<div class="frame">
+				<h2>240 x 320 (xs)</h2>
+				<iframe src="../ejemplos/carousel/index.html" seamless width="255" height="320"></iframe>
+			</div>
+			<div class="frame">
+				<h2>320 x 240 (xs)</h2>
+				<iframe src="../ejemplos/carousel/index.html" seamless width="335" height="240"></iframe>
+			</div>
+			<br />
+			<br />
+			<div id="f3" class="frame">
+				<h2>480 x 640 (xs)</h2>
+				<iframe src="../ejemplos/carousel/index.html" seamless width="495" height="640"></iframe>
+			</div>
+			<div id="f3" class="frame">
+				<h2>640 x 480 (xs)</h2>
+				<iframe src="../ejemplos/carousel/index.html" seamless width="655" height="480"></iframe>
+			</div>
+			<br />
+			<br />
+			<div id="f4" class="frame">
+				<h2>768 x 1024 (sm)</h2>
+				<iframe src="../ejemplos/carousel/index.html" seamless width="783" height="1024"></iframe>
+			</div>
+			<br />
+			<br />
+			<div id="f5" class="frame">
+				<h2>1024 x 768 (md)</h2>
+				<iframe src="../ejemplos/carousel/index.html" seamless width="1039" height="768"></iframe>
+			</div>
+			<br />
+			<br />
+			<div id="f5" class="frame">
+				<h2>1200 x 1024 (lg)</h2>
+				<iframe src="../ejemplos/carousel/index.html" seamless width="1215" height="1024"></iframe>
+			</div>
+		</div>
+	</div>
+</body>
+</html>

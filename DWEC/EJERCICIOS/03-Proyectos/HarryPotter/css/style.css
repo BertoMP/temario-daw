@@ -1,0 +1,217 @@
+/* ESTILO DEL body */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background: url("../assets/images/hogwarts-min.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* ESTILO PARA LOS h2 */
+h2 {
+    font-family: var(--fuente-tematica);
+    text-align: center;
+    width: 80%;
+    font-size: 3rem;
+    color: goldenrod;
+    letter-spacing: 1px;
+    text-shadow:
+            1px 1px 1px rgba(0, 0, 0, .5),
+            2px 2px 2px rgba(0, 0, 0, .5),
+            3px 3px 3px rgba(0, 0, 0, .5);
+}
+
+/* ESTILO PARA LOS section DENTRO DE main */
+main>section {
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+/* ESTILO PARA LOS section DENTRO DE section */
+section>section {
+    background: url("../assets/images/background-min.jpg");
+    background-size: cover;
+    background-position: center;
+    background-clip: border-box;
+    height: 930px;
+    width: 1000px;
+    text-align: center;
+    padding: 20px;
+    border-radius: 10px;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+/* ESTILO PARA LOS img */
+img {
+    width: 200px;
+    margin-bottom: 20px;
+}
+
+/* ESTILO PARA LOS label */
+label {
+    display: inline;
+    font-size: 1.3rem;
+}
+
+/* ESTILO PARA LOS form */
+form {
+    height: 400px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+/* ESTILO PARA LOS article EXCEPTO EL SEGUNDO article DESDE EL FINAL */
+article:not(article:nth-last-of-type(2)) {
+    display: flex;
+    flex-flow: column nowrap;
+}
+
+/* ESTILO PARA LOS article */
+article {
+    margin-bottom: 20px;
+}
+
+/* ESTILO PARA LOS input[type="text"], input[type="checkbox"], button */
+input[type="text"],
+input[type="checkbox"],
+button {
+    width: 420px;
+    text-align: center;
+    margin-bottom: 10px;
+    border-radius: 1.7em;
+    border: 1px solid #ccc;
+}
+
+/* ESTILO PARA LOS input */
+input {
+    font-size: 1rem;
+    padding: 16px;
+}
+
+/* ESTILO PARA LOS input[type="checkbox"] */
+input[type="checkbox"] {
+    width: auto;
+}
+
+/* ESTILO PARA LOS button */
+button {
+    font-size: 1.3rem;
+    background-color: #007bff;
+    color: #fff;
+    padding: 1em;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+/* ESTILO PARA LOS button AL PASAR EL CURSOR SOBRE ELLOS */
+button:hover {
+    filter: brightness(120%);
+}
+
+/* ESTILO PARA LOS div>button */
+div>button {
+    height: 3.7em;
+    margin-bottom: 0;
+    opacity: .8;
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.5);
+    transition: .5s all;
+    background: url("../assets/images/background-buttons.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: black;
+    font-family: 'Papyrus', sans-serif;
+    font-weight: bold;
+    font-size: 1.4em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* ESTILO PARA LOS div>button AL PASAR EL CURSOR SOBRE ELLOS */
+div>button:hover {
+    opacity: 1;
+    filter: brightness(110%);
+}
+
+/* ESTILO PARA LOS div */
+div {
+    display: grid;
+    grid-template-rows: repeat(2, 1fr);
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2em;
+}
+
+/* ESTILO PARA LOS section > p */
+section > p {
+    font-size: 1.3rem;
+    text-align: center;
+    padding: 20px;
+    border-radius: 16px;
+    color: var(--color-blanco);
+}
+
+/* ESTILO PARA LOS video */
+video {
+    width: 80%;
+    max-width: 700px;
+}
+
+/* ESTILO PARA LOS ELEMENTOS CON CLASE access-denied */
+.access-denied {
+    color: #ee4343;
+}
+
+/* ESTILO PARA LOS ELEMENTOS CON CLASE access-granted */
+.access-granted {
+    background-color: green;
+}
+
+/* ESTILO PARA LOS ELEMENTOS CON CLASE invalid */
+.invalid {
+    background-color: #f57a7a;
+}
+
+/* ESTILO PARA LOS small */
+small {
+    display: block;
+}
+
+/* MEDIA-QUERY PARA PANTALLAS DE HASTA 1050px */
+@media screen and (max-width: 1050px) {
+    section>section {
+        width: 800px;
+    }
+
+    div {
+        grid-template-rows: repeat(1, 1fr);
+        grid-template-columns: repeat(1, 1fr);
+    }
+}
+
+/* MEDIA-QUERY PARA PANTALLAS DE HASTA 900px */
+@media screen and (max-width: 900px) {
+    section>section {
+        width: 450px;
+    }
+
+    h2 {
+        font-size: 2.5rem;
+    }
+}

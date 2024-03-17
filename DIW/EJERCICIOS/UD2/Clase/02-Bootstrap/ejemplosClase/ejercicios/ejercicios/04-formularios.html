@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Formularios</title>
+
+    <!-- Bootstrap -->
+    <link href="../../bootstrap-4.0.0-beta/dist/css/bootstrap.min.css" rel="stylesheet">
+
+</head>
+
+<body>
+
+    <div class="container">
+
+        <h1>Formularios</h1>
+
+        <h2>Básico</h2>
+
+        <form role="form">
+            <div class="">
+                <label for="exampleInputEmail1">Email address</label>
+                <input type="email" class="" id="exampleInputEmail1" placeholder="Enter email">
+            </div>
+            <div class="">
+                <label for="exampleInputPassword1">Password</label>
+                <input type="password" class="" id="exampleInputPassword1" placeholder="Password">
+            </div>
+            <div class="">
+                <label>
+                    <input type="checkbox"> Remember me
+                </label>
+            </div>
+            <button type="submit" class="btn btn-secondary">Sign in</button>
+        </form>
+
+        <h2>form-inline</h2>
+
+        <form class="" role="form">
+            <div class="">
+                <label class="sr-only" for="exampleInputEmail3">Email address</label>
+                <input type="email" class="" id="exampleInputEmail3" placeholder="Enter email">
+            </div>
+            <div class="">
+                <label class="sr-only" for="exampleInputPassword3">Password</label>
+                <input type="password" class="" id="exampleInputPassword3" placeholder="Password">
+            </div>
+            <div class="form-check">
+                <label class="form-check-label">
+                    <input class="form-check-input" type="checkbox"> Remember me
+                </label>
+            </div>
+            <button type="submit" class="btn btn-secondary">Sign in</button>
+        </form>
+
+        <h2>form-horizontal</h2>
+
+        <form role="form">
+            <div class="">
+                <label for="inputEmail3" class="col-sm-2 col-form-label">Email</label>
+                <div class="col-sm-10">
+                    <input class="" id="inputEmail3" placeholder="Enter Email" type="email">
+                </div>
+            </div>
+            <div class="">
+                <label for="inputPassword3" class="col-sm-2 col-form-label">Password</label>
+                <div class="col-sm-10">
+                    <input class="" id="inputPassword3" placeholder="Password" type="password">
+                </div>
+            </div>
+            <div class="">
+                <div class="offset-sm-2 col-sm-10">
+                    <div class="form-check">
+                        <label class="form-check-label">
+                            <input class="form-check-input" type="checkbox"> Remember me
+                        </label>
+                    </div>
+                </div>
+            </div>
+            <div class="">
+                <div class="offset-sm-2 col-sm-10">
+                    <button type="submit" class="btn btn-secondary">Sign in</button>
+                </div>
+            </div>
+        </form>
+
+        <h2>checkbox y radiobouttons</h2>
+
+        <div class="">
+            <label>
+                <input type="checkbox" value="check1" checked> checked
+            </label>
+        </div>
+        <div class=" disabled">
+            <label>
+                <input type="checkbox" value="check2" disabled> disabled
+            </label>
+        </div>
+
+        <div class="">
+            <label>
+                <input type="radio" name="optionsRadios" id="optionsRadios1" value="option1" checked> checked
+            </label>
+        </div>
+        <div class=" disabled">
+            <label>
+                <input type="radio" name="optionsRadios" id="optionsRadios3" value="option3" disabled> disabled
+            </label>
+        </div>
+
+        <h2>checkbox y radiobouttons inline</h2>
+
+        <div class="form-check">
+            <label class="form-check-label">
+                <input class="form-check-input" type="checkbox" id="inlineCheckbox1" value="option1"> 1
+            </label>
+          </div>
+        <div class="form-check">
+            <label class="form-check-label">
+                <input class="form-check-input" type="checkbox" id="inlineCheckbox2" value="option2"> 2
+            </label>
+        </div>
+        <div class="form-check disabled">
+            <label class="form-check-label">
+                <input class="form-check-input" type="checkbox" id="inlineCheckbox3" value="option3" disabled> 3
+            </label>
+        </div>
+        <br />
+        <div class="form-check">
+            <label class="form-check-label">
+                <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1"> 1
+            </label>
+        </div>
+        <div class="form-check">
+            <label class="form-check-label">
+                <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2"> 2
+            </label>
+        </div>
+        <div class="form-check disabled">
+            <label class="form-check-label">
+                <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio3" value="option3" disabled> 3
+            </label>
+        </div>
+        
+        <h2>Validaciones con .is-valid y .is-invalid</h2>
+
+        <form>
+            <div class="row">
+                <div class="col">
+                    <label for="validationServer01">Ok</label>
+                    <input type="text" class="form-control" id="validationServer01" placeholder="First name" value="Ok" required>
+                </div>
+                <div class="col-md-6 mb-3">
+                    <label for="validationServer03">Ko</label>
+                    <input type="text" class="form-control" id="validationServer03" placeholder="Ko" required>
+                    <div class="invalid-feedback">Introduce un valor</div>
+                </div>
+            </div>
+        </form>
+
+        <h2>Validaciones 'custom' con .was-validated</h2>
+
+        <form class="">
+
+            <label class="custom-control custom-checkbox">
+                <input type="checkbox" class="custom-control-input" required>
+                <span class="custom-control-indicator"></span>
+                <span class="custom-control-description">Obligatorio</span>
+            </label>
+            
+            <div class="custom-controls-stacked d-block my-3">
+                <label class="custom-control custom-radio">
+                    <input id="radioStacked1" name="radio-stacked" type="radio" class="custom-control-input" required>
+                    <span class="custom-control-indicator"></span>
+                    <span class="custom-control-description">Obligatorio uno</span>
+                </label>
+                <label class="custom-control custom-radio">
+                    <input id="radioStacked2" name="radio-stacked" type="radio" class="custom-control-input" required>
+                    <span class="custom-control-indicator"></span>
+                    <span class="custom-control-description">u otro</span>
+                </label>
+            </div>
+            
+            <select class="custom-select d-block my-3" required>
+                <option value="">Open this select menu</option>
+                <option value="1">One</option>
+                <option value="2">Two</option>
+                <option value="3">Three</option>
+            </select>
+            
+            <label class="custom-file">
+                <input type="file" id="file" class="custom-file-input" required>
+                <span class="custom-file-control"></span>
+            </label>
+        </form>
+
+        <h2>Elementos 'custom' sin .was-validated</h2>
+        
+        <form>
+
+            <label class="custom-control">
+                <input type="checkbox" class="custom-control-input" required>
+                <span class="custom-control-indicator"></span>
+                <span class="custom-control-description">Obligatorio</span>
+            </label>
+            
+            <div class="custom-controls-stacked d-block my-3">
+                <label class="custom-controlo">
+                    <input id="radioStacked1" name="radio-stacked" type="radio" class="custom-control-input" required>
+                    <span class="custom-control-indicator"></span>
+                    <span class="custom-control-description">Obligatorio uno</span>
+                </label>
+                <label class="custom-control">
+                    <input id="radioStacked2" name="radio-stacked" type="radio" class="custom-control-input" required>
+                    <span class="custom-control-indicator"></span>
+                    <span class="custom-control-description">u otro</span>
+                </label>
+            </div>
+            
+            <select class="d-block my-3" required>
+                <option value="">Open this select menu</option>
+                <option value="1">One</option>
+                <option value="2">Two</option>
+                <option value="3">Three</option>
+            </select>
+            
+            <label class="">
+                <input type="file" id="file" class="custom-file-input" required>
+                <span class="custom-file-control"></span>
+            </label>
+        </form>
+
+        <h2>Tamaños</h2>
+
+        <input class="form-control" type="text" placeholder=".form-control-lg">
+        <input class="" type="text" placeholder="Default input">
+        <input class="form-control" type="text" placeholder=".form-control-sm">
+
+        <br />
+
+        <select class="form-control">
+            <option>Large select</option>
+        </select>
+        <select class="">
+            <option>Default select</option>
+        </select>
+        <select class="form-control">
+            <option>Small select</option>
+        </select>
+    </div>
+
+
+</body>
+
+</html>

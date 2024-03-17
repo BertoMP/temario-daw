@@ -1,0 +1,219 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f8f9fa;
+    color: #495057;
+    margin: 0;
+}
+
+header {
+    background-color: #343a40;
+    padding: 15px;
+    color: #fff;
+    text-align: center;
+}
+
+nav {
+    background-color: #007bff;
+    padding: 10px;
+    display: flex;
+    justify-content: space-around;
+}
+
+nav[role="navigation"] {
+    flex-flow: column nowrap;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.2rem;
+}
+
+nav p {
+    text-align: center;
+    padding: 20px;
+}
+
+div.hidden span.relative {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+div.hidden span.relative a,
+div.hidden span.relative span.relative {
+    margin-left: 10px;
+}
+
+nav[role="navigation"]>div:first-child>span,
+span[aria-disabled="true"] svg {
+    cursor: not-allowed;
+}
+
+nav a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav span {
+    color: black;
+    font-weight: bold;
+}
+
+nav p {
+    color: black;
+}
+
+section {
+    padding: 20px;
+}
+
+h2 {
+    margin-bottom: 10px;
+    color: #007bff;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 30px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+th, td {
+    border: 1px solid #dee2e6;
+    padding: 12px;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+th {
+    background-color: #343a40;
+    color: #fff;
+}
+
+a {
+    color: #0066cc;
+}
+
+a:hover {
+    text-decoration: none;
+    color: #004080;
+}
+
+form {
+    margin-top: 20px;
+}
+
+input {
+    padding: 8px;
+}
+
+button {
+    padding: 10px;
+    background-color: #28a745;
+    color: #fff;
+    border: 1px solid #007bff;
+    cursor: pointer;
+    border-radius: 16px;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #218838;
+}
+
+svg {
+    width: 50px;
+    cursor: pointer;
+    display: flex;
+}
+
+.message {
+    padding: 10px;
+    border-radius: 5px;
+    display: inline-block;
+}
+
+.success {
+    background-color: #d1e7dd;
+    color: #155724;
+}
+
+.error {
+    background-color: #f1d7da;
+    color: #721c24;
+}
+
+.inputField {
+    display: flex;
+    align-items: center;
+    flex-flow: row nowrap;
+    gap: 20px;
+}
+
+.inputField>article {
+    display: flex;
+    flex-flow: row nowrap;
+    width: 400px;
+}
+
+.inputField>article>label,
+.inputField>article>input {
+    display: block;
+    width: 50%;
+}
+
+.btn-editBook {
+    display: inline-block;
+    padding: 8px 12px;
+    background-color: #007bff;
+    color: #fff;
+    text-decoration: none;
+    border: 1px solid #007bff;
+    border-radius: 4px;
+    transition: background-color 0.3s ease;
+}
+
+.btn-editBook:hover {
+    background-color: #0056b3;
+    border-color: #0056b3;
+}
+
+.btn-deleteBook {
+    display: inline-block;
+    padding: 8px 12px;
+    background-color: #dc3545;
+    color: #fff;
+    text-decoration: none;
+    border: 1px solid #dc3545;
+    border-radius: 4px;
+    transition: background-color 0.3s ease;
+}
+
+.btn-deleteBook:hover {
+    background-color: #c82333;
+    border-color: #c82333;
+}
+
+.btn-goBack,
+.btn-addBook {
+    display: inline-block;
+    padding: 10px 15px;
+    background-color: #28a745;
+    color: #fff;
+    text-decoration: none;
+    border: 1px solid #28a745;
+    border-radius: 4px;
+    transition: background-color 0.3s ease;
+}
+
+.btn-goBack:hover,
+.btn-addBook:hover {
+    background-color: #218838;
+    border-color: #218838;
+}

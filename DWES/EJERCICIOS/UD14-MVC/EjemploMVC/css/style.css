@@ -1,0 +1,441 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #a48852;
+}
+
+a, button, input[type='submit'] {
+    transition: .5s all;
+}
+
+h1 {
+    padding: 20px;
+}
+
+header {
+    background-color: #333;
+    color: white;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header a {
+    color: white;
+    text-decoration: none;
+    margin-right: 10px;
+}
+
+header h1 {
+    margin: 0;
+}
+
+header a.logout {
+    background-color: #4CAF50;
+    padding: 8px 12px;
+    border-radius: 3px;
+}
+
+header a.logout:hover {
+    background-color: #45a049;
+}
+
+.login {
+    max-width: 300px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+.login p {
+    margin-bottom: 20px;
+    font-size: 14px;
+    color: #333;
+    text-align: center;
+}
+
+.login form {
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.login form article {
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+.login label {
+    font-size: 14px;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 5px;
+}
+
+.login input {
+    width: 100%;
+    padding: 8px;
+    font-size: 14px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+}
+
+.login input[type="submit"] {
+    background-color: #4CAF50;
+    color: #fff;
+    cursor: pointer;
+    padding: 10px;
+    border: none;
+    border-radius: 3px;
+}
+
+.login input[type="submit"]:hover {
+    background-color: #45a049;
+}
+
+.login .not-valid-access {
+    color: red;
+    font-weight: bold;
+}
+
+.list-data {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #b0d7e5;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+.list-data > div {
+    margin-bottom: 20px;
+}
+
+.list-data a {
+    color: #d75e11;
+    text-decoration: none;
+    margin-right: 10px;
+}
+
+.list-data hr {
+    border: 1px solid #ddd;
+}
+
+.list-data p {
+    font-size: 16px;
+    color: #333;
+}
+
+.list-data section {
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.list-data article {
+    display: flex;
+    align-items: center;
+}
+
+.list-data label {
+    display: block;
+}
+
+.list-data button {
+    background-color: #d98146;
+    color: white;
+    padding: 8px 12px;
+    border: none;
+    cursor: pointer;
+    border-radius: 3px;
+}
+
+.list-data button:hover {
+    background-color: #e05e10;
+}
+
+.list-data button:disabled {
+    background-color: #aaaaaa;
+    cursor: not-allowed;
+}
+
+.list-data select {
+    padding: 8px;
+    font-size: 14px;
+    text-align: center;
+}
+
+.list-data form {
+    display: flex;
+    flex-flow: column nowrap;
+    gap: 10px;
+    margin-top: 10px;
+}
+
+.list-data h5 {
+    margin: 0;
+    color: #333;
+    font-size: 18px;
+}
+
+.list-data div:not(p+div, div+div, .list-data>div:first-child) {
+    margin: 20px 10px;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 3px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+}
+
+.list-data a.selected {
+    font-weight: bold;
+    font-size: 1.4rem;
+}
+
+.list-data a.create-note {
+    background-color: #4CAF50;
+    color: white;
+    padding: 8px 12px;
+    border-radius: 3px;
+    text-decoration: none;
+}
+
+.list-data a.edit-note {
+    background-color: #008CBA;
+    color: white;
+    padding: 8px 12px;
+    border-radius: 3px;
+    text-decoration: none;
+}
+
+.list-data a.delete-note {
+    background-color: #FF6347;
+    color: white;
+    padding: 8px 12px;
+    border-radius: 3px;
+    text-decoration: none;
+}
+
+.list-data a.create-note:hover {
+    background-color: #45a049;
+}
+
+.list-data a.edit-note:hover {
+    background-color: #00779e;
+}
+
+.list-data a.delete-note:hover {
+    background-color: #d14735;
+}
+
+.access-denied {
+    max-width: 400px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+.access-denied p {
+    font-size: 16px;
+    color: #333;
+    text-align: center;
+}
+
+.access-denied a {
+    color: #008CBA;
+    text-decoration: none;
+}
+
+.access-denied a:hover {
+    text-decoration: underline;
+}
+
+.confirm-delete {
+    max-width: 500px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+.confirm-delete .form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.confirm-delete .alert {
+    margin-bottom: 20px;
+    padding: 10px;
+    background-color: #ffc107;
+    border: 1px solid #e0a800;
+    border-radius: 3px;
+}
+
+.confirm-delete .alert b {
+    margin-right: 5px;
+}
+
+.confirm-delete .btn {
+    padding: 10px;
+    margin: 5px;
+    cursor: pointer;
+    border-radius: 3px;
+}
+
+.confirm-delete .btn-danger {
+    background-color: #d9534f;
+    color: white;
+    border: none;
+}
+
+.confirm-delete .btn-outline-success {
+    background-color: #5cb85c;
+    color: white;
+    border: none;
+    text-decoration: none;
+}
+
+.confirm-delete .btn-danger,
+.confirm-delete .btn-outline-success {
+    width: 200px;
+    font-size: 1.2rem;
+    text-align: center;
+}
+
+.confirm-delete .btn-danger:hover {
+    background-color: #b91f1a;
+}
+
+.confirm-delete .btn-outline-success:hover {
+    background-color: #137c13;
+}
+
+.edit-create-form {
+    max-width: 500px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+.edit-create-form div {
+    margin-bottom: 20px;
+}
+
+.edit-create-form label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.edit-create-form input,
+.edit-create-form textarea {
+    width: 100%;
+    padding: 8px;
+    font-size: 14px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+}
+
+.edit-create-form textarea {
+    white-space: pre-wrap;
+}
+
+.edit-create-form input[type="submit"],
+.edit-create-form a {
+    display: inline-block;
+    padding: 10px;
+    margin-right: 10px;
+    text-decoration: none;
+    color: #fff;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+.edit-create-form input[type="submit"] {
+    background-color: #008CBA;
+    border: none;
+}
+
+.edit-create-form input[type="submit"]:hover {
+    background-color: #265d73;
+}
+
+.edit-create-form a {
+    background-color: #aaa;
+}
+
+.edit-create-form a:hover {
+    background-color: #666;
+}
+
+.edit-create-form input[type="submit"],
+.edit-create-form a {
+    width: 200px;
+    text-align: center;
+}
+
+.edit-create-form article {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-evenly;
+}
+
+.edit-create-form div {
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    gap: 10px;
+}
+
+.complete-delete {
+    max-width: 500px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: #f2f2f2;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+.complete-delete .alert {
+    margin-bottom: 20px;
+    padding: 15px;
+    border-radius: 3px;
+    text-align: center;
+}
+
+.complete-delete .alert p {
+    margin: 0;
+}
+
+.complete-delete .alert a {
+    color: #fff;
+    text-decoration: none;
+    margin-top: 10px;
+    display: inline-block;
+    padding: 8px 12px;
+    background-color: #218838;
+    border: 1px solid #1e7e34;
+    border-radius: 3px;
+}
+
+.complete-delete .alert a:hover {
+    background-color: #1e7e34;
+}

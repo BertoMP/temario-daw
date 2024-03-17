@@ -1,0 +1,68 @@
+/* Implementación de fuente de texto interna */
+
+@font-face {
+    font-family: 'brushed';
+    font-style: normal;
+    font-weight: 400;
+    src: url('../fonts/Mighty\ Brush\ Demo.ttf');
+}
+
+@font-face {
+    font-family: 'Roboto thin';
+    font-style: normal;
+    font-weight: 100;
+    src: url('../fonts/Roboto-Thin.ttf');
+}
+
+/* Implementación de fuente de texto externa */
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+
+/* Color de selección de textos */
+
+*::selection {
+    background-color: darkmagenta;
+    color: white;
+}
+
+/* Empleo de fuente externa en toda la página */
+
+body {
+    font-family: 'Roboto thin', sans-serif;
+    font-weight: 100;
+}
+
+/* Empleo de fuente interna en encabezados h1 */
+
+h1 {
+    font-family: 'brushed', sans-serif;
+    font-size: 32px;
+}
+
+/* Propiedades más utilizadas para textos */
+
+p {
+    font-size: 22px; /* Normalmente se emplea medidas rem */
+    line-height: 1.4;
+}
+
+p.cita {
+    font-style: italic;
+    font-weight: 700;
+    text-align: center;
+    color: darkmagenta;
+}
+
+p.sombreado {
+    text-shadow: 2px -2px 4px grey;
+    font-size: 36px;
+    text-align: center;
+}
+
+p.subrayado {
+    /* text-decoration-line: underline;
+    text-decoration-color: firebrick;
+    text-decoration-style: wavy; */
+    text-decoration: firebrick underline wavy; /* Shorthand de las anteriores */
+}

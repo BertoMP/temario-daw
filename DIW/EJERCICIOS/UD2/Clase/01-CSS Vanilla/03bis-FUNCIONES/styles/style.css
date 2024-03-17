@@ -1,0 +1,92 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    --size-image: 112px;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+    background-color: #424546;
+    line-height: 1.4;
+    font-size: 1.1em;
+}
+
+ul {
+    list-style-type: square;
+    margin: 10px 30px;
+}
+
+li:nth-child(odd) {
+    color: rgb(148, 116, 18);
+}
+
+li:nth-child(even) {
+    color: rgb(20, 80, 100);
+}
+
+li:nth-child(6) {
+    color: rgb(100, 90, 140);
+}
+
+img {
+    display: inline-block;
+    margin: 20px;
+    background-image: url(../images/imagenWalter.png);
+    width: var(--size-image);
+    height: var(--size-image);
+    background-size: cover;
+}
+
+img:nth-of-type(4) {
+    border: 4px solid rgb(20, 80, 100);
+}
+
+img:nth-of-type(3) {
+    clip-path: circle(50px at 50% 50%);
+}
+
+img:nth-of-type(1):hover {
+    filter: brightness(140%);
+}
+
+img:nth-of-type(2):hover {
+    filter: grayscale(150%);
+}
+
+img:nth-of-type(3):hover {
+    filter: invert(100%);
+}
+
+img:nth-of-type(4):hover {
+    filter: contrast(200%);
+}
+
+img:nth-of-type(5):hover {
+    filter: sepia(400%);
+}
+
+img:nth-of-type(6):hover {
+    filter: saturate(200%)
+}
+
+img:not(:nth-last-child(4)) {
+    border: 2px solid red;
+}
+
+div::after {
+    content: attr(data-autor);
+    text-align: center;
+    font-style: italic;
+}
+
+.gradiente {
+    height: 100px;
+    background: linear-gradient(to right,
+            #FF5733 0%,
+            #6E36CF 50%,
+            #33FF88 100%);
+}

@@ -1,0 +1,32 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #424546;
+    line-height: 1.4;
+    font-size: 1.1em;
+    color: #bbb;
+}
+
+.container {
+    max-width: min(80%, 800px);
+
+    margin: 100px auto;
+    height: 500px;
+    background-color: rgb(56, 56, 33);
+}
+
+nav {
+    background-color: rgb(82, 59, 29);
+    padding: 2rem max(2em, (100% - 20em) / 2);
+}
+
+h1 {
+    text-align: center;
+    font-family: system-ui, serif;
+    font-size: clamp(1.8rem, 5vw, 3rem);
+}
+

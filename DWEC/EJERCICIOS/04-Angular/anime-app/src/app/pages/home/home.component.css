@@ -1,0 +1,50 @@
+input {
+  padding: 16px;
+  font-size: 16px;
+  border-radius: 16px;
+  border: 1px solid #3498db;
+  margin-bottom: 10px;
+}
+
+.filter {
+  background-color: var(--main-color);
+  padding: 20px;
+}
+
+.anime-list {
+  background: var(--gradient);
+  min-height: 50vh;
+  padding: 20px;
+}
+
+button {
+  background-color: var(--secondary-color);
+  color: white;
+  padding: 16px;
+  margin-left: 10px;
+  cursor: pointer;
+  border-radius: 16px;
+  border: none;
+  transition: all 0.3s ease;
+}
+
+button:hover {
+  background-color: var(--btn-hover-color);
+}
+
+p {
+  margin: 5px 0;
+}
+
+p.results-message {
+  font-weight: bold;
+}
+
+p.no-results {
+  font-weight: bold;
+  color: red;
+}
+
+h2 {
+  padding: 20px 0px;
+}

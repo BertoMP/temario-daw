@@ -1,0 +1,31 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+h1 {
+    margin: 40px;
+    text-align: center;
+    color: tomato;
+    font-size: 40px;
+}
+
+img {
+    max-width: 100%;
+}
+
+.portrait {
+    display: none;
+}
+
+@media (max-width: 440px) {
+    .portrait {
+        display: block;
+        margin: 0 auto;
+    }
+
+    .landscape {
+        display: none;
+    }
+}

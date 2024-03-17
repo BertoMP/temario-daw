@@ -1,0 +1,22 @@
+:root {
+    --fuente-tematica: "Monster", fantasy;
+    --color-principal: #da0d0d;
+    --color-blanco: #fff;
+    --boton-hover: #690f0f;
+    --icono-audio-color: #195A22FF;
+    --icono-no-audio-color: #FC3232FF;
+    --formulario: rgba(117, 101, 101, 0.3);
+}
+
+@font-face {
+    font-family: "Monster";
+    src: url("../font/melted-monster.ttf") format("TrueType");
+}
+
+body {
+    font-family: Arial, sans-serif;
+}
+
+h2, h3 {
+    font-family: var(--fuente-tematica);
+}

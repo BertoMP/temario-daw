@@ -1,0 +1,33 @@
+.card {
+    width: 360px;
+    height: 440px;
+    border-radius: 15px;
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+    padding: 20px;
+    margin: 20px;
+    cursor: pointer;
+}
+
+.card:hover {
+    box-shadow: 4px 4px 6px rgba(0, 0, 0, 0.3);
+}
+
+.card-2 {
+    width: 360px;
+    height: 440px;
+    border-radius: 15px;
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.15), 
+                -2px -2px 4px rgba(0, 0, 0, 0.15),
+                -2px 2px 4px rgba(0, 0, 0, 0.15),
+                2px -2px 4px rgba(0, 0, 0, 0.15);
+    padding: 20px;
+    margin: 20px;
+    cursor: pointer;
+}
+
+.card-2:hover {
+    box-shadow: 4px 4px 6px rgba(0, 0, 0, 0.15), 
+                -4px -4px 6px rgba(0, 0, 0, 0.15),
+                -4px 4px 6px rgba(0, 0, 0, 0.15),
+                4px -4px 6px rgba(0, 0, 0, 0.15);
+}

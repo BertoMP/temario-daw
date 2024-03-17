@@ -1,0 +1,31 @@
+body {
+	height: 97vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.parent {
+	background: lightgray;
+	min-height: 400px;
+	width: 400px;
+	display: grid;
+	/* grid-template-columns: repeat(3, 100px);
+	grid-template-rows: repeat(3, 100px); */
+	grid-template: repeat(3, 100px) / repeat(3, 100px);
+	/* align-items: center;
+	justify-items: center; */
+	/* align-content: center;
+	justify-content: center; */
+	place-content: center;
+	gap: 10px;
+}
+
+.item {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background: indigo;
+	font-size: 2rem;
+	color: white;
+}

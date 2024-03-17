@@ -1,0 +1,75 @@
+body {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    display: inline-grid;
+    place-items: center;
+    width: 100%;
+}
+
+button#botonInicio {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+button#botonInicio:hover {
+    background-color: #45a049;
+}
+
+p {
+    font-weight: bold;
+    font-size: larger;
+}
+
+.oculto {
+    visibility: hidden;
+}
+
+.simon {
+    position: relative;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+#containerBotones {
+    background-color: black;
+    border-radius: 50%;
+    display: inline-grid;
+    grid-gap: 20px;
+    grid-template-columns: auto auto;
+    padding: 30px;
+}
+
+.boton {
+    width: 200px;
+    height: 200px;
+	border-radius: 100% 0 0;
+    cursor: pointer;
+}
+
+.boton:active,
+.activo {
+    filter: brightness(150%);
+}
+
+#verde {
+    background-color: #00B294;   
+}
+
+#rojo {
+    background-color: #D83B01;
+    rotate: 90deg;
+}
+
+#amarillo {
+    background-color: #FFB900;
+    rotate: -90deg;
+}
+
+#azul {
+    background-color: #0078D7;
+    rotate: -180deg;
+}

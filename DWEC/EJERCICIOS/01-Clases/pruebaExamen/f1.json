@@ -1,0 +1,156 @@
+{
+    "pilotos": [
+        {
+            "nombre": "Lewis Hamilton",
+            "equipo": "Mercedes",
+            "numero": 44,
+            "nacionalidad": "británico"
+        },
+        {
+            "nombre": "Max Verstappen",
+            "equipo": "Red Bull Racing",
+            "numero": 33,
+            "nacionalidad": "neerlandés"
+        },
+        {
+            "nombre": "Sebastian Vettel",
+            "equipo": "Aston Martin",
+            "numero": 5,
+            "nacionalidad": "alemán"
+        },
+        {
+            "nombre": "Charles Leclerc",
+            "equipo": "Ferrari",
+            "numero": 16,
+            "nacionalidad": "monegasco"
+        },
+        {
+            "nombre": "Valtteri Bottas",
+            "equipo": "Alfa Romeo Racing",
+            "numero": 77,
+            "nacionalidad": "finlandés"
+        },
+        {
+            "nombre": "Fernando Alonso",
+            "equipo": "Alpine",
+            "numero": 14,
+            "nacionalidad": "español"
+        },
+        {
+            "nombre": "Lando Norris",
+            "equipo": "McLaren",
+            "numero": 4,
+            "nacionalidad": "británico"
+        },
+        {
+            "nombre": "Esteban Ocon",
+            "equipo": "Alpine",
+            "numero": 31,
+            "nacionalidad": "francés"
+        },
+        {
+            "nombre": "Daniel Ricciardo",
+            "equipo": "McLaren",
+            "numero": 3,
+            "nacionalidad": "australiano"
+        },
+        {
+            "nombre": "Kimi Räikkönen",
+            "equipo": "Alfa Romeo Racing",
+            "numero": 7,
+            "nacionalidad": "finlandés"
+        }
+    ],
+    "escuderias": [
+        {
+            "nombre": "Mercedes",
+            "pais": "Alemania",
+            "titulos_constructores": 8,
+            "pilotos_destacados": [
+                "Lewis Hamilton",
+                "Valtteri Bottas"
+            ]
+        },
+        {
+            "nombre": "Red Bull Racing",
+            "pais": "Reino Unido",
+            "titulos_constructores": 4,
+            "pilotos_destacados": [
+                "Max Verstappen",
+                "Sergio Pérez"
+            ]
+        },
+        {
+            "nombre": "Ferrari",
+            "pais": "Italia",
+            "titulos_constructores": 16,
+            "pilotos_destacados": [
+                "Sebastian Vettel",
+                "Charles Leclerc"
+            ]
+        },
+        {
+            "nombre": "Aston Martin",
+            "pais": "Reino Unido",
+            "titulos_constructores": 0,
+            "pilotos_destacados": [
+                "Sebastian Vettel",
+                "Lance Stroll"
+            ]
+        },
+        {
+            "nombre": "Alfa Romeo Racing",
+            "pais": "Suiza",
+            "titulos_constructores": 2,
+            "pilotos_destacados": [
+                "Valtteri Bottas",
+                "Kimi Räikkönen"
+            ]
+        },
+        {
+            "nombre": "Alpine",
+            "pais": "Francia",
+            "titulos_constructores": 0,
+            "pilotos_destacados": [
+                "Fernando Alonso",
+                "Esteban Ocon"
+            ]
+        },
+        {
+            "nombre": "McLaren",
+            "pais": "Reino Unido",
+            "titulos_constructores": 8,
+            "pilotos_destacados": [
+                "Lando Norris",
+                "Daniel Ricciardo"
+            ]
+        },
+        {
+            "nombre": "Haas",
+            "pais": "Estados Unidos",
+            "titulos_constructores": 0,
+            "pilotos_destacados": [
+                "Mick Schumacher",
+                "Nikita Mazepin"
+            ]
+        },
+        {
+            "nombre": "Williams",
+            "pais": "Reino Unido",
+            "titulos_constructores": 9,
+            "pilotos_destacados": [
+                "George Russell",
+                "Nicholas Latifi"
+            ]
+        },
+        {
+            "nombre": "AlphaTauri",
+            "pais": "Italia",
+            "titulos_constructores": 1,
+            "pilotos_destacados": [
+                "Pierre Gasly",
+                "Yuki Tsunoda"
+            ]
+        }
+    ]
+}

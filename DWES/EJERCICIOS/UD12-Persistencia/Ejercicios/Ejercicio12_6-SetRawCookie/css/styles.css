@@ -1,0 +1,99 @@
+:root {
+    --body-bgColor: rgba(158, 145, 145);
+    --section-bgColor: rgba(236, 174, 228);
+    --button1-bgColor: rgb(176, 176, 241);
+    --button1-hover-bgColor: rgb(151, 151, 250);
+    --button2-bgColor: rgb(233, 167, 167);
+    --button2-hover-bgColor: rgb(247, 135, 135);
+    --button-hover-color: rgb(240, 240, 240);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: var(--body-bgColor);
+    width: 80%;
+    margin: auto;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+h1 {
+    text-transform: uppercase;
+    text-align: center;
+}
+
+main,
+section,
+form,
+p {
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+}
+
+main {
+    height: 100vh;
+    justify-content: center;
+}
+
+section {
+    justify-content: space-evenly;
+    width: 400px;
+    height: 250px;
+    margin-top: 2%;
+    background-color: var(--section-bgColor);
+    border-radius: 16px;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
+}
+
+form {
+    width: 100%;
+    flex-flow: row nowrap;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+button {
+    border: none;
+    width: 41%;
+    padding: 3%;
+    border-radius: 16px;
+    transition: all 0.5s;
+    font-size: 1.2rem;
+}
+
+button:first-of-type {
+    background-color: var(--button1-bgColor);
+}
+
+button:last-of-type {
+    background-color: var(--button2-bgColor)
+}
+
+button:hover {
+    color: var(--button-hover-color);
+    cursor: pointer;
+}
+
+button:first-of-type:hover {
+    background-color: var(--button1-hover-bgColor);
+}
+
+button:last-of-type:hover {
+    background-color: var(--button2-hover-bgColor);
+}
+
+p {
+    width: 80%;
+    text-align: center;
+    font-size: 1.5rem;
+    height: 100px;
+    justify-content: center;
+}
+
+span {
+    font-size: 3rem;
+}

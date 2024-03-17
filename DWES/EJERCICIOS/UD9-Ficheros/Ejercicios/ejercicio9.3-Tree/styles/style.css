@@ -1,0 +1,24 @@
+ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+ul li {
+    padding: 4px;
+}
+
+ul li ul {
+    margin-left: 20px;
+}
+
+ul li::before {
+    content: "\25B6"; /* Unicode character for right-pointing triangle */
+    margin-right: 5px;
+    display: inline-block;
+    transition: transform 0.4s;
+}
+
+ul li.collapsed::before {
+    transform: rotate(90deg);
+}

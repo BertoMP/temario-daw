@@ -1,0 +1,62 @@
+:root {
+    --alto-contenedor: 300px;
+    --padding: 2em;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    color: #bbb;
+    background-color: #424546;
+    line-height: 1.4;
+    font-size: 1.1em;
+}
+
+#contenedor-izq {
+    background-color: rgb(28, 112, 77);
+    height: var(--alto-contenedor);
+    float: left;
+    width: 50%;
+    /* padding: var(--padding); */
+    position: relative;
+    background-image: url(../images/tux.png);
+    background-size: 50px;
+    background-repeat: no-repeat;
+    background-position: calc(100% - 30px) calc(100% - 30px);
+}
+
+#contenedor-der {
+    background-color: rgb(184, 16, 100);
+    height: calc(var(--alto-contenedor) * 2);
+    float: right;
+    width: 50%;
+}
+
+/* #contenedor-izq > div {
+    background-color: rgb(104, 16, 100);
+    width: 20%;
+    height: 10px;
+    position: absolute;
+    left: calc(var(--padding) - 10px);
+} */
+
+#contenedor-izq > div {
+    background-color: rgb(182, 115, 27);
+    width: 100px;
+    height: calc(var(--alto-contenedor) - 30px - 50px);
+}
+
+#contenedor-izq > div:nth-child(1) {
+    position: absolute;
+    left: calc(100% / 3 - 100px / 2);
+}
+
+#contenedor-izq > div:nth-child(2) {
+    position: absolute;
+    left: calc(100% * 2 / 3 - 100px / 2);
+}

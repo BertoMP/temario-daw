@@ -1,0 +1,15 @@
+.caja-1 {
+    width: 400px;
+    height: 200px;
+    margin: 40px auto; /*Centra en CSS*/
+    border-color: blue red green orange;
+    border-width: 8px 6px 10px 12px;
+    border-style: solid dotted dashed double;
+}
+
+.avatar {
+    width: 250px;
+    height: 250px;
+    border: 4px solid crimson;
+    border-radius: 50%;
+}

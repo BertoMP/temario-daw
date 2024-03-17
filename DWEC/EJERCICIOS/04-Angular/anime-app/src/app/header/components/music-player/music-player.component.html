@@ -1,0 +1,39 @@
+<section class="music-player">
+  <article class="song-info">
+    <section>
+      <p>{{ actualSong.name }}</p>
+      <p class="hiragana">{{ actualSong.hiraganaTitle }}</p>
+      <p>{{ actualSong.anime }}</p>
+    </section>
+    <section>
+      <img src="/assets/image/{{ actualSong.img }}" alt="Foto de {{ actualSong.anime }}">
+    </section>
+  </article>
+  <article class="song-controls">
+    <audio [src]="songUrl" autoplay
+           #audioPlayer
+           (timeupdate)="onTimeUpdate()"
+           (ended)="onNext()"></audio>
+    <i class="fa-solid fa-backward-step" (click)="onPrev()"></i>
+
+    @if (isPause || isStop) {
+      <i class="fa-solid fa-play" (click)="onPlay()"></i>
+    } @else {
+      <i class="fa-solid fa-pause" (click)="onPause()"></i>
+    }
+
+    <i class="fa-solid fa-stop" (click)="onStop()"></i>
+    <i class="fa-solid fa-forward-step" (click)="onNext()"></i>
+    <input type="range" [(ngModel)]="volumen" (input)="onSetVolume()">
+  </article>
+
+  @if (!isStop) {
+    <article class="progress">
+      <progress max="100"
+                #progressElement
+                [value]="isFinite(currentTimePercentage) ? currentTimePercentage : 0"
+                (click)="onProgressBarClick($event)"></progress>
+      <p>{{ formatTime(currentTime) }} / {{ formatTime(duration) }}</p>
+    </article>
+  }
+</section>

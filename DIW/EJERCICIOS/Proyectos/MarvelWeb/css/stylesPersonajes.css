@@ -1,0 +1,167 @@
+/* ESTILOS PARA EL main DE LA PÁGINA Y PARA LOS section QUE SON HIJOS DIRECTOS DE ÉL */
+main,
+main>section {
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+
+    margin: 10px;
+}
+
+/* ESTILO ESPECÍFICO PARA LOS ELEMENTOS section QUE SON HIJOS DIRECTOS DE main */
+main>section {
+    margin: 40px;
+}
+
+/* ESTILO PARA LOS ENCABEZADOS h2 DE LA PÁGINA */
+h2 {
+    font-family: var(--fuente-marvel);
+    font-size: 6rem;
+}
+
+/* ESTILO PARA LOS ENCABEZADOS h3 DE LA PÁGINA */
+h3 {
+    font-family: var(--fuente-marvel);
+    font-size: 2rem;
+    color: var(--color-secundario);
+}
+
+/* ESTILO PARA LOS ELEMENTOS .contenedor-grid QUE FUNCIONA COMO CONTENEDOR GRID */
+.contenedor-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 200px);
+    gap: 20px;
+}
+
+/* ESTILO PARA LOS SECTION CONTENIDOS EN .contenedor-grid */
+.contenedor-grid section {
+    width: 100%;
+    display: flex;
+    flex-flow: column;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 20px;
+
+    background-color: white;
+    border-radius: 16px;
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.5);
+}
+
+/* ESTILO PARA LOS ELEMENTOS article QUE SON HIJOS DIRECTOS DE section QUE SON HIJOS DIRECTOS .contenedor-grid */
+.contenedor-grid>section>article {
+    width: 100%;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* ESTILO PARA LOS ELEMENTOS img CONTENIDOS EN .contenedor-grid */
+.contenedor-grid img {
+    width: 100%;
+    padding: 10%;
+    filter: drop-shadow(5px 5px 10px rgba(0, 0, 0, 0.5));
+    transition: all 1000ms;
+}
+
+/* ESTILO PARA LOS ELEMENTOS img CONTENIDOS EN .contenedor-grid CUANDO SE PASA EL CURSOR POR ENCIMA */
+.contenedor-grid img:hover {
+    cursor: pointer;
+    animation: pendulo 5s infinite linear;
+}
+
+/* ESTILO PARA LOS ELEMENTOS CON CLASE .spiderman */
+.spiderman {
+    background: var(--gradiente-spiderman);
+}
+
+/* ESTILO PARA LOS ELEMENTOS CON CLASE .ironman */
+.ironman {
+    background: var(--gradiente-ironman);
+}
+
+/* ESTILO PARA LOS ELEMENTOS CON CLASE .thor */
+.thor {
+    background: var(--gradiente-thor);
+}
+
+/* ESTILO PARA LOS ELEMENTOS CON CLASE .deadpool */
+.deadpool {
+    background: var(--gradiente-deadpool);
+}
+
+/* ESTILO PARA LOS ELEMENTOS CON CLASE .antman */
+.antman {
+    background: var(--gradiente-antman);
+}
+
+/* ESTILO PARA LOS ELEMENTOS CON CLASE .wolverine */
+.wolverine {
+    background: var(--gradiente-wolverine);
+}
+
+/* ESTILO PARA LOS ELEMENTOS CON CLASE .capitan-america */
+.capitan-america {
+    background: var(--gradiente-capitan-america);
+}
+
+/* ESTILO PARA LOS ELEMENTOS CON CLASE .black-widow */
+.black-widow {
+    background: var(--gradiente-black-widow);
+}
+
+/* ESTILO PARA LOS ELEMENTOS CON CLASE .thanos */
+.thanos {
+    background: var(--gradiente-thanos);
+}
+
+/* ESTILO PARA LOS ELEMENTOS CON CLASE .ultron */
+.ultron {
+    background: var(--gradiente-ultron);
+}
+
+/* ESTILO PARA LOS ELEMENTOS CON CLASE .magneto */
+.magneto {
+    background: var(--gradiente-magneto);
+}
+
+/* ESTILO PARA LOS ELEMENTOS CON CLASE .venom */
+.venom {
+    background: var(--gradiente-venom);
+}
+
+/* ANIMACIÓN CON NOMBRE pendulo:
+    - Establece un escalado a 1.4.
+    - Establece un movimiento de rotación 0 - 33 - (-33) - 0 para dar la sensación de péndulo. */
+@keyframes pendulo {
+    0% {
+        transform: scale(1.4) rotate(0deg);
+    }
+
+    25% {
+        transform: scale(1.4) rotate(33deg);
+    }
+
+    75% {
+        transform: scale(1.4) rotate(-33deg);
+    }
+
+    100% {
+        transform: scale(1.4) rotate(0deg);
+    }
+}
+
+/* MEDIA-QUERY PARA PANTALLAS DE HASTA 1000px */
+@media (max-width: 1000px) {
+    .contenedor-grid {
+        grid-template-columns: repeat(3, 200px);
+    }
+}
+
+/* MEDIA-QUERY PARA PANTALLAS DE HASTA 680px */
+@media (max-width: 650px) {
+    .contenedor-grid {
+        grid-template-columns: repeat(2, 200px);
+    }
+}

@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Enlace al icono de la web -->
+    <link rel="shortcut icon" href="./assets/images/icono.ico" type="image/x-icon">
+    <!-- Enlace a la hoja de estilos de reset -->
+    <link rel="stylesheet" href="./css/reset.css">
+    <!-- Enlace a la hoja de estilos de theme -->
+    <link rel="stylesheet" href="./css/theme.css">
+    <!-- Enlace a la hoja de estilos de encabezado y pie de página -->
+    <link rel="stylesheet" href="./css/stylesHeaderFooter.css">
+    <!-- Enlace a la hoja de estilos específica para la página de inicio -->
+    <link rel="stylesheet" href="css/stylesIndex.css">
+    <!-- Establece una preconexión con el dominio 'https://fonts.googleapis.com' -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <!-- Establece una preconexión con el dominio 'https://fonts.gstatic.com' y permite el acceso desde
+    diferentes orígenes (crossorigin) -->
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <!-- Enlaza una hoja de estilos desde Google Fonts que contiene la fuente 'Poppins' -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+    <title>HOME</title>
+</head>
+<body>
+    <!-- CABECERA DE LA WEB -->
+    <header>
+        <!-- Logo de Marvel con un enlace a la página de inicio -->
+        <a href="./index.html">
+            <img src="./assets/images/logoMarvel.png" alt="Logo de Marvel">
+        </a>
+        <!-- Barra de navegación -->
+        <nav>
+            <a href="./index.html">Inicio</a>
+            <a href="./pages/peliculas.html">Películas</a>
+            <a href="./pages/series.html">Series</a>
+            <a href="./pages/personajes.html">Personajes</a>
+            <a href="./pages/login.html">Login</a>
+        </nav>
+        <!-- Menú de hamburguesa para dispositivos móviles-->
+        <section class="menu-hamburguesa" id="menu">
+            <!-- Span que contienen las líneas que componen el menú hamburguesa -->
+            <span class="linea-top"></span>
+            <span class="linea-mid"></span>
+            <span class="linea-bot"></span>
+        </section>
+        <!-- Menú lateral para dispositivos móviles -->
+        <aside class="menu-lateral" id="aside">
+            <a href="./index.html">Inicio</a>
+            <a href="./pages/peliculas.html">Películas</a>
+            <a href="./pages/series.html">Series</a>
+            <a href="./pages/personajes.html">Personajes</a>
+            <a href="./pages/login.html">Login</a>
+            <img src="./assets/images/imagenLateral.png" alt="imagen avengers">
+        </aside>
+    </header>
+    <!-- CONTENIDO PRINCIPAL DE LA WEB -->
+    <main>
+        <!-- Sección portada para una transición de imágenes-->
+        <section class="portada">
+            <article></article>
+            <article></article>
+            <article></article>
+            <article></article>
+            <article></article>
+            <!-- Logo de Marvel para la sección portada -->
+            <section>
+                <img src="./assets/images/logoMarvel.png" alt="Logo de Marvel">
+            </section>
+        </section>
+        <!-- Sección de las zonas de la web-->
+        <section class="zonas-web">
+            <h2>Secciones</h2>
+            <!-- Sección que funcionará como contenedor grid -->
+            <section class="contenedor-zonas">
+                <!-- Card para la sección películas -->
+                <article>
+                    <!-- Imagen de la card -->
+                    <article>
+                        <img src="./assets/images/imgPeliculas.webp" alt="Imagen de peliculas">
+                    </article>
+                    <!-- Contenido de la card -->
+                    <section>
+                        <!-- Encabezado de la card -->
+                        <h3>Películas</h3>
+                        <!-- Descripción de la sección web -->
+                        <p>Aquí encontrarás información de las películas del UCM.</p>
+                        <!-- Enlace a la sección web -->
+                        <a href="./pages/peliculas.html">Ir a películas</a>
+                    </section>
+                </article>
+                <!-- Card para la sección series -->
+                <article>
+                    <article>
+                        <img src="./assets/images/imgSeries.webp" alt="Imagen de series">
+                    </article>
+                    <section>
+                        <h3>Series</h3>
+                        <p>Aquí encontrarás información de las series del UCM.</p>
+                        <a href="./pages/series.html">Ir a series</a>
+                    </section>
+                </article>
+                <!-- Card para la sección personajes -->
+                <article>
+                    <article>
+                        <img src="./assets/images/imgPersonajes.webp" alt="Imagen de personajes">
+                    </article>
+                    <section>
+                        <h3>Personajes</h3>
+                        <p>Aquí encontrarás información de los personajes.</p>
+                        <a href="./pages/personajes.html">Ir a personajes</a>
+                    </section>
+                </article>
+                <!-- Card para la sección login -->
+                <article>
+                    <article>
+                        <img src="./assets/images/imgLogin.png" alt="Imagen del escudo de Avengers">
+                    </article>
+                    <section>
+                        <h3>Login</h3>
+                        <p>Únete a la iniciativa Vengadores.</p>
+                        <a href="./pages/login.html">Ir al login</a>
+                    </section>
+                </article>
+            </section>
+        </section>
+    </main>
+    <!-- PIE DE PÁGINA DE LA WEB-->
+    <footer>
+        <!-- Información de contacto -->
+        <section>
+            <p>Contacto: <a href="mailto:contact@marvel.com">contact@marvel.com</a></p>
+        </section>
+        <!-- Redes sociales -->
+        <section class="social-media">
+            <!-- Icono y enlace a la página de Facebook de Marvel -->
+            <a href="https://www.facebook.com/Marvel/" target="_blank" aria-label="facebook">
+                <i class="fa-brands fa-square-facebook facebook"></i>
+            </a>
+
+            <!-- Icono y enlace a la página de X de Marvel-->
+            <a href="https://www.x.com/Marvel/" target="_blank" aria-label="x">
+                <i class="fa-brands fa-x-twitter x"></i>
+            </a>
+
+            <!-- Icono y enlace a la página de Instagram de Marvel -->
+            <a href="https://www.instagram.com/marvel/" target="_blank" aria-label="instagram">
+                <i class="fa-brands fa-square-instagram instagram"></i>
+            </a>
+        </section>
+        <!-- Copyright -->
+        <section>
+            <p>Copyright &copy; 2023 Marvel</p>
+        </section>
+        <!-- Enlace a la biblioteca de Font Awesome para los iconos -->
+        <script src="https://kit.fontawesome.com/aca8e1ed37.js" crossorigin="anonymous"></script>
+        <!-- Enlace al archivo JavaScript que contiene la funcionalidad del menú lateral -->
+        <script src="./js/script-aside.js"></script>
+    </footer>
+</body>
+</html>

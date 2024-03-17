@@ -1,0 +1,119 @@
+:root {
+    --body-bgColor: rgba(158, 145, 145);
+    --section-bgColor: rgba(236, 174, 228);
+    --button-bgColor: rgb(176, 176, 241);
+    --button-hover-bgColor: rgb(151, 151, 250);
+    --button-hover-color: rgb(240, 240, 240);
+    --select-border-color: rgb(204, 204, 204);
+    --option-bgColor: rgb(255, 255, 255);
+    --option-color: rgb(51, 51, 51);
+    --a-bgColor: rgb(128, 208, 228);
+    --a-color: rgb(0, 0, 0);
+    --a-hover-bgColor: rgb(9, 120, 148);
+    --a-hover-color: rgb(240, 240, 240);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: var(--body-bgColor);
+    width: 80%;
+    margin: auto;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+h1 {
+    text-transform: uppercase;
+    text-align: center;
+}
+
+main,
+section,
+form,
+article {
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+}
+
+main {
+    height: 100vh;
+    justify-content: center;
+}
+
+section {
+    justify-content: space-evenly;
+    width: 300px;
+    height: 150px;
+    margin-top: 2%;
+    background-color: var(--section-bgColor);
+    border-radius: 16px;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
+}
+
+article {
+    width: 100%;
+    flex-flow: row nowrap;
+    justify-content: space-evenly;
+}
+
+form {
+    width: 100%;
+    height: 100%;
+    justify-content: space-evenly;
+}
+
+button {
+    border: none;
+    width: 41%;
+    padding: 3%;
+    border-radius: 16px;
+    transition: all 0.5s;
+    font-size: 1.2rem;
+    margin-top: 5%;
+    background-color: var(--button-bgColor);
+}
+
+button:hover {
+    background-color: var(--button-hover-bgColor);
+    color: var(--button-hover-color);
+    cursor: pointer;
+}
+
+select {
+    width: 200px;
+    padding: 10px;
+    border: 2px solid var(--select-border-color);
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+option {
+    background-color: var(--option-bgColor);
+    color: var(--option-color);
+    padding: 10px;
+}
+
+a {
+    width: 41%;
+    text-align: center;
+    text-decoration: none;
+    background-color: var(--a-bgColor);
+    padding: 10px;
+    color: var(--a-color);
+    border-radius: 16px;
+    display: inline-block;
+    transition: all 0.5s;
+    font-size: 1.2rem;
+    margin-top: 5%;
+}
+
+a:hover {
+    background-color: var(--a-hover-bgColor);
+    color: var(--a-hover-color);
+    cursor: pointer;
+}

@@ -1,0 +1,12 @@
+/* VARIABLES CSS PERSONALIZADAS CONTENIDAS EN :root PARA SU REUTILIZACIÓN */
+:root {
+    /* VARIBLES DE FUENTES*/
+    --fuente-tematica: "Harry-Potter", fantasy;
+}
+
+/* font-face PARA DEFINIR UNA FUENTE PERSONALIZADA LLAMADA Harry-Potter */
+@font-face {
+    font-family: "Harry-Potter";
+    src: url("../assets/fonts/harryPotter.ttf") format("TrueType");
+}
+

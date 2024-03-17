@@ -1,0 +1,81 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Position relative (a dónde debería estar el elemento) */
+
+.caja-1 {
+    width: 300px;
+    height: 200px;
+    background-color: green;
+    position: relative;
+    top: 100px;
+    left: 60px;
+}
+
+.caja-2 {
+    width: 150px;
+    height: 80px;
+    background-color: orange;
+    position: relative;
+    top: -20px;
+    left: -20px;
+}
+
+/* Position fixed (al dispositivo) */
+
+.caja-3 {
+    width: 200px;
+    height: 50px;
+    background-color: chocolate;
+    position: fixed;
+    bottom: 40px;
+    right: 60px;
+}
+
+/* Position absolute (similar a fixed pero referenciado al elemento padre )*/
+/* El contenedor padre debe estar posicionado (al menos relative) */
+
+.caja-4 {
+    width: 400px;
+    height: 200px;
+    margin: 60px auto;
+    background-color: lightgreen;
+    position: relative;
+}
+
+.caja-5 {
+    width: 30px;
+    height: 30px;
+    background-color: crimson;
+    position: absolute;
+    top: -5px;
+    right: -5px;
+}
+
+/* Position sticky (mantiene su posición hasta llegar a los valores proporcionados en 
+los que pasa a fixed) */
+
+h1 {
+    text-align: center;
+}
+
+h1.titulo-sticky {
+    background-color: orange;
+    color: white;
+    padding: 10px 20px;
+    position: sticky;
+    top: 0;
+    left: 0;
+}
+
+h1.titulo-sticky-2 {
+    background-color: green;
+    color: white;
+    padding: 10px 20px;
+    position: sticky;
+    top: 57px;
+    left: 0;
+}

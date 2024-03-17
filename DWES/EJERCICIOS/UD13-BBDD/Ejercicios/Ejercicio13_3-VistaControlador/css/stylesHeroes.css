@@ -1,0 +1,141 @@
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+    background-color: #f5f5f5;
+}
+
+main {
+    width: 80%;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-content: center;
+    text-align: center;
+}
+
+h1 {
+    text-transform: uppercase;
+    text-align: center;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+    border: 1px solid black;
+}
+
+th,
+td {
+    padding: 8px;
+    text-align: center;
+}
+
+tr:nth-child(odd) {
+    background-color: #d2cffa;
+}
+
+tr:nth-child(even) {
+    background-color: #6f8ff8;
+}
+
+tr>td:nth-child(5) {
+    text-align: justify;
+}
+
+th {
+    background-color: #182de9;
+    color: white;
+}
+
+button {
+    padding: 16px;
+    border-radius: 16px;
+    border: none;
+    cursor: pointer;
+    background-color: #99eb9c;
+    color: black;
+    transition: all .5s;
+}
+
+td:last-of-type button {
+    background-color: #f38383;
+}
+
+button:hover:not(th button) {
+    background-color: #45a049;
+    color: white;
+}
+
+td:last-of-type button:hover {
+    background-color: #eb0909;
+}
+
+th button {
+    background-color: #182de9;
+    color: white;
+}
+
+i {
+    font-size: 1rem;
+}
+
+th {
+    width: 16.66%;
+}
+
+th form {
+    display: inline;
+}
+
+th form:last-of-type i {
+    transform: rotateY(180deg);
+}
+
+main a {
+    margin: 0 auto;
+    width: 20%;
+    display: inline-block;
+    text-align: center;
+    text-decoration: none;
+    background-color: rgb(128, 208, 228);
+    padding: 10px;
+    color: rgb(0, 0, 0);
+    border-radius: 16px;
+    transition: all 0.5s;
+}
+
+a:hover {
+    background-color: rgb(9, 120, 148);
+    color: rgb(240, 240, 240);
+    cursor: pointer;
+}
+
+.pulsado {
+    color: red;
+}
+
+.acceso-invalido {
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    background-color: rgb(240, 127, 127);
+    padding: 20px;
+    border-radius: 16px;
+    margin: 20px 0;
+    font-weight: bold;
+    color: rgb(255, 255, 255);
+    width: 470px;
+    gap: 4px;
+}
+
+.acceso-invalido a {
+    text-decoration: none;
+    color: blue;
+    margin-top: 0;
+}

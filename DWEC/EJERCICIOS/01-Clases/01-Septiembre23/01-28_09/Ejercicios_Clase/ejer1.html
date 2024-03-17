@@ -1,0 +1,25 @@
+<!-- Crear un script que permita llamar a una comerBollo() la cual tenga una variable
+     que indique el tipo de bollo. Realizar la estructura de control necesaria para que
+     se imprima por consola el mensaje: "Me he comido la/el (nombre del bollo) número
+     (número de bollo comido)." -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var comerBollo = function() {
+            let tipoBollo = "napolitana";
+            for (let intCont = 0; intCont < 10; intCont++) {
+                console.log(`Me he comido la ${tipoBollo} número ${intCont + 1}.`);
+            }
+        }
+
+        comerBollo();
+    </script>
+</body>
+</html>

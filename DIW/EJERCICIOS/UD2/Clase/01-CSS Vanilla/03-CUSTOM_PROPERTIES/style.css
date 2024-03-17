@@ -1,0 +1,17 @@
+:root {
+    --color-cuerpo: white;
+    --color-barras: grey;
+}
+
+nav {
+    background-color: rgb(167, 112, 112);
+    color: var(--color-barras)
+}
+
+.container {
+    background-color: brown;
+    text-align: left;
+    width: 900px;
+    margin: 0 auto;
+    color: var(--color-cuerpo);
+}

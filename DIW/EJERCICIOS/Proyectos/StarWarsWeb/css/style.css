@@ -1,0 +1,92 @@
+/* ESTILO PARA LOS section, article, div */
+section, article, div {
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+}
+
+/* ESTILO PARA EL video */
+video {
+    width: 80%;
+}
+
+/* ESTILO PARA LOS h3 */
+h3 {
+    font-family: Star-Wars, sans-serif;
+    letter-spacing: 2px;
+    font-size: 2rem;
+    text-align: center;
+}
+
+/* ESTILO PARA LOS h4 */
+h4 {
+    font-size: 1.5rem;
+    margin-top: 20px;
+    text-align: center;
+}
+
+/* ESTILO PARA LOS table, td, th */
+table, td, th {
+    border-collapse: collapse;
+    border: 1px solid white;
+    padding: 10px;
+}
+
+/* ESTILO PARA LOS li */
+li {
+    list-style-type: none;
+    text-align: center;
+    font-size: 1.5rem;
+}
+
+/* ESTILO PARA LOS ul DENTRO DE nav */
+nav ul {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-evenly;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+/* ESTILO PARA LOS a DENTRO DE li DENTRO DE ul DENTRO DE nav */
+nav ul li a {
+    font-family: var(--fuente-star-wars);
+    padding: 20px;
+    font-size: 1.4rem;
+    letter-spacing: 3px;
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+    transition: .5s;
+}
+
+/* ESTILO PARA LOS a DENTRO DE li DENTRO DE ul DENTRO DE nav AL PASAR EL CURSOR SOBRE ELLOS */
+nav ul li a:hover {
+    color: green;
+    background-color: darkred;
+}
+
+/* ESTILO PARA LOS table */
+table {
+    width: 40%;
+}
+
+/* ESTILO PARA LOS img DENTRO DE td */
+td>img {
+    width: 200px;
+}
+
+/* ESTILO PARA LOS td */
+td {
+    text-align: center;
+}
+
+/* ESTILO PARA LOS ELEMENTOS CON CLASE selectedFilm */
+.selectedFilm {
+    font-size: 2rem;
+    font-style: italic;
+    color: yellow;
+    font-weight: bold;
+}

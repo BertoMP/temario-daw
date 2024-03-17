@@ -1,0 +1,61 @@
+:root {
+    --a-bgColor: rgb(128, 208, 228);
+    --a-color: rgb(0, 0, 0);
+    --a-hover-bgColor: rgb(9, 120, 148);
+    --a-hover-color: rgb(240, 240, 240);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    width: 80%;
+    margin: auto;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+main,
+section,
+article {
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+}
+
+main {
+    height: 100vh;
+    justify-content: center;
+}
+
+section {
+    justify-content: space-evenly;
+    width: 400px;
+}
+
+article {
+    width: 100%;
+    flex-flow: row nowrap;
+    justify-content: space-evenly;
+}
+
+a {
+    width: 41%;
+    text-align: center;
+    text-decoration: none;
+    background-color: var(--a-bgColor);
+    padding: 10px;
+    color: var(--a-color);
+    border-radius: 16px;
+    display: inline-block;
+    transition: all 0.5s;
+    font-size: 1.2rem;
+    margin-top: 5%;
+}
+
+a:hover {
+    background-color: var(--a-hover-bgColor);
+    color: var(--a-hover-color);
+    cursor: pointer;
+}

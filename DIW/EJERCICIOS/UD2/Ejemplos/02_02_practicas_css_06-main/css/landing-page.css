@@ -1,0 +1,34 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.hero {
+    width: 100vw;
+    height: 100vh;
+    /* Gradientes CSS
+    Prefijos de proveedores
+    -webkit- Chrome, Safari y todos iOS 
+    -moz- Mozilla Firefox
+    -o- Opera
+    -ms- IE y Edge */
+    /* background: -webkit-linear-gradient(left, #e54eab 30%, #e00d2c);
+    background: -moz-linear-gradient(left, #e54eab 30%, #e00d2c);
+    background: -o-linear-gradient(left, #e54eab 30%, #e00d2c);
+    background: -ms-linear-gradient(left, #e54eab 30%, #e00d2c); */
+    background: -webkit-radial-gradient(circle, #e54eab 30%, #e00d2c);
+    background: -moz-radial-gradient(circle, #e54eab 30%, #e00d2c);
+    background: -o-radial-gradient(circle, #e54eab 30%, #e00d2c);
+    background: -ms-radial-gradient(circle, #e54eab 30%, #e00d2c);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+h1 {
+    font-family: 'Anton', sans-serif;
+    text-align: start;
+    font-size: 40px;
+    color: white
+}

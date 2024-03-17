@@ -1,0 +1,30 @@
+:root {
+    --color-botones: #e7c941;
+    --color-botones-hover: #d37549;
+    --color-enlace: #2e2d2d;
+    --color-enlace-hover: #ffffff;
+    --color-facebook: #1877F2;
+    --color-facebook-hover: #d8dfea;
+    --color-x: #ebeef0;
+    --color-x-hover: #1DA1F2;
+    --color-instagram: #C13584;
+    --color-instagram-hover: #833AB4;
+    --color-fondo-footer: #2e2d2d;
+    --color-texto-footer: #ffffffb2;
+
+    --gradiente-header: linear-gradient(to right,
+            rgb(248, 236, 0) 0%,
+            rgba(255, 166, 0) 50%,
+            rgb(252, 65, 52) 75%,
+            rgb(255, 0, 0) 100%);
+}
+
+@font-face {
+    font-family: 'one-piece';
+    src: url(../fonts/one-piece-font.ttf);
+}
+
+@font-face {
+    font-family: 'texto-principal';
+    src: url(../fonts/Roboto-Regular.ttf);
+}

@@ -1,0 +1,21 @@
+nav {
+  background-color: #333;
+  padding: 10px;
+}
+
+nav a {
+  color: #fff;
+  text-decoration: none;
+  margin-right: 20px;
+  font-weight: bold;
+  font-size: 16px;
+}
+
+nav a:hover {
+  color: #ffcc00;
+}
+
+nav a.active {
+  color: #ffcc00;
+  pointer-events: none;
+}

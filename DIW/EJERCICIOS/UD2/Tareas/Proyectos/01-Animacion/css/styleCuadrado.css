@@ -1,0 +1,59 @@
+:root {
+    --alto-imagen: 50px;
+    --ancho-imagen: 50px;
+
+    --alto-contenedor: 90vh;
+    --ancho-contenedor: 90vw;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+section {
+    height: var(--alto-contenedor);
+    width: var(--ancho-contenedor);
+    background-color: aqua;
+}
+
+div {
+    background: url(../images/pelota.jpg);
+    background-size: 100%;
+    position: relative;
+    border-radius: 50%;
+    width: var(--ancho-imagen);
+    height: var(--alto-imagen);
+}
+
+section div {
+    animation: cuadrado-rectangulo 12s infinite linear;
+}
+
+@keyframes cuadrado-rectangulo {
+    0% {
+        top: 0%;
+        left: 0%;
+    }
+
+    25% {
+        top: 0%;
+        left: calc(100% - var(--ancho-imagen));
+    }
+
+    50% {
+        top: calc(var(--alto-contenedor) - var(--alto-imagen));
+        left: calc(100% - var(--ancho-imagen));
+    }
+
+    75% {
+        top: calc(100% - var(--alto-imagen));
+        left: 0%;
+    }
+
+    100% {
+        top: 0%;
+        left: 0%;
+        transform: rotate(-360deg);
+    }
+}

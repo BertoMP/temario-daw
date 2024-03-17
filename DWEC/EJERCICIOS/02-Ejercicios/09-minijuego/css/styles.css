@@ -1,0 +1,172 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background: linear-gradient(to right, rgb(241, 84, 84), rgb(116, 206, 236));
+}
+
+h2 {
+    text-align: center;
+}
+
+.jugadores {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.jugador {
+    background: lightgoldenrodyellow;
+    padding: 20px;
+    border-radius: 8px;
+    width: 300px;
+}
+
+.areas,
+.contadores {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 20px;
+}
+
+.area1 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100px;
+    height: 100px;
+    background: lightblue;
+    border-radius: 8px;
+    font-size: 5em;
+}
+
+.area2 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100px;
+    height: 100px;
+    background: lightcoral;
+    border-radius: 8px;
+    font-size: 5em;
+}
+
+.contadores> :nth-child(1) {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100px;
+    height: 30px;
+    background: lightgray;
+    border-radius: 8px;
+    font-size: 1em;
+}
+
+.contadores> :nth-child(2) {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100px;
+    height: 30px;
+    background: lightgray;
+    border-radius: 8px;
+    font-size: 1em;
+}
+
+.botones {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.addJugador {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.addJugador * {
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.resumen {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.botones button {
+    margin: 5px;
+}
+
+.info {
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+}
+
+button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #3498db;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #2980b9;
+}
+
+.disabled {
+    opacity: 40%;
+}
+
+.disabled:hover {
+    background-color: #3498db;
+    cursor: auto;
+}
+
+.faltanDatos {
+    color: lightcoral;
+    text-align: center;
+}
+
+.registroValido {
+    color: green;
+    text-align: center;
+}
+
+.musicaActiva {
+    background-color: lightcoral;
+}
+
+.musicaActiva:hover {
+    background-color: rgb(245, 94, 94);
+}
+
+.formulario {
+    width: 400px;
+    background-color: rgb(255, 255, 255);
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    border-radius: 16px;
+}
+
+input {
+    width: 80%;
+    padding: 2%;
+}
+
+.resumen p {
+    background-color: white;
+    padding: 20px;
+    border-radius: 16px;
+    text-align: center;
+    font-weight: bold;
+}

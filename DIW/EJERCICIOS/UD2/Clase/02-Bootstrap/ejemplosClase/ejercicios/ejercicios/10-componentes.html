@@ -1,0 +1,719 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Componentes</title>
+
+    <!-- Bootstrap -->
+    <link href="../../bootstrap-4.0.0-beta/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <style>
+        h2 {
+            margin-bottom: 1.3em;
+            margin-top: 1.3em;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="container">
+
+        <h1>Componentes</h1>
+
+        <h2>Button groups</h2>
+
+        <div class="">
+            <button type="button" class="btn btn-secondary">Left</button>
+            <button type="button" class="btn btn-secondary">Middle</button>
+            <button type="button" class="btn btn-secondary">Right</button>
+        </div>
+
+        <h2>Input groups</h2>
+
+        <div class="">
+            <span class="input-group-addon">@</span>
+            <input type="text" class="form-control" placeholder="Username">
+        </div>
+
+        <br />
+        <br />
+
+        <div class="">
+            <input type="text" class="form-control">
+            <span class="input-group-addon">.00</span>
+        </div>
+
+        <br />
+        <br />
+
+        <div class="">
+            <span class="input-group-addon">$</span>
+            <input type="text" class="form-control">
+            <span class="input-group-addon">.00</span>
+        </div>
+
+        <br />
+        <br />
+
+        <div class="row">
+            <div class="col-lg-6">
+                <div class="">
+                    <span class="input-group-addon">
+              <input type="checkbox">
+            </span>
+                    <input type="text" class="form-control">
+                </div>
+                <!-- /input-group -->
+            </div>
+            <!-- /.col-lg-6 -->
+            <div class="col-lg-6">
+                <div class="">
+                    <span class="input-group-addon">
+              <input type="radio">
+            </span>
+                    <input type="text" class="form-control">
+                </div>
+                <!-- /input-group -->
+            </div>
+            <!-- /.col-lg-6 -->
+        </div>
+        <!-- /.row -->
+
+        <br />
+        <br />
+
+        <div class="row">
+            <div class="col-lg-6">
+                <div class="">
+                    <span class="input-group-btn">
+              <button class="btn btn-secondary" type="button">Go!</button>
+            </span>
+                    <input type="text" class="form-control">
+                </div>
+                <!-- /input-group -->
+            </div>
+            <!-- /.col-lg-6 -->
+            <div class="col-lg-6">
+                <div class="">
+                    <input type="text" class="form-control">
+                    <span class="input-group-btn">
+              <button class="btn btn-secondary" type="button">Go!</button>
+            </span>
+                </div>
+                <!-- /input-group -->
+            </div>
+            <!-- /.col-lg-6 -->
+        </div>
+        <!-- /.row -->
+
+        <br />
+        <br />
+
+        <div class="row">
+            <div class="col-lg-6">
+                <div class="">
+                    <div class="input-group-btn">
+                        <button type="button" class="btn btn-secondary dropdown-toggle" data-toggle="dropdown">Action </button>
+                        <div class="dropdown-menu" role="menu">
+                            <a class="dropdown-item" role="menuitem" href="#">Action</a>
+                            <a class="dropdown-item" role="menuitem" href="#">Another action</a>
+                            <a class="dropdown-item" role="menuitem" href="#">Something else here</a>
+                            <div class="dropdown-divider"></div>
+                            <a class="dropdown-item" role="menuitem" href="#">Separated link</a>
+                        </div>
+                    </div>
+                    <!-- /btn-group -->
+                    <input type="text" class="form-control">
+                </div>
+                <!-- /input-group -->
+            </div>
+            <!-- /.col-lg-6 -->
+            <div class="col-lg-6">
+                <div class="">
+                    <input type="text" class="form-control">
+                    <div class="input-group-btn">
+                        <button type="button" class="btn btn-secondary dropdown-toggle" data-toggle="dropdown">Action </button>
+                        <div class="dropdown-menu dropdown-menu-right" role="menu">
+                            <a class="dropdown-item" role="menuitem" href="#">Action</a>
+                            <a class="dropdown-item" role="menuitem" href="#">Another action</a>
+                            <a class="dropdown-item" role="menuitem" href="#">Something else here</a>
+                            <div class="dropdown-divider"></div>
+                            <a class="dropdown-item" role="menuitem" href="#">Separated link</a>
+                        </div>
+                    </div>
+                    <!-- /btn-group -->
+                </div>
+                <!-- /input-group -->
+            </div>
+            <!-- /.col-lg-6 -->
+        </div>
+        <!-- /.row -->
+
+        <h2>Tabs</h2>
+
+        <ul class="nav" role="tablist">
+            <li class="nav-item"><a class="nav-link active" href="#">Home</a></li>
+            <li class="nav-item"><a class="nav-link" href="#">Help</a></li>
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#">Dropdown</a>
+                <div class="dropdown-menu" role="menu">
+                    <a class="dropdown-item" role="menuitem" href="#">Action</a>
+                    <a class="dropdown-item" role="menuitem" href="#">Another action</a>
+                    <a class="dropdown-item" role="menuitem" href="#">Something else here</a>
+                    <div class="dropdown-divider"></div>
+                    <a class="dropdown-item" role="menuitem" href="#">Separated link</a>
+                </div>
+            </li>
+        </ul>
+
+        <h2>Pills</h2>
+
+        <ul class="nav">
+            <li class="nav-item"><a class="nav-link active" href="#">Home</a></li>
+            <li class="nav-item"><a class="nav-link" href="#">Help</a></li>
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#">Dropdown</a>
+                <div class="dropdown-menu" role="menu">
+                    <a class="dropdown-item" role="menuitem" href="#">Action</a>
+                    <a class="dropdown-item" role="menuitem" href="#">Another action</a>
+                    <a class="dropdown-item" role="menuitem" href="#">Something else here</a>
+                    <div class="dropdown-divider"></div>
+                    <a class="dropdown-item" role="menuitem" href="#">Separated link</a>
+                </div>
+            </li>
+        </ul>
+
+        <h2>Navbars</h2>
+
+        <nav class="navbar-expand-lg navbar-light bg-light">
+            <a class="navbar-brand" href="#">Navbar</a>
+            <button class="" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Link</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link disabled" href="#">Disabled</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="http://example.com" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true"
+                            aria-expanded="false">Dropdown link</a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                            <a class="dropdown-item" href="#">Action</a>
+                            <a class="dropdown-item" href="#">Another action</a>
+                            <a class="dropdown-item" href="#">Something else here</a>
+                        </div>
+                    </li>
+                </ul>
+                <form class="form-inline my-2 my-lg-0">
+                    <input class="form-control mr-sm-2" type="text" placeholder="Search" aria-label="Search">
+                    <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+                </form>
+            </div>
+        </nav>
+
+        <h2>Breadcrumbs</h2>
+
+        <ol class="">
+            <li class="breadcrumb-item"><a href="#">Home</a></li>
+            <li class="breadcrumb-item"><a href="#">Library</a></li>
+            <li class="breadcrumb-item active">Data</li>
+        </ol>
+
+        <br />
+
+        <h2>Pagination</h2>
+
+        <nav aria-label="Page navigation">
+            <ul class="">
+                <li class="page-item disabled">
+                    <a class="page-link" href="#" tabindex="-1" aria-label="Previous">
+                        <span aria-hidden="true">&laquo;</span>
+                        <span class="sr-only">Previous</span>
+                    </a>
+                </li>
+                <li class="page-item active">
+                    <a class="page-link" href="#">1 <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="page-item"><a class="page-link" href="#">2</a></li>
+                <li class="page-item"><a class="page-link" href="#">3</a></li>
+                <li class="page-item"><a class="page-link" href="#">4</a></li>
+                <li class="page-item"><a class="page-link" href="#">5</a></li>
+                <li class="page-item">
+                    <a class="page-link" href="#" aria-label="Next">
+                        <span aria-hidden="true">&raquo;</span>
+                        <span class="sr-only">Next</span>
+                    </a>
+                </li>
+            </ul>
+        </nav>
+
+        <h2>Badges</h2>
+
+        <span class=" badge-primary">Primary</span>
+        <span class=" badge-secondary">Secondary</span>
+        <span class=" badge-success">Success</span>
+        <span class=" badge-danger">Danger</span>
+        <span class=" badge-warning">Warning</span>
+        <span class=" badge-info">Info</span>
+        <span class=" badge-light">Light</span>
+        <span class=" badge-dark">Dark</span>
+
+        <br />
+        <br />
+
+        <button class="btn">
+            Notifications <span class=" badge-secondary">4</span>
+        </button>
+
+        <h2>Pill badges</h2>
+
+        <span class="  badge-primary">Primary</span>
+        <span class="  badge-secondary">Secondary</span>
+        <span class="  badge-success">Success</span>
+        <span class="  badge-danger">Danger</span>
+        <span class="  badge-warning">Warning</span>
+        <span class="  badge-info">Info</span>
+        <span class="  badge-light">Light</span>
+        <span class="  badge-dark">Dark</span>
+
+        <br />
+        <br />
+
+        <button class="btn">
+            Notifications <span class="  badge-secondary">4</span>
+        </button>
+
+        <h2>Jumbotron</h2>
+
+        <div class="">
+            <h1 class="display-3">Hello, world!</h1>
+            <p class="lead">This is a simple hero unit, a simple jumbotron-style component for calling extra attention to featured content
+                or information.</p>
+            <p class="lead">
+                <a class="btn btn-primary btn-lg" href="#" role="button">Learn more</a>
+            </p>
+        </div>
+
+        <h2>Alerts</h2>
+
+        <div class=" alert-primary" role="alert">This is a primary alert—check it out!</div>
+        <div class=" alert-secondary" role="alert">This is a secondary alert—check it out!</div>
+        <div class=" alert-success" role="alert">This is a success alert—check it out!</div>
+        <div class=" alert-danger" role="alert">This is a danger alert—check it out!</div>
+        <div class=" alert-warning" role="alert">This is a warning alert—check it out!</div>
+        <div class=" alert-info" role="alert">This is a info alert—check it out!</div>
+        <div class=" alert-light" role="alert">This is a light alert—check it out!</div>
+        <div class=" alert-dark" role="alert">This is a dark alert—check it out!</div>
+
+        <h2>Progress Bar</h2>
+
+        <div class="">
+            <div class=" " role="progressbar" style="width: 25%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">25%</div>
+        </div>
+
+        <br />
+        <br />
+
+        <div class="">
+            <div class="progress-bar" role="progressbar" style="width: 15%" aria-valuenow="15" aria-valuemin="0" aria-valuemax="100"></div>
+            <div class="progress-bar bg-success" role="progressbar" style="width: 30%" aria-valuenow="30" aria-valuemin="0" aria-valuemax="100"></div>
+            <div class="progress-bar bg-info" role="progressbar" style="width: 20%" aria-valuenow="20" aria-valuemin="0" aria-valuemax="100"></div>
+            <div class="progress-bar bg-warning" role="progressbar" style="width: 10%" aria-valuenow="10" aria-valuemin="0" aria-valuemax="100"></div>
+            <div class="progress-bar bg-danger" role="progressbar" style="width: 10%" aria-valuenow="10" aria-valuemin="0" aria-valuemax="100"></div>
+        </div>
+
+        <br />
+        <br />
+
+        <div class="">
+            <div class=" " role="progressbar" style="width: 10%" aria-valuenow="10" aria-valuemin="0" aria-valuemax="100"></div>
+        </div>
+        <br />
+        <div class="">
+            <div class="  bg-success" role="progressbar" style="width: 25%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+        </div>
+        <br />
+        <div class="">
+            <div class="  bg-info" role="progressbar" style="width: 50%" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
+        </div>
+        <br />
+        <div class="">
+            <div class="  bg-warning" role="progressbar" style="width: 75%" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
+        </div>
+        <br />
+        <div class="">
+            <div class="  bg-danger" role="progressbar" style="width: 100%" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></div>
+        </div>
+
+        <br />
+        <br />
+
+        <div class="">
+            <div class="progress-bar progress-bar-striped" role="progressbar" style="width: 10%" aria-valuenow="10" aria-valuemin="0"
+                aria-valuemax="100"></div>
+        </div>
+        <br />
+        <div class="">
+            <div class="progress-bar progress-bar-striped bg-success" role="progressbar" style="width: 25%" aria-valuenow="25" aria-valuemin="0"
+                aria-valuemax="100"></div>
+        </div>
+        <br />
+        <div class="">
+            <div class="progress-bar progress-bar-striped bg-info" role="progressbar" style="width: 50%" aria-valuenow="50" aria-valuemin="0"
+                aria-valuemax="100"></div>
+        </div>
+        <br />
+        <div class="">
+            <div class="progress-bar progress-bar-striped bg-warning" role="progressbar" style="width: 75%" aria-valuenow="75" aria-valuemin="0"
+                aria-valuemax="100"></div>
+        </div>
+        <br />
+        <div class="">
+            <div class="progress-bar progress-bar-striped bg-danger" role="progressbar" style="width: 100%" aria-valuenow="100" aria-valuemin="0"
+                aria-valuemax="100"></div>
+        </div>
+
+        <h2>List group</h2>
+
+        <div  class="">
+            <a href="#" class=" active">Cras justo odio</a>
+            <a href="#" class=" list-group-item-action">Dapibus ac facilisis in</a>
+            <a href="#" class=" list-group-item-action">Morbi leo risus</a>
+            <a href="#" class=" list-group-item-action">Porta ac consectetur ac</a>
+            <a href="#" class=" list-group-item-action">Vestibulum at eros</a>
+        </div>
+
+        <br />
+        <br />
+
+        <div  class="list-group">
+            <a href="#" class=" list-group-item-action">Dapibus ac facilisis in</a>
+            <a href="#" class=" list-group-item-action list-group-item-primary">This is a primary list group item</a>
+            <a href="#" class=" list-group-item-action list-group-item-secondary">This is a secondary list group item</a>
+            <a href="#" class=" list-group-item-action list-group-item-success">This is a success list group item</a>
+            <a href="#" class=" list-group-item-action list-group-item-danger">This is a danger list group item</a>
+            <a href="#" class=" list-group-item-action list-group-item-warning">This is a warning list group item</a>
+            <a href="#" class=" list-group-item-action list-group-item-info">This is a info list group item</a>
+            <a href="#" class=" list-group-item-action list-group-item-light">This is a light list group item</a>
+            <a href="#" class=" list-group-item-action list-group-item-dark">This is a dark list group item</a>
+        </div>
+
+        <br />
+        <br />
+
+        <div  class="list-group">
+            <a href="#" class=" list-group-item-action flex-column align-items-start active">
+                <div class="d-flex w-100 justify-content-between">
+                    <h5 class="mb-1">List group item heading</h5>
+                    <small>3 days ago</small>
+                </div>
+                <p class="mb-1">Donec id elit non mi porta gravida at eget metus. Maecenas sed diam eget risus varius blandit.</p>
+                <small>Donec id elit non mi porta.</small>
+            </a>
+            <a href="#" class=" list-group-item-action flex-column align-items-start">
+                <div class="d-flex w-100 justify-content-between">
+                    <h5 class="mb-1">List group item heading</h5>
+                    <small class="text-muted">3 days ago</small>
+                </div>
+                <p class="mb-1">Donec id elit non mi porta gravida at eget metus. Maecenas sed diam eget risus varius blandit.</p>
+                <small class="text-muted">Donec id elit non mi porta.</small>
+            </a>
+            <a href="#" class=" list-group-item-action flex-column align-items-start">
+                <div class="d-flex w-100 justify-content-between">
+                    <h5 class="mb-1">List group item heading</h5>
+                    <small class="text-muted">3 days ago</small>
+                </div>
+                <p class="mb-1">Donec id elit non mi porta gravida at eget metus. Maecenas sed diam eget risus varius blandit.</p>
+                <small class="text-muted">Donec id elit non mi porta.</small>
+            </a>
+        </div>
+
+        <h2>Cards</h2>
+
+        <div class="card-outline-primary mb-3">
+            <div class="bg-primary">Card header</div>
+            <div class="">Card body</div>
+            <div class="">Card footer</div>
+        </div>
+
+        <div class="card   mb-3" style="max-width: 20rem;">
+            <div class="card-header">Header</div>
+            <div class="card-body">
+                <h4 class="card-title">Primary card title</h4>
+                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+            </div>
+        </div>
+        <div class="card    mb-3" style="max-width: 20rem;">
+            <div class="card-header">Header</div>
+            <div class="card-body">
+                <h4 class="card-title">Secondary card title</h4>
+                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+            </div>
+        </div>
+        <div class="card    mb-3" style="max-width: 20rem;">
+            <div class="card-header">Header</div>
+            <div class="card-body">
+                <h4 class="card-title">Success card title</h4>
+                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+            </div>
+        </div>
+        <div class="card    mb-3" style="max-width: 20rem;">
+            <div class="card-header">Header</div>
+            <div class="card-body">
+                <h4 class="card-title">Danger card title</h4>
+                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+            </div>
+        </div>
+        <div class="card    mb-3" style="max-width: 20rem;">
+            <div class="card-header">Header</div>
+            <div class="card-body">
+                <h4 class="card-title">Warning card title</h4>
+                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+            </div>
+        </div>
+        <div class="card    mb-3" style="max-width: 20rem;">
+            <div class="card-header">Header</div>
+            <div class="card-body">
+                <h4 class="card-title">Info card title</h4>
+                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+            </div>
+        </div>
+        <div class="card bg-light mb-3" style="max-width: 20rem;">
+            <div class="card-header">Header</div>
+            <div class="card-body">
+                <h4 class="card-title">Light card title</h4>
+                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+            </div>
+        </div>
+        <div class="card   mb-3" style="max-width: 20rem;">
+            <div class="card-header">Header</div>
+            <div class="card-body">
+                <h4 class="card-title">Dark card title</h4>
+                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+            </div>
+        </div>
+
+        <div class="card  mb-3" style="max-width: 20rem;">
+            <div class="card-header">Header</div>
+            <div class="card-body text-primary">
+                <h4 class="card-title">Primary card title</h4>
+                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+            </div>
+        </div>
+        <div class="card  mb-3" style="max-width: 20rem;">
+            <div class="card-header">Header</div>
+            <div class="card-body text-secondary">
+                <h4 class="card-title">Secondary card title</h4>
+                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+            </div>
+        </div>
+        <div class="card  mb-3" style="max-width: 20rem;">
+            <div class="card-header">Header</div>
+            <div class="card-body text-success">
+                <h4 class="card-title">Success card title</h4>
+                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+            </div>
+        </div>
+        <div class="card  mb-3" style="max-width: 20rem;">
+            <div class="card-header">Header</div>
+            <div class="card-body text-danger">
+                <h4 class="card-title">Danger card title</h4>
+                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+            </div>
+        </div>
+        <div class="card  mb-3" style="max-width: 20rem;">
+            <div class="card-header">Header</div>
+            <div class="card-body text-warning">
+                <h4 class="card-title">Warning card title</h4>
+                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+            </div>
+        </div>
+        <div class="card  mb-3" style="max-width: 20rem;">
+            <div class="card-header">Header</div>
+            <div class="card-body text-info">
+                <h4 class="card-title">Info card title</h4>
+                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+            </div>
+        </div>
+        <div class="card  mb-3" style="max-width: 20rem;">
+            <div class="card-header">Header</div>
+            <div class="card-body">
+                <h4 class="card-title">Light card title</h4>
+                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+            </div>
+        </div>
+        <div class="card  mb-3" style="max-width: 20rem;">
+            <div class="card-header">Header</div>
+            <div class="card-body text-dark">
+                <h4 class="card-title">Dark card title</h4>
+                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+            </div>
+        </div>
+
+        <h2>Card Group</h2>
+
+        <div class="">
+            <div class="card">
+                <img class="card-img-top" src="../img/adolfo-sanz-de-diego.jpg" alt="Card image cap">
+                <div class="card-body">
+                    <h4 class="card-title">Card title</h4>
+                    <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content
+                        is a little bit longer.</p>
+                </div>
+                <div class="card-footer">
+                    <small class="text-muted">Last updated 3 mins ago</small>
+                </div>
+            </div>
+            <div class="card">
+                <img class="card-img-top" src="../img/adolfo-sanz-de-diego.jpg" alt="Card image cap">
+                <div class="card-body">
+                    <h4 class="card-title">Card title</h4>
+                    <p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
+                </div>
+                <div class="card-footer">
+                    <small class="text-muted">Last updated 3 mins ago</small>
+                </div>
+            </div>
+            <div class="card">
+                <img class="card-img-top" src="../img/adolfo-sanz-de-diego.jpg" alt="Card image cap">
+                <div class="card-body">
+                    <h4 class="card-title">Card title</h4>
+                    <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This card
+                        has even longer content than the first to show that equal height action.</p>
+                </div>
+                <div class="card-footer">
+                    <small class="text-muted">Last updated 3 mins ago</small>
+                </div>
+            </div>
+        </div>
+
+        <h2>Card Decks</h2>
+
+        <div class="">
+            <div class="card">
+                <img class="card-img-top" src="../img/adolfo-sanz-de-diego.jpg" alt="Card image cap">
+                <div class="card-body">
+                    <h4 class="card-title">Card title</h4>
+                    <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content
+                        is a little bit longer.</p>
+                </div>
+                <div class="card-footer">
+                    <small class="text-muted">Last updated 3 mins ago</small>
+                </div>
+            </div>
+            <div class="card">
+                <img class="card-img-top" src="../img/adolfo-sanz-de-diego.jpg" alt="Card image cap">
+                <div class="card-body">
+                    <h4 class="card-title">Card title</h4>
+                    <p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
+                </div>
+                <div class="card-footer">
+                    <small class="text-muted">Last updated 3 mins ago</small>
+                </div>
+            </div>
+            <div class="card">
+                <img class="card-img-top" src="../img/adolfo-sanz-de-diego.jpg" alt="Card image cap">
+                <div class="card-body">
+                    <h4 class="card-title">Card title</h4>
+                    <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This card
+                        has even longer content than the first to show that equal height action.</p>
+                </div>
+                <div class="card-footer">
+                    <small class="text-muted">Last updated 3 mins ago</small>
+                </div>
+            </div>
+        </div>
+
+        <h2>Card Colums</h2>
+
+        <div class="">
+            <div class="card">
+                <img class="card-img-top" src="../img/adolfo-sanz-de-diego.jpg" alt="Card image cap">
+                <div class="card-body">
+                    <h4 class="card-title">Card title that wraps to a new line</h4>
+                    <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content
+                        is a little bit longer.</p>
+                </div>
+            </div>
+            <div class="card">
+                <img class="card-img-top" src="../img/adolfo-sanz-de-diego.jpg" alt="Card image cap">
+                <div class="card-body">
+                    <h4 class="card-title">Card title</h4>
+                    <p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
+                    <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                </div>
+            </div>
+            <div class="card bg-primary p-3 text-center">
+                <blockquote class="blockquote mb-0">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat.</p>
+                    <footer class="blockquote-footer">
+                        <small>
+                        Someone famous in <cite title="Source Title">Source Title</cite>
+                      </small>
+                    </footer>
+                </blockquote>
+            </div>
+            <div class="card p-3">
+                <blockquote class="blockquote mb-0 card-body">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.</p>
+                    <footer class="blockquote-footer">
+                        <small class="text-muted">
+                            Someone famous in <cite title="Source Title">Source Title</cite>
+                          </small>
+                    </footer>
+                </blockquote>
+            </div>
+            <div class="card text-center">
+                <div class="card-body">
+                    <h4 class="card-title">Card title</h4>
+                    <p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
+                    <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                </div>
+            </div>
+            <div class="card p-3 text-right">
+                <blockquote class="blockquote mb-0">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.</p>
+                    <footer class="blockquote-footer">
+                        <small class="text-muted">
+                        Someone famous in <cite title="Source Title">Source Title</cite>
+                      </small>
+                    </footer>
+                </blockquote>
+            </div>
+            <div class="card">
+                <div class="card-body">
+                    <h4 class="card-title">Card title</h4>
+                    <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This card
+                        has even longer content than the first to show that equal height action.</p>
+                    <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                </div>
+            </div>
+            <div class="card">
+                <img class="card-img" src="../img/adolfo-sanz-de-diego.jpg" alt="Card image">
+            </div>
+        </div>
+
+        <h2>Responsive embed</h2>
+
+        <div class="embed-responsive-16by9">
+            <iframe class="embed-responsive-item" src="http://www.youtube.com/embed/5gBi2DJwd8c" allowfullscreen=""></iframe>
+        </div>
+
+    </div>
+
+</body>
+
+</html>

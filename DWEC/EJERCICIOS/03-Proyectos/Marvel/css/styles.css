@@ -1,0 +1,205 @@
+@font-face {
+    font-family: 'Marvel';
+    src: url(../assets/fonts/ACMESecretAgentBB_Reg.ttf);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Marvel, sans-serif;
+    font-size: 1rem;
+}
+
+h1 {
+    font-size: 3rem;
+    text-align: center;
+}
+
+body {
+    background: url("../assets/img/background.jpg") no-repeat center;
+    background-size: cover;
+    min-height: 100vh;
+}
+
+body, main, article, form {
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+}
+
+label {
+    font-size: 1.3rem;
+}
+
+main {
+    margin: 20px;
+    gap: 20px;
+}
+
+form {
+    padding: 20px;
+    gap: 20px;
+}
+
+form article {
+    gap: 20px;
+}
+
+input {
+    text-align: center;
+    font-size: 2rem;
+    padding: 5px;
+    border-radius: 16px;
+}
+
+.heroSearch {
+    background-color: rgba(255, 255, 255, 80%);
+    border-radius: 16px;
+    width: 400px;
+    padding: 30px;
+}
+
+.heroInfo {
+    visibility: hidden;
+    background-color: rgba(255,255,255, 80%);
+    border-radius: 16px;
+    padding: 30px;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: space-around;
+    gap: 20px;
+}
+
+.character-card {
+    height: 220px;
+    background-color: #980713;
+    border-radius: 16px;
+    padding: 30px;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: space-between;
+    box-shadow: 0 12px 12px rgba(0, 0, 0, 80%);
+}
+
+.character-card p {
+    color: white;
+    text-align: center;
+    font-size: 0.9rem;
+}
+
+.character-card img {
+    height: 100px;
+    transition: all .5s;
+    border-radius: 16px;
+}
+
+.character-card img:hover {
+    cursor: pointer;
+    scale: 1.5;
+    box-shadow: 0 12px 12px rgba(0, 0, 0, 80%);
+    filter: brightness(120%);
+}
+
+.heroList{
+    display: grid;
+    width: 700px;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+}
+
+.heroInfo section:first-of-type:not(.heroList) {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    gap: 100px;
+}
+
+table {
+    width: 400px;
+    border-collapse: collapse;
+    background-color: white;
+}
+
+table img {
+    width: 50%;
+    border-radius: 16px;
+}
+
+th, td {
+    padding: 15px;
+    border: 1px solid #ddd;
+    text-align: center;
+}
+
+tr:first-of-type th {
+    font-size: 1.8rem;
+    background-color: #f2f2f2;
+    color: #333;
+}
+
+.info-field th {
+    letter-spacing: 1px;
+    background-color: #8e8eea;
+    color: white;
+}
+
+.info-field td {
+    font-style: italic;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+button {
+    background-color: #007bff;
+    color: #fff;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:disabled {
+    background-color: #a9c5e7;
+    cursor: not-allowed;
+}
+
+button:hover:not(button:disabled) {
+    background-color: #0056b3;
+}
+
+.btnContainer {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-around;
+}
+
+.btnContainer button:first-of-type {
+    background-color: #ec6e7e;
+    transition: all .5s;
+    color: black;
+}
+
+.btnContainer button:first-of-type:hover {
+    background-color: #7a1422;
+    color: white;
+}
+
+.btnContainer button:nth-of-type(2) {
+    background-color: #06600c;
+    transition: all .5s;
+    color: white;
+}
+
+.btnContainer button:nth-of-type(2):hover {
+    background-color: #82c76e;
+    color: black;
+}
+
+.error {
+    font-size: 1.5rem;
+    color: red;
+    font-weight: bold;
+    text-align: center;
+}

@@ -1,0 +1,28 @@
+:host {
+  display: flex;
+  flex-flow: row nowrap;
+  align-items: center;
+  justify-content: start;
+}
+
+img {
+  width: 100px;
+}
+
+h1 {
+  font-family: var(--title-font);
+  font-size: 3rem;
+  letter-spacing: 3px;
+  text-align: center;
+}
+
+@media (max-width: 750px) {
+  :host {
+    width: 100%;
+    justify-content: center;
+  }
+
+  h1 {
+    display: none;
+  }
+}

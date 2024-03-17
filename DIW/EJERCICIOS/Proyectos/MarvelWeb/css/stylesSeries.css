@@ -1,0 +1,4 @@
+/* ESTILOS PARA LOS ELEMENTOS article QUE SON HIJOS DIRECTOS DE .contenedor-flex */
+.contenedor-flex>article {
+    height: 300px;
+}

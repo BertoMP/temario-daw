@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Enlace al icono de la web -->
+    <link rel="shortcut icon" href="../assets/images/icono.ico" type="image/x-icon">
+    <!-- Enlace a la hoja de estilos de reset -->
+    <link rel="stylesheet" href="../css/reset.css">
+    <!-- Enlace a la hoja de estilos de theme -->
+    <link rel="stylesheet" href="../css/theme.css">
+    <!-- Enlace a la hoja de estilos de encabezado y pie de página -->
+    <link rel="stylesheet" href="../css/stylesHeaderFooter.css">
+    <!-- Enlace a la hoja de estilos específica para la página de formulario -->
+    <link rel="stylesheet" href="../css/stylesFormulario.css">
+    <!-- Establece una preconexión con el dominio 'https://fonts.googleapis.com' -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <!-- Establece una preconexión con el dominio 'https://fonts.gstatic.com' y permite el acceso desde
+    diferentes orígenes (crossorigin) -->
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <!-- Enlaza una hoja de estilos desde Google Fonts que contiene la fuente 'Poppins' -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+    <title>REGISTRO</title>
+</head>
+<body>
+<!-- CABECERA DE LA WEB -->
+<header>
+    <!-- Logo de Marvel con un enlace a la página de inicio -->
+    <a href="../index.html">
+        <img src="../assets/images/logoMarvel.png" alt="Logo de Marvel">
+    </a>
+    <!-- Barra de navegación -->
+    <nav>
+        <a href="../index.html">Inicio</a>
+        <a href="./peliculas.html">Películas</a>
+        <a href="./series.html">Series</a>
+        <a href="./personajes.html">Personajes</a>
+        <a href="./login.html">Login</a>
+    </nav>
+    <!-- Menú de hamburguesa para dispositivos móviles-->
+    <section class="menu-hamburguesa" id="menu">
+        <!-- Span que contienen las líneas que componen el menú hamburguesa -->
+        <span class="linea-top"></span>
+        <span class="linea-mid"></span>
+        <span class="linea-bot"></span>
+    </section>
+    <!-- Menú lateral para dispositivos móviles -->
+    <aside class="menu-lateral" id="aside">
+        <a href="../index.html">Inicio</a>
+        <a href="./peliculas.html">Películas</a>
+        <a href="./series.html">Series</a>
+        <a href="./personajes.html">Personajes</a>
+        <a href="./login.html">Login</a>
+        <img src="../assets/images/imagenLateral.png" alt="imagen avengers">
+    </aside>
+</header>
+<!-- CONTENIDO PRINCIPAL DE LA WEB -->
+<main>
+    <!-- Seccion que va a funcionar como contenedor del formulario -->
+    <section class="formulario-registro">
+        <!-- Elemento form para el envío de datos -->
+        <form action="../index.html" method="POST">
+            <h2>Formulario de Registro</h2>
+            <!-- Contenedor article para el username -->
+            <article>
+                <label for="usuario">Usuario</label>
+                <input type="text" id="usuario" name="usuario">
+            </article>
+            <!-- Contenedor article para la contraseña -->
+            <article>
+                <label for="contrasena">Contraseña</label>
+                <input type="password" id="contrasena" name="contrasena">
+            </article>
+            <!-- Contenedor article para el nombre -->
+            <article>
+                <label for="nombre">Nombre</label>
+                <input type="text" id="nombre" name="nombre">
+            </article>
+            <!-- Contenedor article para el primer apellido -->
+            <article>
+                <label for="apellido1">Apellido 1</label>
+                <input type="text" id="apellido1" name="apellido1">
+            </article>
+            <!-- Contenedor article para el segundo apellido -->
+            <article>
+                <label for="apellido2">Apellido 2</label>
+                <input type="text" id="apellido2" name="apellido2">
+            </article>
+            <!-- Contenedor article para el email -->
+            <article>
+                <label for="correo">Email</label>
+                <input type="email" id="correo" name="correo">
+            </article>
+            <!-- Contenedor article para la dirección -->
+            <article>
+                <label for="direccion">Dirección</label>
+                <input type="text" name="direccion" id="direccion">
+            </article>
+            <!-- Contenedor article para la fecha de nacimiento -->
+            <article>
+                <label for="fecha_nacimiento">Fecha de nacimiento</label>
+                <input type="date" id="fecha_nacimiento" name="fecha_nacimiento">
+            </article>
+            <!-- Contenedor article para el botón de envío -->
+            <article>
+                <button type="submit">Completar registro</button>
+            </article>
+        </form>
+    </section>
+</main>
+<!-- PIE DE PÁGINA DE LA WEB-->
+<footer>
+    <!-- Información de contacto -->
+    <section>
+        <p>Contacto: <a href="mailto:contact@marvel.com">contact@marvel.com</a></p>
+    </section>
+    <!-- Redes sociales -->
+    <section class="social-media">
+        <!-- Icono y enlace a la página de Facebook de Marvel -->
+        <a href="https://www.facebook.com/Marvel/" target="_blank" aria-label="facebook">
+            <i class="fa-brands fa-square-facebook facebook"></i>
+        </a>
+        <!-- Icono y enlace a la página de X de Marvel-->
+        <a href="https://www.x.com/Marvel/" target="_blank" aria-label="x">
+            <i class="fa-brands fa-x-twitter x"></i>
+        </a>
+        <!-- Icono y enlace a la página de Instagram de Marvel -->
+        <a href="https://www.instagram.com/marvel/" target="_blank" aria-label="instagram">
+            <i class="fa-brands fa-square-instagram instagram"></i>
+        </a>
+    </section>
+    <!-- Copyright -->
+    <section>
+        <p>Copyright &copy; 2023 Marvel</p>
+    </section>
+    <!-- Enlace a la biblioteca de Font Awesome para los iconos -->
+    <script src="https://kit.fontawesome.com/aca8e1ed37.js" crossorigin="anonymous"></script>
+    <!-- Enlace al archivo JavaScript que contiene la funcionalidad del menú lateral -->
+    <script src="../js/script-aside.js"></script>
+</footer>
+</body>
+</html>

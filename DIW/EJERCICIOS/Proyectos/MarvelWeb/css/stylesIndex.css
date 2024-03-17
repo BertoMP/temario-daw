@@ -1,0 +1,226 @@
+/* ESTABLECE ESTILOS PARA EL main DE LA PÁGINA */
+main {
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+/* ESTABLECE ESTILOS PARA LAS ELEMENTOS a DE LA PÁGINA */
+a {
+    text-decoration: none;
+    color: var(--color-terciario);
+}
+
+/* ESTILOS PARA EL ELEMENTO .portada */
+.portada {
+    width: 100%;
+    height: 90vh;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+/* ESTILOS PARA LOS article CONTENIDOS EN .portada */
+.portada article {
+    width: 100%;
+    height: 90vh;
+    position: absolute;
+    background-position: center;
+    background-size: cover;
+    opacity: 0;
+    animation: imagenesPortada 25s infinite linear;
+}
+
+/* ANIMACIÓN CON NOMBRE imagenesPortada:
+    - Establece cambios de opacidad en los elementos a los que afecta. */
+@keyframes imagenesPortada {
+    0% {
+        opacity: 0;
+    }
+
+    25% {
+        opacity: 1;
+    }
+
+    50% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 0;
+    }
+}
+
+/* ESTILO PARA EL PRIMER article CONTENIDO EN .portada */
+.portada article:first-of-type {
+    background-image: url(../assets/images/imgPortada1.jpg);
+    animation-delay: 0s;
+}
+
+/* ESTILO PARA EL SEGUNDO article CONTENIDO EN .portada */
+.portada article:nth-of-type(2) {
+    background-image: url(../assets/images/imgPortada2.jpg);
+    animation-delay: 5s;
+}
+
+/* ESTILO PARA EL TERCER article CONTENIDO EN .portada */
+.portada article:nth-of-type(3) {
+    background-image: url(../assets/images/imgPortada3.jpg);
+    animation-delay: 10s;
+}
+
+/* ESTILO PARA EL CUARTO article CONTENIDO EN .portada */
+.portada article:nth-of-type(4) {
+    background-image: url(../assets/images/imgPortada4.jpg);
+    animation-delay: 15s;
+}
+
+/* ESTILO PARA EL QUINTO article CONTENIDO EN .portada */
+.portada article:nth-of-type(5) {
+    background-image: url(../assets/images/imgPortada5.jpg);
+    animation-delay: 20s;
+}
+
+/* ESTILO PARA LOS SECTION CONTENIDOS EN .portada */
+.portada section {
+    width: 600px;
+    z-index: 1;
+}
+
+/* ESTILO PARA LOS ELEMENTOS img CONTENIDOS EN .portada */
+.portada img {
+    width: 100%;
+    box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.5);
+}
+
+/* ESTILO PARA EL CONTENEDOR .zonas-web */
+.zonas-web {
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: flex-start;
+    align-items: center;
+    width: 100%;
+    height: 1000px;
+    background: var(--bgColor-general);
+}
+
+/* ESTILOS PARA LOS ENCABEZADOS h2 CONTENIDOS EN .zonas-web */
+.zonas-web h2 {
+    font-family: Marvel, sans-serif;
+    font-size: 5rem;
+    text-transform: uppercase;
+    letter-spacing: 0.3rem;
+    margin: 20px;
+}
+
+/* ESTILOS PARA EL CONTENEDOR .contenedor-zonas QUE FUNCIONA COMO CONTENEDOR GRID */
+.contenedor-zonas {
+    width: 80%;
+    display: grid;
+    grid-template-columns: repeat(2, minmax(350px, 1fr));
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+}
+
+/* ESTILOS PARA LOS ARTICLE QUE SON HIJOS DIRECTOS DE .contenedor-zonas */
+.contenedor-zonas>article {
+    background-color: var(--bgColor-cards);
+    border-radius: 16px;
+    text-align: center;
+    height: 400px;
+    box-shadow: 4px 4px 5px rgba(0, 0, 0, 0.5);
+}
+
+/* ESTILOS PARA LOS article QUE SON HIJOS DIRECTOS DE LOS article QUE SON HIJOS DIRECTOS DE .contenedor-zonas */
+.contenedor-zonas>article>article {
+    height: 175px;
+    border-radius: 16px 16px 0 0;
+    overflow: hidden;
+}
+
+/* ESTILO PARA LOS ELEMENTOS img CONTENIDOS EN .contenedor-zonas */
+.contenedor-zonas img {
+    width: 100%;
+    height: 175px;
+    object-fit: cover;
+    transition: all 1000ms;
+}
+
+/* ESTILO ESPECIAL PARA EL article CONTENIDO EN EL ÚLTIMO article QUE ES HIJO DIRECTO DE .contenedor-zonas */
+.contenedor-zonas>article:last-of-type>article {
+    background: var(--gradiente-avengers);
+}
+
+/* ESTILO PARA LOS ELEMENTOS img CONTENIDOS EN .contenedor-zonas CUANDO EL CURSOR PASA POR ENCIMA DE ELLOS */
+.contenedor-zonas img:hover {
+    transform: scale(1.2);
+}
+
+/* ESTILO PARA LOS section CONTENIDOS EN .contenedor-zonas */
+.contenedor-zonas section {
+    width: 100%;
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+    padding: 2%;
+}
+
+/* ESTILO PARA LOS ENCABEZADOS h3 CONTENIDOS EN .contenedor-zonas */
+.contenedor-zonas h3 {
+    font-family: Marvel, sans-serif;
+    text-transform: uppercase;
+    font-size: 2.5rem;
+    letter-spacing: 0.3rem;
+    max-height: 20%;
+    color: var(--color-secundario);
+}
+
+/* ESTILOS PARA LOS p CONTENIDOS .contenedor-zonas */
+.contenedor-zonas p {
+    padding: 4%;
+    max-height: 20%;
+}
+
+/* ESTILOS PARA LOS ELEMENTOS a CONTENIDOS EN .contenedor-zonas */
+.contenedor-zonas a {
+    background-color: var(--color-secundario);
+    padding: 10px;
+    border-radius: 20px;
+    transition: all 1000ms;
+}
+
+/* ESTILOS PARA LOS ELEMENTOS a CONTENIDOS EN .contenedor-zonas CUANDO EL CURSOR PASA POR ENCIMA DE ELLOS */
+.contenedor-zonas a:hover {
+    padding: 15px 50px;
+    background-color: var(--color-secundario);
+    color: var(--color-terciario);
+}
+
+/* MEDIA-QUERY PARA PANTALLAS DE HASTA 1000px */
+@media (max-width: 1000px) {
+    .portada section {
+        width: 400px;
+    }
+
+    .zonas-web {
+        justify-content: flex-start;
+        height: 1800px;
+    }
+
+    .contenedor-zonas {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+
+}
+
+/* MEDIA-QUERY PARA PANTALLAS DE HASTA 680px */
+@media (max-width: 680px) {
+    .portada section {
+        width: 300px;
+    }
+}

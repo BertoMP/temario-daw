@@ -1,0 +1,157 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #f0f0f0;
+    width: 80%;
+    margin: auto;
+}
+
+h1 {
+    text-align: center;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+li {
+    background-color: #fff;
+    border: 2px solid #999;
+    margin: 10px 0;
+    padding: 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+span {
+    font-weight: bold;
+    color: #333;
+}
+
+button {
+    padding: 10px 20px;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    margin-right: 10px;
+    border-radius: 16px;
+}
+
+button:hover {
+    background-color: #d84315;
+}
+
+div button:first-child {
+    background-color: #4caf50;
+}
+
+div button:first-child:hover {
+    background-color: #206422;
+}
+
+div button:last-child {
+    background-color: #f44336;
+}
+
+div button:last-child:hover {
+    background-color: #a3231a;
+}
+
+button:nth-child(1) {
+    background-color: #af4ca2;
+}
+
+button:nth-child(1):hover {
+    background-color: #5c2064;
+}
+
+button:nth-child(2) {
+    background-color: #f47c36;
+}
+
+button:nth-child(2):hover {
+    background-color: #ce5814;
+}
+
+button:nth-child(3) {
+    background-color: #2196f3;
+}
+
+button:nth-child(3):hover {
+    background-color: #0e558f;
+}
+
+section {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+section article:first-child {
+    width: 60%;
+    margin-right: 10%;
+}
+
+section article:nth-child(2) {
+    width: 30%;
+}
+
+table {
+    border-collapse: collapse;
+}
+
+th, td {
+    border: 1px solid #ddd;
+    padding: 10px;
+    text-align: left;
+}
+
+tr td {
+    width: 200px;
+}
+
+tr th:nth-child(2),
+tr th:last-child,
+tr td:nth-child(2),
+tr td:last-child {
+    text-align: center;
+}
+
+tr td:last-child::after,
+tfoot tr th:last-child::after {
+    content: " €";
+}
+
+th {
+    background-color: #2a9d8f;
+    color: white;
+}
+
+tr:nth-child(even):not(tfoot tr) {
+    background-color: #79b6af;
+}
+
+tr:nth-child(odd):not(tfoot tr) {
+    background-color: #57c9bb;
+}
+
+tfoot {
+    background-color: #2a9d8f;
+    color: white;
+}
+
+tr:hover {
+    background-color: #457b9d;
+}
+
+p {
+    margin-top: 20px;
+    text-align: center;
+    font-size: 18px;
+    color: #333;
+    background-color: #f7f7f7;
+    border: 2px solid #ccc;
+    padding: 10px;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+}

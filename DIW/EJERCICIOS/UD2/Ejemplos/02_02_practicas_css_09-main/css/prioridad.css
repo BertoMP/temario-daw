@@ -1,0 +1,23 @@
+/* Prioridad de bloques y prioridades CSS */
+
+/* Por la forma de implementación la prioridad es:
+1.- Estilos en línea con el atributo style
+2.- Estilos en el elemento style
+3.- Archivos externos */
+
+/* Si se repiten selectores CSS interpreta la última escrituras */
+
+/* Para combinación de selectores se establece con al Especificidad */
+/* Índice de especificidad 3 dígitos
+1er digito = Número de selectores por id #
+2o digito = Número de selectores por clase . ó pseudoclase :
+3er digito = Número de elementos (nombre) ó pseudoelementos :: */
+
+.texto {
+    color: orange; /* Especificidad 010 */
+}
+
+p {
+    color: grey; /* Especificidad 001 */
+}
+

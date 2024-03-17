@@ -1,0 +1,37 @@
+body {
+	width: 80%;
+	margin: auto;
+}
+
+section {
+	height: 200px;
+	width: 100%;
+	padding: 0 2%;
+	margin-top: 1%;
+	background-color: rgb(153, 143, 143);
+	border: 1px solid rgb(105, 98, 98);
+	color: transparent;
+}
+
+article {
+	height: 200px;
+	width: 150px;
+}
+
+article:first-of-type {
+	float: left;
+	background: url(../images/arrowKit.png) 391px 0px;
+}
+
+article:last-of-type {
+	float: right;
+	background: url(../images/arrowKit.png) 548px 0px;
+}
+
+article:first-of-type:hover {
+	background: url(../images/arrowKit.png) 165px -375px;
+}
+
+article:last-of-type:hover {
+	background: url(../images/arrowKit.png) 780px 0px;
+}

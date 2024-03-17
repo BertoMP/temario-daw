@@ -1,0 +1,134 @@
+.jugadores {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.jugador {
+    background: lightgoldenrodyellow;
+    padding: 20px;
+    border-radius: 8px;
+    width: 300px;
+}
+
+.areas, .contadores {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 20px;
+}
+
+.area1 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100px;
+    height: 100px;
+    background: lightblue;
+    border-radius: 8px;
+    font-size: 5em;
+}
+
+.area2 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100px;
+    height: 100px;
+    background: lightsalmon;
+    border-radius: 8px;
+    font-size: 5em;
+}
+
+.contadores > :nth-child(1) {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100px;
+    height: 30px;
+    background: lightgray;
+    border-radius: 8px;
+    font-size: 1em;
+}
+
+.contadores > :nth-child(2) {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100px;
+    height: 30px;
+    background: lightgray;
+    border-radius: 8px;
+    font-size: 1em;
+}
+
+.botones {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.addJugador {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.addJugador *{
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.resumen {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.botones button {
+    margin: 5px;
+}
+
+/* Agrego una clase hidden */
+
+.hidden{
+    display: none;
+}
+
+/* Agrego una clase aviso y comienzo */
+
+.aviso{
+    display:flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.aviso > p{
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    width:120px;
+    height:120px;
+    border: 3px solid black;
+    border-radius:50px;
+
+}
+
+.preparados{
+    font-size: 2em;
+    font-weight: bold;
+    background-color: red;
+}
+
+.ya{
+    font-size: 2em;
+    font-weight: bold;
+    background-color: greenyellow;
+}
+
+/* Agrego una clase para los textos del resumen */
+
+.resumen p{
+    font: 2em bold;
+}

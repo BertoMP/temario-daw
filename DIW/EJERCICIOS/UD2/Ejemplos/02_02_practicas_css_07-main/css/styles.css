@@ -1,0 +1,124 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+
+body {
+    font-family: 'Montserrat', sans-serif;
+}
+
+
+ul {
+    list-style: none;
+}
+
+li {
+    font-size: 28px;
+}
+
+/* Pseudoelemento before (renderizar un contenido antes del elemento) */
+
+.equipos li::before {
+    content: ' ';
+    display: inline-block;
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    background-color: crimson;
+    margin-right: 10px;
+    margin-bottom: 3px;
+}
+
+.joyeria li::before {
+    content: url('../img/icons8-diamante-80.png');
+    margin-right: 10px;
+}
+
+/* Pseudoclases para elementos repetitivos */
+
+/* li:first-child {
+    color: orange;
+}
+
+li:last-child {
+    color: violet;
+}
+
+li:nth-child(2) {
+    color: green;
+} */
+
+li:nth-child(odd) {
+    color: violet;
+}
+
+li:nth-child(even) {
+    color: green;
+}
+
+/* Ejemplo de estilos de tablas en CSS */
+
+table {
+    width: 80%;
+    margin: 40px auto;
+    box-shadow: 2px 2px 5px grey;
+    padding: 20px;
+    border-spacing: 5px;
+    font-size: 22px;
+}
+
+
+table tr th {
+    background-color: #167f92;
+    color: white;
+    padding: 10px;
+} 
+
+table tr th:nth-child(1), 
+table tr th:nth-child(2),
+table tr th:nth-child(4) {
+    text-align: left;
+}
+
+table tr td {
+    color: #0f535f;
+    padding: 10px;
+}
+
+table tr td:nth-child(3) {
+    text-align: center;
+}
+
+table tr:nth-child(even) td {
+    border: solid 1px rgba(22, 128, 146, 0.3);
+}
+
+table tr:nth-child(odd) td {
+    border: solid 1px rgba(22, 128, 146, 0.3);
+    background-color: rgba(22, 128, 146, 0.3);
+}
+
+/* Ejemplos de estilos para botones */
+
+button {
+    font-size: 20px;
+    padding: 10px 20px;
+    background-color: tomato;
+    border: 1px solid tomato;
+    border-bottom: 4px solid rgb(175, 66, 47);
+    border-radius: 5px;
+    color: white;
+    cursor: pointer;
+    transition: all 400ms ease-in-out;
+}
+
+button.outline {
+    background-color: white;
+    color: rgb(175, 66, 47);
+    border: 1px solid rgb(175, 66, 47);
+    border-bottom: 4px solid rgb(175, 66, 47);
+}
+
+button:hover {
+    color: white;
+    background-color: rgb(204, 80, 58);
+    border: 1px solid rgb(204, 80, 58);
+    border-bottom: 4px solid rgb(175, 66, 47);
+}

@@ -1,0 +1,21 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    border: 4px solid orange;
+    width: 100%;
+    display: flex; 
+    justify-content: space-around; 
+    align-items: stretch;
+    /*
+        stretch (por defecto) igualar la altura de los elementos
+    */
+}
+
+.caja {
+    width: 150px;
+    background-color: cornflowerblue;
+}

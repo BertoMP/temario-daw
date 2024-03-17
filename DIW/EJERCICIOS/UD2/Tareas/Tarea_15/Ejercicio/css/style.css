@@ -1,0 +1,177 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Tahoma, sans-serif;
+  font-size: 1rem;
+}
+
+h2 {
+  padding: 1rem;
+}
+
+form {
+  width: 800px;
+}
+
+ul {
+  list-style: none;
+}
+
+li {
+  margin: -1.5rem 0;
+  padding: 1rem;
+  width: 46%;
+}
+
+/* li:nth-child(odd) {
+  float: left;
+  clear: left;
+}
+
+li:nth-child(even) {
+  float: right;
+  clear: right;
+} */
+
+li:nth-of-type(2) div span:nth-child(2),
+li:nth-of-type(2) div span:nth-child(4) {
+  float: left;
+  width: 40%;
+}
+
+li:nth-of-type(2) div span:nth-child(3),
+li:nth-of-type(2) div span:nth-child(5) {
+  float: right;
+  width: 60%;
+}
+
+li:nth-of-type(4) div span:first-child {
+  float: left;
+  width: 50%;
+}
+
+li:nth-of-type(4) div span:last-child {
+  float: right;
+  width: 50%;
+}
+
+label {
+  display: block;
+  font-size: 0.8rem;
+  color: #4e4e4e;
+}
+
+input {
+  padding: 0.3rem;
+  border: 1px solid rgb(172, 158, 158);
+}
+
+input:not([type="submit"]) {
+  box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.5) inset;
+}
+
+input[type="text"], 
+input[type="email"] {
+  width: 300px;
+}
+
+input[type="number"],
+select[name="provincia"] {
+  width: 120px;
+}
+
+input[name="nombre"], 
+input[name="municipio"],
+input[type="tel"],
+select[name="pais"] {
+  width: 150px;
+}
+
+li:last-of-type {
+  border-top: 2px solid #CCC;
+  clear: both;
+  margin-top: 1rem;
+  text-align: right;
+  width: 100%;
+  font-size: 1.3rem;
+}
+
+.requerido {
+  color: red;
+}
+
+.ayuda {
+  display: none;
+}
+
+.titulo {
+  font-weight: bold;
+}
+
+/*************************************/
+
+li:hover {
+  background-color: #FF9;
+}
+
+input:focus {
+  border: 2px solid #E6B700;
+}
+
+/*************************************/
+
+ul li {
+  float: none;
+  width: auto;
+}
+
+ul li>label {
+  float: left;
+  width: 150px;
+}
+
+ul li div {
+  margin-left: 160px;
+}
+
+/****************************************/
+
+h2 {
+  margin-bottom: 0.3em;
+}
+
+ul li {
+  border-top: 1px solid #CCC;
+  margin: 0;
+  padding: 1em;
+}
+
+ul li {
+  margin: 0;
+}
+
+li+label {
+  text-align: right;
+  width: 100px;
+}
+
+div {
+  margin-left: 110px;
+  overflow: hidden;
+}
+
+li {
+  position: relative;
+}
+
+li:hover p.ayuda {
+  display: block;
+  margin: 0.3em;
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 150px;
+}

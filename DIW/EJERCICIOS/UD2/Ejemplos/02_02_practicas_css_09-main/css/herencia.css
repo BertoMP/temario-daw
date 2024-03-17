@@ -1,0 +1,21 @@
+.padre {
+    border: solid 2px green;
+    margin: 40px;
+    padding: 40px;
+    color: crimson; /* Como color es heredable el valor se hereda a los descendientes 
+                         hasta que se sobrescriba el valor*/
+}
+
+.hijo {
+    border: solid 2px violet;
+    margin: 40px;
+    padding: 40px;
+    color: green; /* Romper la herencia y prevalece este valor sobre el de su asciendente */
+}
+
+.nieto {
+    border: inherit; /* Convertir una propiedad en heredable para ese selector*/
+    margin: 40px;
+    padding: 40px;
+    color: initial; /* Eliminar la herencia y establecer su valor por defecto */
+}

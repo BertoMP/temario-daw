@@ -1,0 +1,37 @@
+* {
+    margin: 10px;
+    padding: 0px;
+}
+
+body {
+    background-color: #333;
+    color: #bbbaaa;
+}
+
+section p:nth-child(1) {
+    float: left;
+    width: 300px;
+}
+
+section p:nth-child(2) {
+    float: right;
+    width: 300px;
+}
+
+section + p {
+    float: right;
+    width: 300px;
+}
+
+section::after {
+    content: "";
+    visibility: hidden;
+    height: 0;
+    display: block;
+    clear: both;
+}
+
+section {
+    background-color: blueviolet;
+}
+

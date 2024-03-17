@@ -1,0 +1,39 @@
+:root {
+    --fondo-bg-color: rgb(207, 83, 25);
+    --barras-bg-color: rgb(247, 198, 158);
+}
+
+section {
+    width: 400px;
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    background-color: var(--fondo-bg-color);
+    cursor: pointer;
+}
+
+div {
+    width: 80%;
+    height: 20%;
+    background-color: var(--barras-bg-color);
+    position: relative;
+    border-radius:25%/50%;
+    opacity: 1;
+    left: 0;
+    transition: 1.3s;
+}
+
+.activado div:nth-child(2) {
+    transform: translateX(-100%);
+    opacity: 0;
+}
+
+.activado div:first-child {
+    transform: translateY(150%) rotate(-135deg) scaleY(1.2);
+}
+
+.activado div:last-child {
+    transform: translateY(-150%) rotate(135deg) scaleY(1.2);
+}

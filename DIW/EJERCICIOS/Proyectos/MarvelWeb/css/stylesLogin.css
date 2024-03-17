@@ -1,0 +1,156 @@
+/* ESTILO DEL main DE LA PÁGINA */
+main {
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+    height: 80vh;
+}
+
+/* ESTILO PARA LOS ELEMENTOS a DE LA PÁGINA*/
+a {
+    color: var(--color-terciario);
+}
+
+/* ESTILO PARA EL ELEMENTO CON CLASE .formulario-login */
+.formulario-login {
+    width: 80%;
+    height: 600px;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--bgColor-cards);
+    border-radius: 16px;
+    box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.5);
+}
+
+/* ESTILO PARA LOS article QUE SON HIJOS DIRECTOS DE .formulario-login */
+.formulario-login>article {
+    width: 50%;
+}
+
+/* ESTILO PARA EL article QUE ES HIJO DIRECTO DE .formulario-login */
+.formulario-login>article:first-child {
+    height: 100%;
+    background: url(../assets/images/imgFormLogin.webp) no-repeat center;
+    border-radius: 16px 0 0 16px;
+}
+
+/* ESTILO PARA LOS article QUE SON HERMANOS DE OTRO article QUE ES HIJO DIRECTO DE .formulario-login */
+.formulario-login>article+article {
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+/* ESTILO PARA LOS ENCABEZASOS h2 CONTENIDOS EN UN article QUE SON HERMANOS DE OTRO article QUE ES HIJO DIRECTO
+   DE .formulario-login */
+.formulario-login>article+article h2 {
+    font-family: var(--fuente-encabezado-formulario);
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    font-size: 2.5rem;
+    padding: 20px;
+    text-align: center;
+}
+
+/* ESTILO PARA LOS ELEMENTOS form CONTENIDOS EN .formulario-login Y PARA LOS article QUE SON HIJOS DIRECTOS DEL form */
+.formulario-login form,
+.formulario-login form>article {
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+}
+
+/* ESTILOS ESPECÍFICOS PARA LOS ELEMENTOS form CONTENIDOS EN .formulario-login */
+.formulario-login form {
+    width: 80%;
+    gap: 20px;
+}
+
+/* ESTILOS ESPECÍFICOS PARA LOS ELEMENTOS article QUE SON HIJOS DIRECTOS DE UN form QUE ESTÁ
+   CONTENIDO EN .formulario-login */
+.formulario-login form>article {
+    width: 100%;
+}
+
+/* ESTILOS PARA LOS label CONTENIDOS EN .formulario-login */
+.formulario-login label {
+    font-weight: bold;
+    text-transform: uppercase;
+    margin-top: 10px;
+}
+
+/* ESTILOS PARA LOS input CONTENIDOS EN .formulario-login */
+.formulario-login input {
+    width: 300px;
+    padding: 10px 0;
+    text-align: center;
+    font-size: 2rem;
+    margin-top: 10px;
+    border-radius: 10px;
+    border: 1px solid #ccc;
+    box-shadow: 5px 5px 5px inset rgba(0, 0, 0, 0.5);
+}
+
+/* ESTILOS PARA LOS button CONTENIDOS EN .formulario-login */
+.formulario-login button {
+    background-color: var(--bgColor-boton-formulario);
+    border-radius: 16px;
+    color: var(--color-secundario);
+    padding: 10px 20px;
+    width: 200px;
+    height: 50px;
+    font-size: 1.5rem;
+    border: none;
+    cursor: pointer;
+    transition: all 1000ms;
+}
+
+/* ESTILOS PARA LOS button CONTENIDOS EN .fomulario-login CUANDO EL CURSOR PASA SOBRE ELLOS */
+.formulario-login button:hover {
+    background-color: var(--bgColor-boton-formulario-hover);
+    color: var(--color-terciario);
+}
+
+/* ESTILOS PARA LOS a CONTENIDOS EN .formulario-login */
+.formulario-login a {
+    display: block;
+    width: 300px;
+    text-decoration: none;
+    color: var(--color-secundario);
+    font-weight: bold;
+    text-align: center;
+    margin-top: 10px;
+    transition: all 1000ms;
+}
+
+/* ESTILOS PARA LOS a CONTENIDOS EN .formulario-login CUANDO EL CURSOR PASA SOBRE ELLOS */
+.formulario-login a:hover {
+    color: var(--color-terciario);
+}
+
+/* MEDIA-QUERY PARA PANTALLAS DE HASTA 1000px */
+@media (max-width: 1000px) {
+    .formulario-login>article:first-child {
+        display: none;
+    }
+
+    .formulario-login>article+article h2 {
+        font-size: 3rem;
+    }
+
+    .formulario-login a {
+        font-size: 0.7rem;
+    }
+}
+
+/* MEDIA-QUERY PARA PANTALLAS DE HASTA 680px */
+@media (max-width: 680px) {
+    .formulario-login>article:first-child {
+        display: none;
+    }
+}

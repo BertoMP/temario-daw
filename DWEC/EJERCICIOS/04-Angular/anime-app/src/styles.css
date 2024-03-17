@@ -1,0 +1,34 @@
+:root {
+  --title-font: 'Hirakatana', sans-serif;
+  --japanese-font: 'Noto Sans JP', sans-serif;
+  --main-color: #e5b967;
+  --secondary-color: #3498db;
+  --btn-hover-color: #2980b9;
+  --gradient: linear-gradient(#e5b967 0%, #3498db 100%);
+  --horizontal-gradient: linear-gradient(to right, rebeccapurple 0%, orangered 100%);
+  --bg-color: #f4f4f4;
+}
+
+@font-face {
+  font-family: 'Hirakatana';
+  src: url('./assets/fonts/Hirakatana.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'Noto Sans JP';
+  src: url('./assets/fonts/NotoSansJP.ttf') format('truetype');
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+}
+
+input[type="text"] {
+  cursor: text;
+}

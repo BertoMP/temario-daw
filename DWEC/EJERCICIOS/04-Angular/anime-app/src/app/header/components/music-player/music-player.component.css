@@ -1,0 +1,114 @@
+:host {
+  display: flex;
+  justify-content: end;
+
+  height: 300px;
+}
+
+.music-player {
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center;
+  justify-content: center;
+  background-color: rgba(255, 255, 255, 0.5);
+  box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.5);
+  border-radius: 16px;
+  padding: 20px;
+  margin: 20px;
+  width: 400px;
+}
+
+.song-info {
+  display: flex;
+  flex-flow: row nowrap;
+  width: 100%;
+}
+
+.song-info section:nth-of-type(1) {
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+  width: 66%;
+}
+
+.song-info section:nth-of-type(2) {
+  display: flex;
+  justify-content: center;
+  width: 33%;
+}
+
+img {
+  width: 100%;
+  border-radius: 50%;
+}
+
+.song-controls {
+  display: flex;
+  flex-flow: row nowrap;
+  align-items: center;
+  justify-content: center;
+  padding: 1rem;
+}
+
+p {
+  font-size: 1rem;
+  padding: 0.5rem;
+  text-align: center;
+  white-space: nowrap;
+}
+
+.hiragana {
+  font-family: var(--japanese-font);
+  font-style: italic;
+}
+
+i {
+  font-size: 1.5rem;
+  margin-right: 0.5rem;
+}
+
+i:hover {
+  cursor: pointer;
+  color: var(--btn-hover-color);
+}
+
+input[type="range"] {
+  appearance: none;
+  height: 3px;
+  background: var(--horizontal-gradient);
+  filter: progid:DXImageTransform.Microsoft.gradient(
+    startColorstr="#f67280",
+    endColorstr="#355c7d",
+    GradientType=1
+  );
+
+  cursor: grab;
+}
+
+input[type="range"]:active {
+  cursor: grabbing;
+}
+
+.progress {
+  width: 100%;
+}
+
+progress {
+  height: 10px;
+  background: var(--horizontal-gradient);
+  width: 100%;
+}
+
+@media (max-width: 750px) {
+  .music-player {
+    width: 300px;
+  }
+
+  .song-info section:nth-of-type(1) {
+    width: 100%;
+  }
+
+  .song-info section:nth-of-type(2) {
+    display: none;
+  }
+}

@@ -1,0 +1,26 @@
+html {
+    font-size: 1em;
+}
+
+body {
+    background-color: #333;
+    color: #bbbaaa;
+}
+
+h1, h2, h3 {
+    font-family: 'Roboto', sans-serif;
+}
+
+h1 {
+    font-size: 1.5em;
+}
+
+p {
+    padding: 0.5em;
+    font-size: 2em; 
+}
+
+em {
+    padding: inherit;
+    font-size: 0.5em;
+}

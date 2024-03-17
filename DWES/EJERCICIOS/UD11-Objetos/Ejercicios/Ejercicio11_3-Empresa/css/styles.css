@@ -1,0 +1,88 @@
+:root {
+    --body-bgColor: rgb(171, 171, 179);
+    --section-bgColor: rgb(163, 163, 250);
+    --article-bgColor: rgb(180, 180, 185);
+    --article-2nd-level-bgColor: rgb(238, 188, 130);
+    --artcile-3rd-level-bgColor: rgb(197, 109, 87);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: var(--body-bgColor);
+}
+
+body,
+section,
+article {
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+}
+
+h1,
+h2,
+h3,
+h5 {
+    text-decoration: underline;
+    text-align: center;
+    margin-bottom: 2%;
+}
+
+h1,
+h2 {
+    text-transform: uppercase;
+}
+
+h1 {
+    margin-top: 2%;
+}
+
+section,
+article {
+    width: 80%;
+    margin: 2%;
+    padding: 2%;
+    border-radius: 16px;
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.5);
+}
+
+section {
+    background-color: var(--section-bgColor);
+}
+
+article {
+    background-color: var(--article-bgColor);
+}
+
+article>article {
+    background-color: var(--article-2nd-level-bgColor);
+}
+
+article>article>article {
+    background-color: var(--artcile-3rd-level-bgColor);
+    align-items: flex-start;
+    font-size: 0.9rem;
+}
+
+span {
+    font-weight: bold;
+}
+
+p {
+    text-align: justify;
+    margin: 2%;
+}
+
+ol {
+    padding-left: 10%;
+}
+
+li {
+    font-style: italic;
+}

@@ -1,0 +1,199 @@
+/* Estilos generales */
+:root {
+    --bg-div-heroe: #666edd;
+    --bg-div-villano: #e74c3c;
+    --bg-button: #13e70c;
+    --bg-filas-odd: #558db3;
+    --bg-filas-even: #91b8d1;
+    --bg-th: #3498db;
+    --bg-log: #234615;
+    --bg-scrollbar: #555;
+
+    --color-textos: #f0f8ff;
+    --color-button: #221c1c;
+
+    --boder-tabla: #ddd;
+
+    --gradient-scrollbar: linear-gradient(to bottom, var(--bg-div-heroe), var(--bg-div-villano));
+}
+
+body {
+    font-family: Arial, sans-serif;
+    width: 60%;
+    margin: auto;
+    background-image: url(../images/fondo.jpg);
+    background-attachment: fixed;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+h1,
+p {
+    text-align: center;
+    color: var(--color-textos);
+}
+
+/* Estilos para el contenedor principal */
+
+body>div:nth-child(3) {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+}
+
+/* Estilos para los contendientes (Héroe y Villano) */
+
+div>div:first-child,
+div>div:last-child {
+    height: 200px;
+    padding: 1%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    text-align: center;
+    width: 30%;
+    border-radius: 50%;
+}
+
+div>div:first-child {
+    background-color: var(--bg-div-heroe);
+}
+
+div>div:last-child {
+    background-color: var(--bg-div-villano);
+}
+
+h2 {
+    font-size: 1.5rem;
+    color: var(--color-textos);
+}
+
+/* Estilos para el botón "Round" */
+
+div>button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    display: block;
+    margin: 20px auto;
+}
+
+/* Estilos para el resultado */
+
+div+p {
+    text-align: center;
+    font-size: 1.2rem;
+    margin-top: 20px;
+}
+
+/* Estilos para el ganador */
+
+p+div {
+    text-align: center;
+    margin-top: 20px;
+}
+
+p+div h2 {
+    font-size: 1.5rem;
+    color: var(--color-textos);
+}
+
+p+div img {
+    max-width: 50%;
+    height: auto;
+    visibility: hidden;
+}
+
+/* Estilos para los botones */
+
+button {
+    background-color: var(--bg-button);
+    color: var(--color-button);
+    font-size: 1.6rem;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 16px;
+    cursor: pointer;
+    display: block;
+    margin: 20px auto;
+}
+
+/* Estilos para la tabla de historial */
+
+body>div:nth-last-child(2) {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+table {
+    width: 80%;
+    border-collapse: collapse;
+    margin: 3%;
+}
+
+th,
+td {
+    padding: 8px;
+    text-align: center;
+}
+
+tr:nth-child(odd) {
+    background-color: var(--bg-filas-odd);
+}
+
+tr:nth-child(even) {
+    background-color: var(--bg-filas-even);
+}
+
+th {
+    background-color: var(--bg-th);
+    color: var(--color-textos);
+}
+
+/* Estilos para el log del combate */
+
+div+div {
+    width: 70%;
+    height: 300px;
+    overflow-y: scroll;
+    margin: 0 auto;
+    background-color: var(--bg-log);
+    color: var(--color-textos);
+    padding: 10px;
+    border-radius: 10px;
+    margin-top: 20px;
+    text-align: center;
+}
+
+div+div::-webkit-scrollbar,
+body::-webkit-scrollbar {
+    width: 12px;
+}
+
+div+div::-webkit-scrollbar-thumb,
+body::-webkit-scrollbar-thumb {
+    background: var(--gradient-scrollbar);
+    border-radius: 16px;
+}
+
+div+div::-webkit-scrollbar-track,
+body::-webkit-scrollbar-track {
+    background-color: var(--bg-scrollbar);
+}
+
+div+div h2 {
+    font-size: 1.5rem;
+}
+
+div+div h3 {
+    text-decoration: underline;
+    margin-top: 1%;
+}
+
+div+div p {
+    margin: 5px 0;
+}

@@ -1,0 +1,400 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Enlace al icono de la web -->
+    <link rel="shortcut icon" href="../assets/images/icono.ico" type="image/x-icon">
+    <!-- Enlace a la hoja de estilos de reset -->
+    <link rel="stylesheet" href="../css/reset.css">
+    <!-- Enlace a la hoja de estilos de theme -->
+    <link rel="stylesheet" href="../css/theme.css">
+    <!-- Enlace a la hoja de estilos de encabezado y pie de página -->
+    <link rel="stylesheet" href="../css/stylesHeaderFooter.css">
+    <!-- Enlace a la hoja de estilos específica para la página de películas -->
+    <link rel="stylesheet" href="../css/stylesPelisSeries.css">
+    <!-- Establece una preconexión con el dominio 'https://fonts.googleapis.com' -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <!-- Establece una preconexión con el dominio 'https://fonts.gstatic.com' y permite el acceso desde
+    diferentes orígenes (crossorigin) -->
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <!-- Enlaza una hoja de estilos desde Google Fonts que contiene la fuente 'Poppins' -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+    <title>PELÍCULAS</title>
+</head>
+<body>
+<!-- CABECERA DE LA WEB -->
+<header>
+    <!-- Logo de Marvel con un enlace a la página de inicio -->
+    <a href="../index.html">
+        <img src="../assets/images/logoMarvel.png" alt="Logo de Marvel">
+    </a>
+    <!-- Barra de navegación -->
+    <nav>
+        <a href="../index.html">Inicio</a>
+        <a href="./peliculas.html">Películas</a>
+        <a href="./series.html">Series</a>
+        <a href="./personajes.html">Personajes</a>
+        <a href="./login.html">Login</a>
+    </nav>
+    <!-- Menú de hamburguesa para dispositivos móviles-->
+    <section class="menu-hamburguesa" id="menu">
+        <!-- Span que contienen las líneas que componen el menú hamburguesa -->
+        <span class="linea-top"></span>
+        <span class="linea-mid"></span>
+        <span class="linea-bot"></span>
+    </section>
+    <!-- Menú lateral para dispositivos móviles -->
+    <aside class="menu-lateral" id="aside">
+        <a href="../index.html">Inicio</a>
+        <a href="./peliculas.html">Películas</a>
+        <a href="./series.html">Series</a>
+        <a href="./personajes.html">Personajes</a>
+        <a href="./login.html">Login</a>
+        <img src="../assets/images/imagenLateral.png" alt="imagen avengers">
+    </aside>
+</header>
+<!-- CONTENIDO PRINCIPAL -->
+<main>
+    <!-- Seccion que contiene el primer grupo de películas -->
+    <section>
+        <h2>FASE 1</h2>
+        <!-- Sección que funciona como bloque oculto-visible en función de la pulsación del usuario -->
+        <section>
+            <!-- Artículo que contiene las películas de determinado año -->
+            <article>
+                <h3>2008</h3>
+                <!-- Sección que funciona como contenedor para las cards formadas por el cartel de la película y su
+                     título -->
+                <section class="contenedor-flex">
+                    <!-- Article que funciona como card compuesto por una imagen y un párrafo -->
+                    <article>
+                        <img src="../assets/images/cartel-IronMan1.jpg" alt="Cartel de la película">
+                        <!-- Article que funciona como contenedor flexible para tener el texto centrado -->
+                        <article>
+                            <p>Iron Man</p>
+                        </article>
+                    </article>
+                    <article>
+                        <img src="../assets/images/cartel-Hulk.jpg" alt="Cartel de la película">
+                        <article>
+                            <p>The incredible Hulk</p>
+                        </article>
+                    </article>
+                </section>
+            </article>
+            <article>
+                <h3>2010</h3>
+                <section class="contenedor-flex">
+                    <article>
+                        <img src="../assets/images/cartel-IronMan2.jpg" alt="Cartel de la película">
+                        <article>
+                            <p>Iron Man 2</p>
+                        </article>
+                    </article>
+                </section>
+            </article>
+            <article>
+                <h3>2011</h3>
+                <section class="contenedor-flex">
+                    <article>
+                        <img src="../assets/images/cartel-Thor.jpg" alt="Cartel de la película">
+                        <article>
+                            <p>Thor</p>
+                        </article>
+                    </article>
+                    <article>
+                        <img src="../assets/images/cartel-Capt-America1.jpg" alt="Cartel de la película">
+                        <article>
+                            <p>Capitán América: El primer vengador</p>
+                        </article>
+                    </article>
+                </section>
+            </article>
+            <article>
+                <h3>2012</h3>
+                <section class="contenedor-flex">
+                    <article>
+                        <img src="../assets/images/cartel-Avengers1.jpg" alt="Cartel de la película">
+                        <article>
+                            <p>The Avengers</p>
+                        </article>
+                    </article>
+                </section>
+            </article>
+        </section>
+    </section>
+    <section>
+        <h2>FASE 2</h2>
+        <section>
+            <article>
+                <h3>2013</h3>
+                <section class="contenedor-flex">
+                    <article>
+                        <img src="../assets/images/cartel-IronMan3.jpg" alt="Cartel de la película">
+                        <article>
+                            <p>Iron Man 3</p>
+                        </article>
+                    </article>
+                    <article>
+                        <img src="../assets/images/cartel-Thor2.jpg" alt="Cartel de la película">
+                        <article>
+                            <p>Thor: El mundo oscuro</p>
+                        </article>
+                    </article>
+                </section>
+            </article>
+            <article>
+                <h3>2014</h3>
+                <section class="contenedor-flex">
+                    <article>
+                        <img src="../assets/images/cartel-Capt-America2.jpg" alt="Cartel de la película">
+                        <article>
+                            <p class="titulo-largo">Capitán América: El soldado de invierno</p>
+                        </article>
+                    </article>
+                    <article>
+                        <img src="../assets/images/cartel-Guardians1.jpg" alt="Cartel de la película">
+                        <article>
+                            <p>Guardianes de la galaxia</p>
+                        </article>
+                    </article>
+                </section>
+            </article>
+            <article>
+                <h3>2015</h3>
+                <section class="contenedor-flex">
+                    <article>
+                        <img src="../assets/images/cartel-Avengers2.jpg" alt="Cartel de la película">
+                        <article>
+                            <p>Avengers: La era de Ultrón</p>
+                        </article>
+                    </article>
+                    <article>
+                        <img src="../assets/images/cartel-AntMan.jpg" alt="Cartel de la película">
+                        <article>
+                            <p>Ant Man</p>
+                        </article>
+                    </article>
+                </section>
+            </article>
+        </section>
+    </section>
+    <section>
+        <h2>FASE 3</h2>
+        <section>
+            <article>
+                <h3>2016</h3>
+                <section class="contenedor-flex">
+                    <article>
+                        <img src="../assets/images/cartel-Capt-America3.jpg" alt="Cartel de la película">
+                        <article>
+                            <p>Capitán América: Civil War</p>
+                        </article>
+                    </article>
+                    <article>
+                        <img src="../assets/images/cartel-Doctor-Extranyo.jpg" alt="Cartel de la película">
+                        <article>
+                            <p>Doctor Strange</p>
+                        </article>
+                    </article>
+                </section>
+            </article>
+            <article>
+                <h3>2017</h3>
+                <section class="contenedor-flex">
+                    <article>
+                        <img src="../assets/images/cartel-Guardians2.jpg" alt="Cartel de la película">
+                        <article>
+                            <p>Guardianes de la Galaxia Vol. 2</p>
+                        </article>
+                    </article>
+                    <article>
+                        <img src="../assets/images/cartel-Spiderman1.jpg" alt="Cartel de la película">
+                        <article>
+                            <p>Spider Man: Homecoming</p>
+                        </article>
+                    </article>
+                    <article>
+                        <img src="../assets/images/cartel-Thor3.jpg" alt="Cartel de la película">
+                        <article>
+                            <p>Thor: Ragnarok</p>
+                        </article>
+                    </article>
+                </section>
+            </article>
+            <article>
+                <h3>2018</h3>
+                <section class="contenedor-flex">
+                    <article>
+                        <img src="../assets/images/cartel-BlackPanther1.jpg" alt="Cartel de la película">
+                        <article>
+                            <p>Black Panther</p>
+                        </article>
+                    </article>
+                    <article>
+                        <img src="../assets/images/cartel-Avengers3.jpg" alt="Cartel de la película">
+                        <article>
+                            <p>Avengers: Infinity War</p>
+                        </article>
+                    </article>
+                    <article>
+                        <img src="../assets/images/cartel-AntMan2.jpg" alt="Cartel de la película">
+                        <article>
+                            <p>Ant Man y la Avispa</p>
+                        </article>
+                    </article>
+                </section>
+            </article>
+            <article>
+                <h3>2019</h3>
+                <section class="contenedor-flex">
+                    <article>
+                        <img src="../assets/images/cartel-Capt-Marvel.jpg" alt="Cartel de la película">
+                        <article>
+                            <p>Capitana Marvel</p>
+                        </article>
+                    </article>
+                    <article>
+                        <img src="../assets/images/cartel-Avengers4.jpg" alt="Cartel de la película">
+                        <article>
+                            <p>Avengers: Endgame</p>
+                        </article>
+                    </article>
+                    <article>
+                        <img src="../assets/images/cartel-Spiderman2.jpg" alt="Cartel de la película">
+                        <article>
+                            <p>Spider Man: Far from home</p>
+                        </article>
+                    </article>
+                </section>
+            </article>
+        </section>
+    </section>
+    <section>
+        <h2>FASE 4</h2>
+        <section>
+            <article>
+                <h3>2021</h3>
+                <section class="contenedor-flex">
+                    <article>
+                        <img src="../assets/images/cartel-BlackWidow.jpg" alt="Cartel de la película">
+                        <article>
+                            <p>Viuda Negra</p>
+                        </article>
+                    </article>
+                    <article>
+                        <img src="../assets/images/cartel-Shang-Chi.jpg" alt="Cartel de la película">
+                        <article>
+                            <p class="titulo-largo">Shang-Chi y la leyenda de los diez anillos</p>
+                        </article>
+                    </article>
+                    <article>
+                        <img src="../assets/images/cartel-Eternals.jpg" alt="Cartel de la película">
+                        <article>
+                            <p>Eternals</p>
+                        </article>
+                    </article>
+                    <article>
+                        <img src="../assets/images/cartel-Spiderman3.jpg" alt="Cartel de la película">
+                        <article>
+                            <p>Spider Man: No way home</p>
+                        </article>
+                    </article>
+                </section>
+            </article>
+            <article>
+                <h3>2022</h3>
+                <section class="contenedor-flex">
+                    <article>
+                        <img src="../assets/images/cartel-Doctor-Extranyo2.jpg" alt="Cartel de la película">
+                        <article>
+                            <p class="titulo-largo">Doctor Strange en el multiverso de la locura</p>
+                        </article>
+                    </article>
+                    <article>
+                        <img src="../assets/images/cartel-Thor4.jpg" alt="Cartel de la película">
+                        <article>
+                            <p>Thor: Love and Thunder</p>
+                        </article>
+                    </article>
+                    <article>
+                        <img src="../assets/images/cartel-BlackPanther2.jpg" alt="Cartel de la película">
+                        <article>
+                            <p>Black Panther: Wakanda forever</p>
+                        </article>
+                    </article>
+                    <article>
+                        <img src="../assets/images/cartel-Spiderman3.jpg" alt="Cartel de la película">
+                        <article>
+                            <p>Spider Man: No way home</p>
+                        </article>
+                    </article>
+                </section>
+            </article>
+        </section>
+    </section>
+    <section>
+        <h2>FASE 5</h2>
+       <section>
+           <article>
+               <h3>2023</h3>
+               <section class="contenedor-flex">
+                   <article>
+                       <img src="../assets/images/cartel-AntMan3.jpg" alt="Cartel de la película">
+                       <article>
+                           <p class="titulo-largo">Ant Man y la Avispa: Quantumania</p>
+                       </article>
+                   </article>
+                   <article>
+                       <img src="../assets/images/cartel-Guardians3.jpg" alt="Cartel de la película">
+                       <article>
+                           <p>Guardianes de la Galaxia: Vol. 3</p>
+                       </article>
+                   </article>
+                   <article>
+                       <img src="../assets/images/cartel-TheMarvels.jpg" alt="Cartel de la película">
+                       <article>
+                           <p>The Marvels</p>
+                       </article>
+                   </article>
+               </section>
+           </article>
+       </section>
+    </section>
+</main>
+<!-- PIE DE PÁGINA DE LA WEB-->
+<footer>
+    <!-- Información de contacto -->
+    <section>
+        <p>Contacto: <a href="mailto:contact@marvel.com">contact@marvel.com</a></p>
+    </section>
+    <!-- Redes sociales -->
+    <section class="social-media">
+        <!-- Icono y enlace a la página de Facebook de Marvel -->
+        <a href="https://www.facebook.com/Marvel/" target="_blank" aria-label="facebook">
+            <i class="fa-brands fa-square-facebook facebook"></i>
+        </a>
+
+        <!-- Icono y enlace a la página de X de Marvel-->
+        <a href="https://www.x.com/Marvel/" target="_blank" aria-label="x">
+            <i class="fa-brands fa-x-twitter x"></i>
+        </a>
+
+        <!-- Icono y enlace a la página de Instagram de Marvel -->
+        <a href="https://www.instagram.com/marvel/" target="_blank" aria-label="instagram">
+            <i class="fa-brands fa-square-instagram instagram"></i>
+        </a>
+    </section>
+    <!-- Copyright -->
+    <section>
+        <p>Copyright &copy; 2023 Marvel</p>
+    </section>
+    <!-- Enlace a la biblioteca de Font Awesome para los iconos -->
+    <script src="https://kit.fontawesome.com/aca8e1ed37.js" crossorigin="anonymous"></script>
+    <!-- Enlace al archivo JavaScript que contiene la funcionalidad del menú lateral -->
+    <script src="../js/script-aside.js"></script>
+    <script src="../js/script-pelisSeries.js"></script>
+</footer>
+</body>
+</html>

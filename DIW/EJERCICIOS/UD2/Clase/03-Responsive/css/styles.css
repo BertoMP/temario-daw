@@ -1,0 +1,35 @@
+@import url(./styles.css) screen and (max-width: 480px) and (resolution: 163dpi);
+
+html {
+    font-size: 1rem;
+}
+
+body {
+    background-color: #333;
+    columns: #bbbabb;
+}
+
+#envoltorio {
+    width: 60%;
+    position: relative;
+}
+
+#personajes {
+    width: 20%;
+    position: absolute;
+    top: 6rem;
+    padding-left: 0.5rem;
+    background-color: chocolate;
+}
+
+#historia {
+    margin-left: 12rem;
+    padding: 0.5rem;
+    background-color: green;
+}
+
+@media screen and (max-width: 480px) and (resolution: 163dpi) {
+    body {
+        background-color: red;
+    }
+}

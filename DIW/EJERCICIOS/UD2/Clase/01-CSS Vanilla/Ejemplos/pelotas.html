@@ -1,0 +1,60 @@
+<html>
+<head>
+<style>
+div.pelota{
+  background: url(pelota.jpg);
+  background-size: 100%;  
+  position: relative;
+  border-radius:50%;  
+}
+div.uno{
+  width: 50px;
+  height: 50px;  
+  -webkit-animation: movimiento 4s infinite alternate;  
+}
+div.dos{
+  width: 80px;
+  height: 80px;  
+  -webkit-animation: movimiento 10s infinite alternate;  
+}
+div.cuadrado {
+	width: 50px;
+	height: 50px;
+	border: 2px solid black;
+	position: absolute;
+	-webkit-animation: mueve 5s infinite alternate;
+}
+@-webkit-keyframes mueve
+{
+0%{
+    top:0px; left:0px;	
+}
+50%{
+    top:100px; left: 100px;
+	-webkit-transform: rotate(45deg);
+}
+100%{
+    top:150px; left: 20px;
+}
+}
+
+@-webkit-keyframes movimiento
+{
+0%{
+	top:0px;
+	left:0px;
+	}
+100%{
+	top:0px;
+	left:400px;
+	-webkit-transform:rotate(360deg);
+	}
+}
+</style>
+</head>
+<body>
+<div class="pelota uno"></div>
+<div class="pelota dos"></div>
+<div class="cuadrado"></div>
+</body>
+</html>

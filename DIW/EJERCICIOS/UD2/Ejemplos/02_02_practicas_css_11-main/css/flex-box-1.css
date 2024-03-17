@@ -1,0 +1,38 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    border: 4px solid orange;
+    width: 100%;
+    height: 100vh;
+    display: flex; /* Se establece el modelo FLEX para sus hijos */
+    /* los hijos de un contenedor flex pasan a ser elementos en línea */
+    /* Organizar a los hijos mediante un sistema de ejes 
+       Eje primario sería la x por defecto 
+       Eje secunadrio sería la y por defecto */
+    /* Los ejes se pueden cambiar con la propiedad flex direction */
+    flex-direction: column; /* Con el valor column el eje primaria será la y el secundario la x */
+    justify-content: space-around; /*Alinea en el eje primario */
+    /* Valores para justify-content
+        flex-start alinea al principo del eje (por defecto)
+        center centra en el eje
+        flex-end alinea al final del eje
+        space-between repartir los espacios libres desde los extremos
+        space-around reparte los espacios libres a todos los elementos
+    */  
+    align-items: flex-end; /*Alinea en el eje secundario */ 
+    /*    flex-start alinea al principo del eje
+        center centra en el eje
+        flex-end alinea al final del eje
+        stretch (por defecto) igualar la altura de los elementos
+    */
+}
+
+.caja {
+    width: 150px;
+    height: 150px;
+    background-color: cornflowerblue;
+}

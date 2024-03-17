@@ -1,0 +1,41 @@
+.borde-naranja {
+    border: 2px solid orange;
+}
+
+div.caja-1 {
+    width: 500px;
+    height: 250px;
+    background-color: orange;
+}
+
+div.caja-2 {
+    width: 400px;
+}
+
+div.caja-3 {
+    height: 25%; /* Para utilizar % en la altura el elemento padre debe tener una altura fija */
+    width: 50%; /* a la dimensión del padre*/
+    background-color: orchid;
+}
+
+div.cita {
+    width: 80%; /*El 80% de body => el 80% del dispositivo */
+    height: 100px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: lightgray;
+    /* overflow: hidden; */
+    overflow-y: auto;
+}
+
+img {
+    max-width: 100%;  /*Esta imagen tendra su ancho salvo que supere al 100% del padre*/
+}
+
+div.card {
+    height: 260px;
+    width: 33.3333%;
+    min-width: 320px;
+    box-shadow: 2px 2px 4px grey;
+    border-radius: 5px;
+}

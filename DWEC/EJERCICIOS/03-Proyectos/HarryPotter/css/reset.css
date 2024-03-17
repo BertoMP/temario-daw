@@ -1,0 +1,6 @@
+/* ESTABLECE UN RESETEO SOBRE TODOS LOS ELEMENTOS */
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}

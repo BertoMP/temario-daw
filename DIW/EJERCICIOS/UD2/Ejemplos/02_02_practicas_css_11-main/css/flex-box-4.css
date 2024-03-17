@@ -1,0 +1,26 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    border: 4px solid orange;
+    height: 100vh;
+    width: 100%;
+    display: flex; 
+    flex-direction: column;
+    justify-content: flex-end; 
+    align-items: center;
+}
+
+.caja {
+    width: 150px;
+    height: 150px;
+    background-color: cornflowerblue;
+    margin: 20px;
+}
+
+.caja.derecha {
+    align-self: flex-end; /* Alinear en el eje secundario el elemento de manera distinta al resto */
+}

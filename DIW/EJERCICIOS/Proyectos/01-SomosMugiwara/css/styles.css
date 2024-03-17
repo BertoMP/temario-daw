@@ -1,0 +1,141 @@
+/* Body */
+body {
+    font-family: 'texto-principal';
+    font-size: 1em;
+}
+
+/* Header */
+header,
+nav {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+header {
+    font-family: 'one-piece';
+    height: 10vw;
+    background: var(--gradiente-header);
+}
+
+nav>a {
+    font-size: 2em;
+    margin: 20px;
+}
+
+a {
+    text-decoration: none;
+    color: var(--color-enlace);
+    cursor: pointer;
+}
+
+nav a:nth-last-child(2) i {
+    margin: 10px;
+}
+
+header>a>img {
+    width: 60%;
+}
+
+header>i {
+    color: var(--color-botones);
+    cursor: pointer;
+}
+
+nav>a:last-child {
+    background-color: var(--color-botones);
+    font-size: 2em;
+    border: none;
+    padding: 10px 20px;
+    text-align: center;
+    margin: 4px 2px;
+    border-radius: 16px;
+    text-transform: capitalize;
+    transition: background-color 0.7s, color 0.7s;
+}
+
+nav>*:hover {
+    color: var(--color-enlace-hover);
+}
+
+nav>a:last-child:hover {
+    background-color: var(--color-botones-hover);
+}
+
+/* Footer */
+footer {
+    height: 5vw;
+    font-size: 1.3em;
+    background-color: var(--color-fondo-footer);
+    color: var(--color-texto-footer);
+}
+
+footer,
+footer>section,
+section>a {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+section a {
+    flex-direction: column;
+    align-items: center;
+}
+
+footer>section:nth-of-type(2) {
+    justify-content: center;
+}
+
+footer>section {
+    width: 33%;
+}
+
+footer>section:nth-of-type(2)>a {
+    margin: 0 6%;
+}
+
+section>a * {
+    margin-bottom: 3px;
+    font-size: 1.3em;
+}
+
+footer p a {
+    color: var(--color-texto-footer);
+}
+
+footer p a:hover {
+    color: var(--color-enlace-hover);
+}
+
+footer>section a:first-child {
+    color: var(--color-facebook);
+}
+
+footer>section a:first-child:hover {
+    color: var(--color-facebook-hover);
+}
+
+footer>section a:nth-child(2) {
+    color: var(--color-x);
+}
+
+footer>section a:nth-child(2):hover {
+    color: var(--color-x-hover);
+}
+
+footer>section a:last-child:hover {
+    color: var(--color-instagram-hover);
+}
+
+footer>section a:last-child {
+    color: var(--color-instagram);
+}
+
+/* Main */
+h1 {
+    font-family: 'one-piece';
+    font-size: 5em;
+    text-align: center;
+    text-transform: uppercase;
+}

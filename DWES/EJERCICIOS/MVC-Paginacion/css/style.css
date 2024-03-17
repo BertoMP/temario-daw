@@ -1,0 +1,624 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+a, button {
+    transition: .5s all;
+}
+
+body {
+    width: 100%;
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+main {
+    min-height: 80vh;
+    width: 100%;
+}
+
+header {
+    width: 100%;
+    text-align: center;
+}
+
+header h1 {
+    width: 100%;
+    font-size: 2em;
+}
+
+header section {
+    background-color: #706f6f;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+}
+
+section {
+    padding: 20px;
+    background-color: #fff;
+}
+
+h1 {
+    color: #3498db;
+}
+
+h2 {
+    text-transform: uppercase;
+    margin-top: 20px;
+}
+
+header section nav {
+    display: flex;
+    margin-top: 20px;
+    max-width: 600px;
+    gap: 40px;
+}
+
+header section nav a {
+    display: block;
+    padding: 10px;
+    margin-bottom: 10px;
+    background-color: #2980b9;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+header section nav a:hover {
+    background-color: #3498db;
+}
+
+.login, .login section, .login form {
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.login section a {
+    color: #3498db;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.login section a:hover {
+    color: #2980b9;
+}
+
+.login p {
+    width: 300px;
+    text-align: center;
+}
+
+.login p.not-valid-access {
+    color: #e74c3c;
+    font-weight: bold;
+}
+
+.login form {
+    width: 400px;
+    margin-top: 20px;
+}
+
+.login label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+.login form article {
+    width: 80%;
+    text-align: center;
+}
+
+.login input {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 10px;
+    box-sizing: border-box;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    text-align: center;
+}
+
+.login button {
+    background-color: #3498db;
+    color: #fff;
+    padding: 10px 15px;
+    margin-bottom: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.login button:hover {
+    background-color: #2980b9;
+}
+
+.access-denied {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.access-denied section {
+    display: flex;
+    width: 50%;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    background-color: #e74c3c;
+    color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+}
+
+.access-denied p {
+    text-align: center;
+}
+
+.access-denied a {
+    color: black;
+    text-decoration: underline;
+}
+
+.access-denied a:hover {
+    text-decoration: none;
+}
+
+.entry-list .create-search {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.entry-list .create-button {
+    box-shadow: none;
+    margin: 0;
+}
+
+.entry-list section a.create-entry {
+    background-color: #308a18;
+    color: #fff;
+    padding: 10px 15px;
+    text-decoration: none;
+    border-radius: 5px;
+    margin-bottom: 20px;
+}
+
+.entry-list section a.create-entry:hover {
+    color: #fff;
+    background-color: #17ab17;
+}
+
+.entry-list {
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.entry-list section:not(.create-button, .search) {
+    background-color: #fff;
+    padding: 20px;
+}
+
+.entry-list .search,
+.entry-list .page-info {
+    box-shadow: none;
+}
+
+.search input {
+    padding: 5px;
+}
+
+.search button {
+    border: none;
+    padding: 10px;
+    background-color: #e05e10;
+    color: white;
+    border-radius: 5px;
+}
+
+.search button:hover {
+    background-color: #ec7522;
+    cursor: pointer;
+}
+
+.entry-list p {
+    color: #333;
+}
+
+.page-info {
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+.page-info a {
+    display: inline-block;
+    margin: 0 5px;
+    padding: 8px 12px;
+    text-decoration: none;
+    color: #3498db;
+    border-radius: 5px;
+}
+
+.page-info a[href] {
+    cursor: pointer;
+}
+
+.page-info a.selected {
+    background-color: #3498db;
+    color: #fff;
+}
+
+.page-info button {
+    background-color: #3498db;
+    color: #fff;
+    border: none;
+    padding: 8px 12px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.page-info button:hover {
+    background-color: #2980b9;
+}
+
+.page-info button:disabled {
+    background-color: #ccc;
+    color: #666;
+    cursor: not-allowed;
+}
+
+.page-info form {
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+    gap: 20px;
+}
+
+.page-info label {
+    color: #333;
+}
+
+.page-info select {
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.page-info button[type="submit"] {
+    background-color: #3498db;
+    color: #fff;
+    padding: 8px 12px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.page-info button[type="submit"]:hover {
+    background-color: #2980b9;
+}
+
+.entry-list .elements-section {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+}
+
+.entry-list .element {
+    display: flex;
+    flex-flow: column;
+    justify-content: space-evenly;
+    align-items: center;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    padding: 15px;
+    border-radius: 5px;
+    margin: 0;
+}
+
+.entry-list .element h2 {
+    color: #3498db;
+    margin-bottom: 10px;
+    text-align: center;
+    height: 50px;
+}
+
+.entry-list .element table {
+    margin-top: 10px;
+    border-collapse: collapse;
+}
+
+.entry-list .element th,
+.entry-list .element td {
+    padding: 8px;
+    border-bottom: 1px solid #ccc;
+    text-align: right;
+    width: 200px;
+}
+
+.entry-list .element th {
+    color: #3498db;
+    text-align: left;
+}
+
+.entry-list .element a {
+    display: inline-block;
+    margin-top: 10px;
+    padding: 8px 12px;
+    text-decoration: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.entry-list .element .edit-element {
+    background-color: #3498db;
+    color: #fff;
+    margin-right: 10px;
+    text-align: center;
+}
+
+.entry-list .element .edit-element:hover {
+    background-color: #2980b9;
+}
+
+.entry-list .element .delete-element {
+    background-color: #e74c3c;
+    color: #fff;
+    text-align: center;
+}
+
+.entry-list .element .delete-element:hover {
+    background-color: #c0392b;
+}
+
+.entry-list .element .btn-container {
+    width: 300px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.edit-create-form {
+    width: 80%;
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+}
+
+.edit-create-form section {
+    width: 100%;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.edit-create-form p {
+    margin: 10px 0;
+}
+
+.edit-create-form a {
+    display: inline-block;
+    margin-top: 10px;
+    text-decoration: none;
+    color: #3498db;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.edit-create-form a:hover {
+    text-decoration: underline;
+}
+
+.edit-create-form form {
+    width: 400px;
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    margin-top: 20px;
+    padding: 20px;
+    background-color: #9ad29a;
+    border-radius: 50px;
+}
+
+.edit-create-form article {
+    width: 80%;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.edit-create-form label {
+    display: block;
+    margin-bottom: 5px;
+    color: #333;
+}
+
+.edit-create-form input {
+    width: 300px;
+    padding: 8px;
+    margin-bottom: 10px;
+    box-sizing: border-box;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    text-align: center;
+}
+
+.edit-create-form button[type="submit"] {
+    background-color: #3498db;
+    color: #fff;
+    padding: 8px 12px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.edit-create-form button[type="submit"]:hover {
+    background-color: #2980b9;
+}
+
+.edit-create-form button[type="button"] {
+    background-color: #fff;
+    color: #3498db;
+    border: 1px solid #3498db;
+    padding: 8px 12px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.edit-create-form button[type="button"]:hover {
+    background-color: #3498db;
+    color: #fff;
+}
+
+.confirm-delete {
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+    padding: 20px;
+}
+
+.confirm-delete p {
+    margin: 10px 0;
+}
+
+.confirm-delete a {
+    display: inline-block;
+    margin-top: 10px;
+    padding: 8px 12px;
+    text-decoration: none;
+    color: #000;
+    font-weight: bold;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.confirm-delete a:hover {
+    color: #fff;
+}
+
+.confirm-delete form {
+    width: 50%;
+    display: flex;
+    flex-flow: column nowrap;
+    margin-top: 20px;
+}
+
+.confirm-delete article.alert {
+    background-color: #e74c3c;
+    color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+    padding: 15px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.confirm-delete article.alert p {
+    margin: 10px 0;
+}
+
+.confirm-delete article {
+    text-align: center;
+}
+
+.confirm-delete article button {
+    margin-right: 10px;
+}
+
+.confirm-delete button[type="submit"].btn-delete {
+    background-color: #e74c3c;
+    color: #fff;
+    padding: 8px 12px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.confirm-delete button[type="submit"].btn-delete:hover {
+    background-color: #c0392b;
+}
+
+.confirm-delete button[type="button"] {
+    background-color: #3498db;
+    color: #fff;
+    border: none;
+    padding: 8px 12px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.confirm-delete button[type="button"]:hover {
+    background-color: #2980b9;
+    color: #fff;
+}
+
+.complete-delete,
+.complete-delete > article {
+    width: 100%;
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+    justify-content: center;
+}
+
+.complete-delete section {
+    text-align: center;
+}
+
+.complete-delete p {
+    margin: 10px 0;
+}
+
+.complete-delete a {
+    display: inline-block;
+    margin-top: 10px;
+    padding: 8px 12px;
+    text-decoration: none;
+    color: #3498db;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.complete-delete a button {
+    background-color: #3498db;
+    color: #fff;
+    border: none;
+    padding: 8px 12px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.complete-delete a button:hover {
+    background-color: #2980b9;
+}
+
+@media screen and (max-width: 650px) {
+    .entry-list .create-search {
+        flex-flow: column nowrap;
+    }
+}
+
+@media screen and (max-width: 800px) {
+    .entry-list .elements-section {
+        grid-template-columns: 1fr;
+        justify-items: center;
+    }
+
+    .entry-list .element {
+        width: 80%;
+    }
+}

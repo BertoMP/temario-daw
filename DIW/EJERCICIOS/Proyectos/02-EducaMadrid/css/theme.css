@@ -1,0 +1,13 @@
+@font-face {
+    font-family: 'fuente-principal';
+    src: url(../fonts/OpenSans.ttf);
+}
+
+body {
+    font-family: 'fuente-principal', sans-serif;
+    font-size: 0.9em;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #1d2125;
+    text-align: left;
+}

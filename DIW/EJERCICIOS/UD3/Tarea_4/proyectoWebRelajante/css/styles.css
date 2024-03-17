@@ -1,0 +1,126 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Arial", sans-serif;
+}
+
+h2 {
+    text-transform: uppercase;
+}
+
+h3 {
+    color: blueviolet;
+    background: #cea1ee;
+    padding: 20px;
+    border-radius: 16px;
+}
+
+header, footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #fdfff6;
+    min-height: 100px;
+}
+
+header img {
+    width: 100px;
+}
+
+.contenedor-flex {
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-flow: column nowrap;
+    min-height: 750px;
+    padding: 20px;
+    background-color: #b2aeae;
+}
+
+.contenedor-grid {
+    display: grid;
+    grid-template-rows: repeat(2, 1fr);
+    grid-template-columns: repeat(2, 1fr);
+    width: 100%;
+    gap: 20px;
+    justify-items: center;
+    align-items: center;
+}
+
+section>section {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-flow: column nowrap;
+    width: 400px;
+    height: 200px;
+    border-radius: 16px;
+    box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.5);
+}
+
+article {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-flow: column nowrap;
+    height: 170px;
+}
+
+.contenedor-grid section:first-child {
+    background: url(../images/lofi.jpg);
+    background-size: 100%;
+}
+
+.contenedor-grid section:nth-child(2) {
+    background: url(../images/lluvia.jpg);
+    background-size: 100%;
+}
+
+.contenedor-grid section:nth-child(3) {
+    background: url(../images/cafeteria.png);
+    background-size: 100%;
+}
+
+.contenedor-grid section:nth-child(4) {
+    background: url(../images/olas.jpg);
+    background-size: 100%;
+}
+
+i {
+    display: block;
+    background-color: #195A22FF;
+    color: white;
+    font-size: 1rem;
+    padding: 20px;
+    border-radius: 50%;
+    margin: 1%;
+    transition: 0.5s;
+}
+
+i:hover {
+    cursor: pointer;
+}
+
+i:active {
+    transform: scale(0.5);
+}
+
+.sonidoActivado {
+    background-color: #FC3232FF;
+}
+
+@media screen and (max-width: 900px) {
+    .contenedor-grid {
+        display: flex;
+        width: 100%;
+        gap: 20px;
+        justify-items: center;
+        align-items: center;
+        flex-flow: column nowrap;
+    }
+}

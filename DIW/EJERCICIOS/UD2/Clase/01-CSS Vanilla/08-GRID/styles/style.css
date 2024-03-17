@@ -1,0 +1,50 @@
+body {
+    background-color: #333;
+    color: #bbbabb;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 2em;
+}
+
+.item {
+    padding: 0.4em;
+    border: 1px solid white;
+    background-color: darkslategray;
+}
+
+#rejilla {
+    width: 900px;
+    height: 1100px;
+
+    display: grid;
+    grid-template: 180px 100px / repeat(4, 100px);
+    grid-auto-rows: 200px;
+    gap: 30px;
+    background: aquamarine;
+
+    align-content: space-evenly;
+    justify-content: space-evenly;
+}
+
+#rejilla div:nth-child(3) {
+    grid-column-end: span 3;
+    grid-row-end: span 2;
+}
+
+#rejilla div:nth-child(1) {
+    grid-column-end: span 3;
+}
+
+#rejilla div:nth-child(5) {
+    grid-column: 2 / -1;
+    grid-row: 2 / 3;
+}
+
+#rejilla div:nth-child(4) {
+    order: 1;
+}
+
+#rejilla div:nth-child(8) {
+    order: 1;
+}
+
+

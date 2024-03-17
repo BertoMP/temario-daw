@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<!-- Declaración del tipo de documento especifica la versión de HTML y el idioma -->
+<html lang="es">
+<head>
+    <!-- La sección head contiene metadatos sobre el documento -->
+    <meta charset="UTF-8"> <!-- Especifica la codificación de caracteres -->
+    <title>Harry Potter</title> <!-- Establece el título de la página -->
+    <!-- Enlaces a hojas de estilo externas para la presentación -->
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/theme.css">
+</head>
+<body>
+<!-- El contenido principal de la página -->
+<main>
+    <!-- Sección para el contenido principal -->
+    <section>
+        <!-- Sección para el formulario de Hogwarts -->
+        <section id="form-hogwarts">
+            <h2>Tu casa de Hogwarts te espera...</h2> <!-- Encabezado para el formulario de Hogwarts -->
+            <img src="./assets/images/principal-logo-min.png" alt=""> <!-- Imagen del logo de Hogwarts -->
+            <!-- Formulario para recopilar la información del usuario -->
+            <form action="pages/questionnaire.html" method="get">
+                <!-- Campo de entrada para el nombre del usuario -->
+                <article>
+                    <label for="name">Nombre</label>
+                    <input type="text"
+                           name="name"
+                           id="name"
+                           placeholder="Ej: José, Julián Gómez">
+                </article>
+                <!-- Campo de entrada para el número de teléfono del usuario -->
+                <article>
+                    <label for="phone">Teléfono</label>
+                    <input type="text"
+                           name="phone"
+                           id="phone"
+                           placeholder="Ej: +34 912345678, 612345678, +34-712345678">
+                </article>
+                <!-- Campo de entrada para la dirección de correo electrónico del usuario -->
+                <article>
+                    <label for="email">Correo electrónico</label>
+                    <input type="text"
+                           name="email"
+                           id="email"
+                           placeholder="Ej: usuario@dominio, usuario@dominio.com">
+                </article>
+                <!-- Casilla de verificación para aceptar el uso de los datos -->
+                <article>
+                    <input type="checkbox" name="accept-terms" id="accept-terms">
+                    <label for="accept-terms">Acepto el uso de mis datos.</label>
+                </article>
+                <!-- Botón para enviar el formulario y comenzar el cuestionario -->
+                <article>
+                    <button type="submit" id="btn-start">Comenzar cuestionario</button>
+                </article>
+            </form>
+        </section>
+    </section>
+</main>
+<!-- Pie de página que incluye el script de JavaScript -->
+<footer>
+    <script src="./js/landing.js"></script>
+</footer>
+</body>
+</html>

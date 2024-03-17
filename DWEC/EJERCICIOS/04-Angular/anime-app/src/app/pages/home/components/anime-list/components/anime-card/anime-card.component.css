@@ -1,0 +1,44 @@
+p {
+  font-family: var(--japanese-font);
+  font-style: italic;
+  opacity: 0.7;
+  text-align: center;
+}
+
+img {
+  width: 100%;
+  border-top-left-radius: 16px;
+  border-top-right-radius: 16px;
+}
+
+.anime-card {
+  width: 100%;
+  border-radius: 16px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.5);
+  transition: transform 0.3s ease-in-out;
+}
+
+.anime-card:hover {
+  transform: scale(1.05);
+}
+
+mat-card-content {
+  background-color: var(--main-color);
+  border-bottom-left-radius: 16px;
+  border-bottom-right-radius: 16px;
+  padding: 16px;
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+}
+
+h2 {
+  font-size: 1.2em;
+  font-weight: bold;
+  text-align: center;
+}
+
+p {
+  font-size: 0.9em;
+  opacity: 0.8;
+}

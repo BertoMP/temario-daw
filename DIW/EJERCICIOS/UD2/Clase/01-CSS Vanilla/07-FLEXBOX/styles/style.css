@@ -1,0 +1,33 @@
+body {
+    background-color: #333;        
+    color: #bbbabb;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+h1 {
+    text-align: center;
+}
+
+.item {
+    height: 100px;
+    width: 100px;
+    text-align: center;
+    line-height: 100px;
+    font-size: 1.4rem;
+    background-color: darkslategrey;
+    margin: 5px;
+}
+
+#i3 {
+    align-self: center;
+}
+
+#contenedor {
+    background-color: slategray;
+    height: 400px;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: flex-start;
+    align-items: flex-start;
+    align-content: space-around;
+}

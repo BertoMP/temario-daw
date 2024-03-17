@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="./css/theme.css">
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <title>Aventura</title>
+</head>
+<body>
+    <main>
+        <section>
+            <i id="btn-music" class="fa-solid fa-music"></i>
+            <h2>Genera tu propia aventura...</h2>
+            <section id="form">
+                <form action="./pages/game.html" method="get">
+                    <article>
+                        <label for="input-name">¿Cuál es tu nombre?</label>
+                        <input type="text"
+                               name="username"
+                               id="input-name"
+                               title="El nombre no puede contener espacios ni caracteres especiales">
+                    </article>
+                    <article>
+                        <label for="input-date">¿Cuál es tu fecha de nacimiento?</label>
+                        <input type="date" name="date-birth" id="input-date">
+                    </article>
+                    <article>
+                        <label for="terror">¿Qué es lo que te da más miedo?</label>
+                        <select id="terror" name="terror">
+                            <option value="hombre lobo">Hombres lobo</option>
+                            <option value="vampiro">Vampiros</option>
+                            <option value="fantasma">Fantasmas</option>
+                            <option value="payaso asesino">Payasos asesinos</option>
+                            <option value="demonio">Demonios</option>
+                        </select>
+                    </article>
+                    <article>
+                        <label for="email">Email</label>
+                        <input type="text" name="email" id="email">
+                    </article>
+                    <article>
+                        <label for="phonenumber">Número de teléfono</label>
+                        <input type="text" name="phone" id="phonenumber">
+                    </article>
+                    <article class="not-flex">
+                        <input type="checkbox" name="accept" id="accept">
+                        <label for="accept" class="not-block">¿Aceptas entrar en el psiquiátrico?</label>
+                    </article>
+
+                    <article>
+                        <button type="submit" id="btn-start">Comenzar aventura</button>
+                    </article>
+                </form>
+            </section>
+        </section>
+    </main>
+    <footer>
+        <script src="https://kit.fontawesome.com/aca8e1ed37.js" crossorigin="anonymous"></script>
+        <script src="js/landing.js"></script>
+        <script src="js/audios.js"></script>
+    </footer>
+</body>
+</html>

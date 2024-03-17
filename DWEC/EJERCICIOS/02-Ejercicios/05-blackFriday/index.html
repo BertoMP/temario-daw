@@ -1,0 +1,51 @@
+<!--
+    Desarrollar un botón que reduzca el precio de los productos 
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carrito de Compras Black Friday</title>
+    <link rel="stylesheet" href="./css/styles.css">
+</head>
+<body>
+    <h1>CARRITO BLACKFRIDAY</h1>
+    <section>
+        <article id="productos">
+            <h2>PRODUCTOS</h2>
+            <ul>
+                <li>
+                    <span>Placa base - 100€</span>
+                    <div>
+                        <button type="button" id="aniadir1">Añadir</button>
+                        <button type="button" id="eliminar1">Eliminar</button>
+                    </div>
+                </li>
+                <li>
+                    <span>Fuente de alimentación - 50€</span>
+                    <div>
+                        <button type="button" id="aniadir2">Añadir</button>
+                        <button type="button" id="eliminar2">Eliminar</button>
+                    </div>
+                </li>
+                <li>
+                    <span>Memoria RAM - 75€</span>
+                    <div>
+                        <button type="button" id="aniadir3">Añadir</button>
+                        <button type="button" id="eliminar3">Eliminar</button>
+                    </div>
+                </li>
+            </ul>
+            <section>
+                <button type="button" id="aplicarDescuento">Aplicar descuento del 20%</button>
+                <button type="button" id="finalizarCompra">Finalizar compra</button>
+                <button type="button" id="nuevaCompra">Nueva compra</button>
+            </section>
+        </article>
+        <article id="tuCesta"></article>
+    </section>
+    <script src="./js/script.js"></script>
+</body>
+</html>

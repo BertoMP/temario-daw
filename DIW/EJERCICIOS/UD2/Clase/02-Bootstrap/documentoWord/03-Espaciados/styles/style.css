@@ -1,0 +1,17 @@
+body {
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    color: white;
+}
+
+.row {
+    background-color: #563d7c;
+    border: white;
+}
+
+[class*="col"] {
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    background-color: #b199d6;
+    border: 1px solid #563d7c;
+}

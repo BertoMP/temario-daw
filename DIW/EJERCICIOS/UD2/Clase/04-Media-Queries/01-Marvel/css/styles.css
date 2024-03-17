@@ -1,0 +1,43 @@
+html {
+    font-size: 1em;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    background-color: #eee;
+    color: #bbbaaa;
+}
+
+img {
+    width: 200px;
+    height: 200px;
+    display: block;
+    margin: 0 auto;
+}
+
+#miniaturas {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.titulo {
+    color: blue;
+    font-weight: 700;
+    margin: 10px 8px;
+    text-align: center;
+}
+
+.bloque {
+    height: 250px;
+    flex-basis: 250px;
+    border: 1px solid#777;
+    background-color: white;
+}
+
+@media all and (max-width: 750px) {
+    #miniaturas {
+        flex-direction: column;
+        flex-wrap: nowrap;
+    }
+}

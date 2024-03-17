@@ -1,0 +1,26 @@
+<section>
+  <article class="filter">
+    <h2>Filtrado</h2>
+    <input type="text"
+           placeholder="Buscar..."
+           id="searchInput"
+           [(ngModel)]="searchAnime"
+           (input)="onSearchAnime()">
+    @if (searchAnime.length > 0) {
+      <button (click)="onCleanSearch()">Limpiar</button>
+    }
+  </article>
+  <article class="anime-list">
+      @if (animeList.length > 0 &&  searchAnime.length > 0) {
+        <h2 class="results-message">
+          Mostrando resultados para la búsqueda: {{ searchAnime }} ({{ animeList.length }} resultados)
+        </h2>
+        <app-anime-list [animeList]="animeList"></app-anime-list>
+      } @else if (animeList.length === 0) {
+        <p class="no-results">No se encontraron resultados para la búsqueda.</p>
+      } @else {
+        <h2>Mostrando todos los animes disponibles</h2>
+        <app-anime-list [animeList]="animeList"></app-anime-list>
+      }
+    </article>
+</section>

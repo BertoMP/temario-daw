@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Enlace al icono de la web -->
+    <link rel="shortcut icon" href="../assets/images/icono.ico" type="image/x-icon">
+    <!-- Enlace a la hoja de estilos de reset -->
+    <link rel="stylesheet" href="../css/reset.css">
+    <!-- Enlace a la hoja de estilos de theme -->
+    <link rel="stylesheet" href="../css/theme.css">
+    <!-- Enlace a la hoja de estilos de encabezado y pie de página -->
+    <link rel="stylesheet" href="../css/stylesHeaderFooter.css">
+    <!-- Enlace a la hoja de estilos específica para la página de películas -->
+    <link rel="stylesheet" href="../css/stylesPelisSeries.css">
+    <!-- Enlace a la hoja de estilos específica para la página de series -->
+    <link rel="stylesheet" href="../css/stylesSeries.css">
+    <!-- Establece una preconexión con el dominio 'https://fonts.googleapis.com' -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <!-- Establece una preconexión con el dominio 'https://fonts.gstatic.com' y permite el acceso desde
+    diferentes orígenes (crossorigin) -->
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <!-- Enlaza una hoja de estilos desde Google Fonts que contiene la fuente 'Poppins' -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+    <title>SERIES</title>
+</head>
+
+<body>
+<!-- CABECERA DE LA WEB -->
+<header>
+    <!-- Logo de Marvel con un enlace a la página de inicio -->
+    <a href="../index.html">
+        <img src="../assets/images/logoMarvel.png" alt="Logo de Marvel">
+    </a>
+    <!-- Barra de navegación -->
+    <nav>
+        <a href="../index.html">Inicio</a>
+        <a href="./peliculas.html">Películas</a>
+        <a href="./series.html">Series</a>
+        <a href="./personajes.html">Personajes</a>
+        <a href="./login.html">Login</a>
+    </nav>
+    <!-- Menú de hamburguesa para dispositivos móviles-->
+    <section class="menu-hamburguesa" id="menu">
+        <!-- Span que contienen las líneas que componen el menú hamburguesa -->
+        <span class="linea-top"></span>
+        <span class="linea-mid"></span>
+        <span class="linea-bot"></span>
+    </section>
+    <!-- Menú lateral para dispositivos móviles -->
+    <aside class="menu-lateral" id="aside">
+        <a href="../index.html">Inicio</a>
+        <a href="./peliculas.html">Películas</a>
+        <a href="./series.html">Series</a>
+        <a href="./personajes.html">Personajes</a>
+        <a href="./login.html">Login</a>
+        <img src="../assets/images/imagenLateral.png" alt="imagen avengers">
+    </aside>
+</header>
+
+<!-- CONTENIDO PRINCIPAL -->
+<main>
+    <!-- Seccion que contiene el primer grupo de series -->
+    <section>
+        <h2>FASE 4</h2>
+        <!-- Sección que funciona como bloque oculto-visible en función de la pulsación del usuario -->
+        <section>
+            <article>
+                <h3>2021</h3>
+                <!-- Sección que funciona como contenedor para las cards formadas por el cartel de la serie y su
+                     título -->
+                <section class="contenedor-flex">
+                    <!-- Article que funciona como card compuesto por una imagen y un párrafo -->
+                    <article>
+                        <img src="../assets/images/serie-Wandavision.png" alt="Cartel de la serie">
+                        <!-- Article que funciona como contenedor flexible para tener el texto centrado -->
+                        <article>
+                            <p>WandaVision</p>
+                        </article>
+                    </article>
+                    <article>
+                        <img src="../assets/images/serie-FalconWinterSoldier.png" alt="Cartel de la serie">
+                        <article>
+                            <p class="titulo-largo">Falcon y el soldado de invierno</p>
+                        </article>
+                    </article>
+                    <article>
+                        <img src="../assets/images/serie-Loki.png" alt="Cartel de la serie">
+                        <article>
+                            <p>Loki T1</p>
+                        </article>
+                    </article>
+                    <article>
+                        <img src="../assets/images/serie-WhatIf.png" alt="Cartel de la serie">
+                        <article>
+                            <p>What If...?</p>
+                        </article>
+                    </article>
+                    <article>
+                        <img src="../assets/images/serie-Hawkeye.png" alt="Cartel de la serie">
+                        <article>
+                            <p>Hawkeye</p>
+                        </article>
+                    </article>
+                </section>
+            </article>
+            <article>
+                <h3>2022</h3>
+                <section class="contenedor-flex">
+                    <article>
+                        <img src="../assets/images/serie-Moon-Knight.jpg" alt="Cartel de la película">
+                        <article>
+                            <p>Moon Knight</p>
+                        </article>
+                    </article>
+                    <article>
+                        <img src="../assets/images/serie-MsMarvel.jpg" alt="Cartel de la película">
+                        <article>
+                            <p>Ms Marvel</p>
+                        </article>
+                    </article>
+                    <article>
+                        <img src="../assets/images/serie-SheHulk.jpg" alt="Cartel de la película">
+                        <article>
+                            <p class="titulo-largo">She-Hulk: Attorney at Law</p>
+                        </article>
+                    </article>
+                </section>
+            </article>
+        </section>
+    </section>
+    <section>
+        <h2>FASE 5</h2>
+        <section>
+            <article>
+                <h3>2023</h3>
+                <section class="contenedor-flex">
+                    <article>
+                        <img src="../assets/images/serie-SecretInvasion.jpg" alt="Cartel de la película">
+                        <article>
+                            <p>Invasión Secreta</p>
+                        </article>
+                    </article>
+                    <article>
+                        <img src="../assets/images/serie-Loki.png" alt="Cartel de la película">
+                        <article>
+                            <p>Loki</p>
+                        </article>
+                    </article>
+                </section>
+            </article>
+        </section>
+    </section>
+</main>
+
+<!-- PIE DE PÁGINA DE LA WEB-->
+<footer>
+    <!-- Información de contacto -->
+    <section>
+        <p>Contacto: <a href="mailto:contact@marvel.com">contact@marvel.com</a></p>
+    </section>
+    <!-- Redes sociales -->
+    <section class="social-media">
+        <!-- Icono y enlace a la página de Facebook de Marvel -->
+        <a href="https://www.facebook.com/Marvel/" target="_blank" aria-label="facebook">
+            <i class="fa-brands fa-square-facebook facebook"></i>
+        </a>
+
+        <!-- Icono y enlace a la página de X de Marvel-->
+        <a href="https://www.x.com/Marvel/" target="_blank" aria-label="x">
+            <i class="fa-brands fa-x-twitter x"></i>
+        </a>
+
+        <!-- Icono y enlace a la página de Instagram de Marvel -->
+        <a href="https://www.instagram.com/marvel/" target="_blank" aria-label="instagram">
+            <i class="fa-brands fa-square-instagram instagram"></i>
+        </a>
+    </section>
+    <!-- Copyright -->
+    <section>
+        <p>Copyright &copy; 2023 Marvel</p>
+    </section>
+    <!-- Enlace a la biblioteca de Font Awesome para los iconos -->
+    <script src="https://kit.fontawesome.com/aca8e1ed37.js" crossorigin="anonymous"></script>
+    <!-- Enlace al archivo JavaScript que contiene la funcionalidad del menú lateral -->
+    <script src="../js/script-aside.js"></script>
+    <script src="../js/script-pelisSeries.js"></script>
+</footer>
+</body>
+</html>

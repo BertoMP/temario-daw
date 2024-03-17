@@ -1,0 +1,147 @@
+body {
+    min-height: 90vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url("../images/fondoWeb.jpg");
+    background-position: center;
+}
+
+main {
+    width: 100%;
+    margin: 20px auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+main > section {
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+    gap: 20px;
+}
+
+section > section {
+    background-color: var(--formulario);
+    width: 650px;
+    height: 700px;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 16px;
+    backdrop-filter: blur(5px);
+
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+section article:not(.not-flex) {
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+}
+
+h2 {
+    text-align: center;
+    text-shadow:
+            -3px 0 black,
+            0 3px black,
+            3px 0 black,
+            0 -3px black;
+    margin: 10px;
+    font-size: 3rem;
+    letter-spacing: 2px;
+    color: var(--color-principal);
+}
+
+h3 {
+    width: 300px;
+    text-align: center;
+    background-color: var(--color-principal);
+    font-size: 4rem;
+    padding: 20px;
+    border-radius: 10px;
+    color: var(--color-blanco);
+}
+
+label:not(.not-block) {
+    display: block;
+}
+
+label{
+    margin-bottom: 8px;
+    font-size: 1.3rem;
+    color: var(--color-blanco);
+}
+
+input[type="text"],
+input[type="date"],
+input[type="email"],
+select,
+button {
+    text-align: center;
+    font-size: 1.3rem;
+    padding: 8px;
+    margin-bottom: 15px;
+    width: 100%;
+    border-radius: 10px;
+}
+
+button {
+    background-color: var(--color-principal);
+    color: var(--color-blanco);
+    font-family: "Monster", fantasy;
+    letter-spacing: 2px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    padding: 20px;
+    transition: background-color 0.3s;
+    margin-top: 20px;
+}
+
+button:hover {
+    background-color: var(--boton-hover);
+}
+
+i {
+    display: block;
+    background-color: var(--icono-audio-color);
+    color: var(--color-blanco);
+    font-size: 2rem;
+    padding: 20px;
+    border-radius: 50%;
+    margin: 1%;
+    transition: 0.5s;
+}
+
+i:hover {
+    cursor: pointer;
+}
+
+i:active {
+    transform: scale(0.5);
+}
+
+.sonidoActivado {
+    background-color: var(--icono-no-audio-color);
+}
+
+section > p {
+    font-size: 1.3rem;
+    text-align: center;
+    padding: 20px;
+    border-radius: 16px;
+    color: var(--color-blanco);
+}
+
+.access-denied {
+    background-color: var(--color-principal);
+}
+
+.access-granted {
+    background-color: green;
+}

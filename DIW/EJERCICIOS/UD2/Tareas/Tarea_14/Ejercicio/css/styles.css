@@ -1,0 +1,25 @@
+.content {
+    width: 194px;
+    height: 336px;
+    margin: 100px;
+    background: url(../images/pegatinaLata.png);
+    animation: rotacion 10s infinite linear;
+    
+}
+
+.sombra-3d {
+    background: url(../images/sombraLata.png);
+    position: absolute;
+    width: 194px;
+    height: 336px;
+}
+
+@keyframes rotacion {
+    0% {
+        background-position: 0px 0px;
+    }
+
+    100% {
+        background-position: -446px 0px;
+    }
+}

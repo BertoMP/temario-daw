@@ -1,0 +1,52 @@
+:root {
+    --modal-fondo: #b4b4b4;
+    --body-fondo: #0b0c0e;
+
+    --encabezados-color: #ededed;
+    --encabezados-fondo: #1a1a1a;
+    --encabezados-color-hover: #4d4d4d;
+    --encabezados-fondo-hover: #e2e2e2;
+
+    --icono-audio-color: #111111;
+    --icono-audio-fondo: #195a22;
+    --icono-audio-desactivado-color: #e0e0e0;
+    --icono-audio-desactivado-fondo: #fc3232;
+
+    --stark-color-primario: #454546;
+    --stark-color-secundario: #eee;
+    --lannister-color-primario: #a30c0c;
+    --lannister-color-secundario: #cf9d1f;
+    --targaryen-color-primario: #d60303;
+    --targaryen-color-secundario: #0c0c0c;
+    --baratheon-color-primario: #fc0;
+    --baratheon-color-secundario: #0c0c0c;
+    --tyrell-color-primario: #196d1f;
+    --tyrell-color-secundario: #ffd700;
+    --martell-color-primario: #f8c253;
+    --martell-color-secundario: #df5506;
+    --arryn-color-primario: #1554c3;
+    --arryn-color-secundario: #545252;
+    --tully-color-primario: #2b4da3;
+    --tully-color-sedundario: #af2620;
+    --greyjoy-color-primario: #eece17;
+    --greyjoy-color-secundario: #0c0c0c;
+}
+
+@font-face {
+    font-family: 'game-of-thrones';
+    src: url(../fonts/got.ttf);
+}
+
+body {
+    background-image: url(../images/fondoWeb.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-color: var(--body-fondo);
+
+    width: 80%;
+    margin: auto;
+
+    font-family: Arial, Helvetica, sans-serif;
+}

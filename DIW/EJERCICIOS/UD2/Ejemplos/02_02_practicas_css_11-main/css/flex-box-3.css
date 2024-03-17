@@ -1,0 +1,22 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    border: 4px solid orange;
+    width: 100%;
+    display: flex; 
+    flex-wrap: wrap;
+    justify-content: space-around; 
+    align-items: stretch;
+}
+
+.caja {
+    width: 320px;
+    background-color: cornflowerblue;
+    padding: 20px;
+    margin: 20px;
+    font-size: 18px;
+}

@@ -1,0 +1,39 @@
+<html>
+    <body>
+        <form action="1.php">
+            <label for="nombre">Nombre:</label>
+				<input type="text" id="nombre" name="nombre" />
+            <br />
+			<label for="apellidos">Apellidos:</label>
+				<input type="text" name="apellidos" />
+			<br />
+			<label for="mail">Correo electr&oacute;nico:</label>
+				<input type="email" id="mail" name="mail" />
+			<br />
+			<label for="web">Página Web Personal</label>
+				<input type="url" id="web" name="web" />
+			<br />
+			<label for="sexo">Sexo:</label>
+				<input type="radio" id="sexo" name="sexo" value="hombre" /> Hombre
+				<input type="radio" id="sexo" name="sexo" value="mujer" /> Mujer
+            <br />
+			<label for="convivientes">N&uacute;mero de convivientes en el domicilio:</label>
+				<input type="number" id="convivientes" name="convivientes" />
+			<br />
+       		<label for="aficiones[]">Aficiones:</label>
+				<input type="checkbox" id="aficiones[]" name="aficiones[]" value="Musica" /> M&uacute;sica<br />
+				<input type="checkbox" id="aficiones[]" name="aficiones[]" value="Viajes" /> Viajar<br />
+				<input type="checkbox" id="aficiones[]" name="aficiones[]" value="Jardineria" /> Jardineria<br />
+				<input type="checkbox" id="aficiones[]" name="aficiones[]" value="Bricolaje" /> Bricolaje<br />
+            <br />
+			<select name="favorito[]" multiple="true">
+                <option value="futbol">Futbol</option>
+                <option value="natacion">Nataci&oacute;n</option>
+                <option value="atletismo">Atletismo</option>
+                <option value="fitness">Fitness</option>
+            </select>
+            <br /><br /><br />
+            <input type="submit">
+        </form>
+    </body>
+</html>

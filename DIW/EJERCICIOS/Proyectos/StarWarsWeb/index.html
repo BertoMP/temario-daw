@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<!-- Declaración del tipo de documento especificando la versión de HTML e idioma -->
+<html lang="es">
+<head>
+    <!-- Sección head que contiene metadatos sobre el documento -->
+    <meta charset="UTF-8"> <!-- Especifica la codificación de caracteres -->
+    <title>STAR WARS</title> <!-- Establece el título de la página -->
+    <!-- Enlaces a hojas de estilo externas para la presentación -->
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/theme.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<!-- Cuerpo principal de la página -->
+<header>
+    <!-- Encabezado de la página que incluye una imagen -->
+    <img src="assets/images/cabecera.jpg" alt="Foto de la cabecera">
+</header>
+<main>
+    <!-- Sección principal de la página -->
+    <section id="section-audio">
+        <!-- Sección de audio con un título y un elemento de audio -->
+        <h2>audio</h2>
+        <audio src="assets/audio/starWarsAudio.mp3" controls></audio>
+    </section>
+    <section id="section-video">
+        <!-- Sección de video con un título y un elemento de video -->
+        <h2>vídeo</h2>
+        <video src="assets/videos/starWars.mp4" controls></video>
+    </section>
+    <section id="section-peliculas">
+        <!-- Sección de películas con títulos y listas de películas -->
+        <h2>películas</h2>
+        <section>
+            <!-- Subsección para cada trilogía de películas -->
+            <article>
+                <!-- Artículo para la trilogía precuela con títulos de películas -->
+                <h3>Trilogía precuela</h3>
+                <h4 id="episode-1">La amenaza fantasma</h4>
+                <h4 id="episode-2">El ataque de los clones</h4>
+                <h4 id="episode-3">La venganza de los Sith</h4>
+            </article>
+            <article>
+                <!-- Artículo para la trilogía original con títulos de películas -->
+                <h3>Trilogía original</h3>
+                <h4 id="episode-4">Una nueva esperanza</h4>
+                <h4 id="episode-5">El imperio contraataca</h4>
+                <h4 id="episode-6">El retorno del Jedi</h4>
+            </article>
+            <article>
+                <!-- Artículo para la trilogía secuela con títulos de películas -->
+                <h3>Trilogía secuela</h3>
+                <h4 id="episode-7">El despertar de la Fuerza</h4>
+                <h4 id="episode-8">Los últimos Jedi</h4>
+                <h4 id="episode-9">El Ascenso de Skywalker</h4>
+            </article>
+        </section>
+    </section>
+</main>
+<footer>
+    <!-- Pie de página que incluye enlaces a scripts de jQuery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="./js/jQueryHover.js"></script>
+    <script src="./js/jQueryAjax.js"></script>
+    <script src="./js/jQuerySlideDown.js"></script>
+    <script src="./js/jQueryExtension.js"></script>
+</footer>
+</body>
+</html>

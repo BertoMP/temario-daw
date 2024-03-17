@@ -1,0 +1,42 @@
+header, nav, section {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+nav {
+    padding: 16px;
+    border-bottom: #dee2e6 1px solid;
+    width: 100%;
+}
+
+nav>section:first-child {
+    width: 50%;
+}
+
+nav>section:last-child {
+    width: 50%;
+    justify-content: flex-end;
+}
+
+a {
+    color: #1d2125;
+    text-decoration: none;
+}
+
+nav>section:first-child a {
+    margin-right: 2%;
+}
+
+nav>section:last-child * {
+    margin-left: 2%;
+}
+
+a img {
+    width: 100%;
+}
+
+a:first-child {
+    width: 25%;
+    margin-right: 3%;
+}

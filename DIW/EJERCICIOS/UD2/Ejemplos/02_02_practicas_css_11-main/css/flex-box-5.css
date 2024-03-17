@@ -1,0 +1,27 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    border: 4px solid orange;
+    width: 100%;
+    display: flex; 
+    justify-content: center; 
+    align-items: center;
+}
+
+.caja {
+    height: 150px;
+    flex-basis: 200px; /* Ancho mínimo a partir del cual crecerá según el valor de flex-grow*/
+    flex-grow: 1; /* Proporción con la que el elemento crece hasta alcanzar el mayor tamaño posible */
+}
+
+.caja.doble {
+    flex-grow: 4;
+}
+
+.caja.verde { background-color: green;}
+.caja.azul { background-color: blue;}
+.caja.roja { background-color: red;}

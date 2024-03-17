@@ -1,0 +1,102 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f4f4f4;
+}
+
+h2 {
+    text-align: center;
+}
+
+.alumno {
+    background-color: #fff;
+    width: 50%;
+    border-radius: 5px;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin: 20px;
+}
+
+.info {
+    margin-bottom: 20px;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+input {
+    box-sizing: border-box;
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    margin-top: 5px;
+}
+
+button {
+    padding: 10px 20px;
+    background-color: #3498db;
+    color: #fff;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+    width: 45%;
+    margin-top: 10px;
+}
+
+button:first-of-type {
+    float: left;
+}
+
+button:last-of-type {
+    float: right;
+}
+
+p {
+    padding-top: 5%;
+    clear: both;
+    text-align: center;
+    font-size: 1.1rem;
+}
+
+button:hover {
+    background-color: #2980b9;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+th,
+td {
+    padding: 10px;
+    text-align: center;
+}
+
+th {
+    background-color: #3498db;
+    color: #fff;
+}
+
+tr {
+    background-color: #bdcbf1;
+}
+
+.valido {
+    color: rgba(74, 139, 74, 0.87);
+}
+
+.noValido {
+    color: rgba(185, 50, 50, 0.87);
+}

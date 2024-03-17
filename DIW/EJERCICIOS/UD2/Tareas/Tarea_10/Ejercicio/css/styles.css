@@ -1,0 +1,42 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+section {
+    margin: 1%;
+}
+
+div {
+    width: 15px;
+    height: 15px;
+    background: url(../images/flecha_inactiva.png);
+    background-size: 100%;
+    margin-right: 2%;
+}
+
+article {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    width: 200px;
+    border: 1px solid black;
+    padding: 0.5%;
+}
+
+article:not(:first-of-type) {
+    border-top: none;
+}
+
+p {
+    display: inline;
+}
+
+article:hover {
+    cursor: pointer;
+    background-color: #e4e4e4;
+}
+
+article:hover div {
+    background: url(../images/flecha_activa.png);
+}
